@@ -68,7 +68,7 @@ const SEOVideo: React.FC<SEOVideoProps> = ({
   }, [isVisible, pauseOnScroll, autoPlay, src]);
 
   return (
-    <div ref={containerRef} className="w-full h-full">
+    <div ref={containerRef} className="absolute inset-0 w-full h-full">
       <video
         ref={videoRef}
         poster={poster}
@@ -78,7 +78,7 @@ const SEOVideo: React.FC<SEOVideoProps> = ({
         playsInline
         preload="metadata"
         controlsList="nodownload"
-        className="w-full h-full object-cover"
+        className="absolute inset-0 w-full h-full object-cover"
       />
     </div>
   );
