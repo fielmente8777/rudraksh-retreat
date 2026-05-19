@@ -7,14 +7,14 @@ export default function RoomSection() {
   return (
     <SectionWithContainer sectionClassName="bg-background">
       {/* TOP CONTENT */}
-      <div className="flex flex-col gap-10 lg:flex-row lg:items-start lg:justify-between">
+      <div className="flex flex-col md:gap-10 lg:flex-row lg:items-start lg:justify-between">
         {/* LEFT */}
         <div className="max-w-[650px]">
           <p className="text-xs uppercase tracking-[3.5px] text-p22">
             {roomSection.subtitle}
           </p>
 
-          <h2 className="font-primary mt-4 text-4xl font-light text-secondary md:text-[60px]">
+          <h2 className="font-primary text-4xl font-light text-secondary md:text-[60px]">
             {roomSection.title.normal}{" "}
             <span className="italic text-p22">
               {roomSection.title.highlighted}
@@ -27,17 +27,16 @@ export default function RoomSection() {
         </p>
       </div>
       {/* CARDS */}
-      <div className="mt-16 flex flex-col gap-8 xl:flex-row xl:justify-between">
+      <div className="mt-6 md:mt-16 flex flex-col gap-8 xl:flex-row xl:justify-between">
         {roomSection.cards.map((card, index) => (
           <div
             key={index}
-            className={`flex flex-col xl:w-[31.5%] ${
-              index === 1 ? "xl:mt-16" : ""
-            }`}
+            className={`flex flex-col xl:w-[31.5%] ${index === 1 ? "xl:mt-16" : ""
+              }`}
           >
             {/* IMAGE */}
             <div className="relative overflow-hidden">
-              <div className="relative h-[540px] w-full">
+              <div className="relative aspect-4/4 lg:aspect-4/5.5 w-full">
                 <Image
                   src={card.image}
                   alt={card.title}
@@ -68,19 +67,18 @@ export default function RoomSection() {
         ))}
       </div>
       {/* buttons */}
-      <div className="mt-16 flex flex-wrap justify-center gap-4">
+      <div className=" mt-4 md:mt-16 flex flex-wrap justify-center gap-4">
         {roomSection.buttons.map((button, index) => {
           const Icon = button.icon;
 
           return (
             <button
               key={index}
-              className={`rounded-md px-8 py-4 text-xs tracking-[3px] transition-all 
-                            ${
-                              button.variant === "primary"
-                                ? "bg-primary text-white hover:opacity-90"
-                                : "border border-primary text-primary hover:bg-primary hover:text-white"
-                            }
+              className={`rounded-md px-8 py-4 flex justify-center max-md:w-full text-xs tracking-[3px] transition-all 
+                            ${button.variant === "primary"
+                  ? "bg-primary text-white hover:opacity-90"
+                  : "border border-primary text-primary hover:bg-primary hover:text-white"
+                }
                          `}
             >
               <div className="flex items-center gap-2">

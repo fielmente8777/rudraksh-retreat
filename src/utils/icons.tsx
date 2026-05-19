@@ -96,117 +96,35 @@ export const FillMailIcon = () => (
 
 );
 export const SliderPrevIcon = () => (
-  <svg
-  width={64}
-  height={48}
-  viewBox="0 0 64 48"
+ <svg
+  width={8}
+  height={16}
+  viewBox="0 0 8 16"
   fill="none"
   xmlns="http://www.w3.org/2000/svg"
 >
-  <g filter="url(#filter0_d_13_102)">
-    <rect
-      width={48}
-      height={32}
-      rx={16}
-      transform="matrix(-1 0 0 1 56 6)"
-      fill="white"
-    />
-    <path
-      d="M34.9746 30L36 28.8239L30.0508 22L36 15.1761L34.9746 14L28 22L34.9746 30Z"
-      fill="#C9A96F"
-    />
-  </g>
-  <defs>
-    <filter
-      id="filter0_d_13_102"
-      x={0}
-      y={0}
-      width={64}
-      height={48}
-      filterUnits="userSpaceOnUse"
-      colorInterpolationFilters="sRGB"
-    >
-      <feFlood floodOpacity={0} result="BackgroundImageFix" />
-      <feColorMatrix
-        in="SourceAlpha"
-        type="matrix"
-        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
-        result="hardAlpha"
-      />
-      <feOffset dy={2} />
-      <feGaussianBlur stdDeviation={4} />
-      <feColorMatrix
-        type="matrix"
-        values="0 0 0 0 0.392157 0 0 0 0 0.392157 0 0 0 0 0.435294 0 0 0 0.2 0"
-      />
-      <feBlend
-        mode="normal"
-        in2="BackgroundImageFix"
-        result="effect1_dropShadow_13_102"
-      />
-      <feBlend
-        mode="normal"
-        in="SourceGraphic"
-        in2="effect1_dropShadow_13_102"
-        result="shape"
-      />
-    </filter>
-  </defs>
+  <path
+    d="M6.97462 16L8 14.8239L2.05075 8L8 1.17612L6.97462 0L0 8L6.97462 16Z"
+    fill="#C9A96F"
+  />
 </svg>
+
 
 ); 
 export const SliderNextIcon= () => (
-  <svg
-  width={64}
-  height={48}
-  viewBox="0 0 64 48"
+ <svg
+  width={8}
+  height={16}
+  viewBox="0 0 8 16"
   fill="none"
   xmlns="http://www.w3.org/2000/svg"
 >
-  <g filter="url(#filter0_d_13_104)">
-    <rect x={8} y={6} width={48} height={32} rx={16} fill="white" />
-    <path
-      d="M29.0254 30L28.0001 28.8239L33.9493 22L28.0001 15.1761L29.0254 14L36.0001 22L29.0254 30Z"
-      fill="#C9A96F"
-    />
-  </g>
-  <defs>
-    <filter
-      id="filter0_d_13_104"
-      x={0}
-      y={0}
-      width={64}
-      height={48}
-      filterUnits="userSpaceOnUse"
-      colorInterpolationFilters="sRGB"
-    >
-      <feFlood floodOpacity={0} result="BackgroundImageFix" />
-      <feColorMatrix
-        in="SourceAlpha"
-        type="matrix"
-        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
-        result="hardAlpha"
-      />
-      <feOffset dy={2} />
-      <feGaussianBlur stdDeviation={4} />
-      <feColorMatrix
-        type="matrix"
-        values="0 0 0 0 0.392157 0 0 0 0 0.392157 0 0 0 0 0.435294 0 0 0 0.2 0"
-      />
-      <feBlend
-        mode="normal"
-        in2="BackgroundImageFix"
-        result="effect1_dropShadow_13_104"
-      />
-      <feBlend
-        mode="normal"
-        in="SourceGraphic"
-        in2="effect1_dropShadow_13_104"
-        result="shape"
-      />
-    </filter>
-  </defs>
+  <path
+    d="M1.02538 16L0 14.8239L5.94925 8L0 1.17612L1.02538 0L8 8L1.02538 16Z"
+    fill="#C9A96F"
+  />
 </svg>
+
 
 );
  export const OneIcon = () => (

@@ -116,13 +116,13 @@ export const landingPageData = {
       {
         label: "CHECK AVAILABILITY VIA WHATSAPP",
         variant: "primary",
-        icon: CallIcon,
+       
       },
 
       {
         label: "BOOK YOUR STAY",
         variant: "secondary",
-        icon: ArrowIcon,
+      
       },
     ],
   },

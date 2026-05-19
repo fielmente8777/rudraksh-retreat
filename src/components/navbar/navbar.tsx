@@ -11,17 +11,17 @@ export default function Navbar() {
 
   return (
 
-    <header className="absolute top-0 left-0 z-30 w-full">
+    <header className="max_screen_width  border-b border-white/10 backdrop-blur-md z-30 w-full">
 
       {/* TOP BAR */}
-      <nav className="border-b border-white/10 bg-background/80 backdrop-blur-md">
+      <nav className="max_width">
 
-        <div className="mx-auto flex h-20 max-w-[1440px] items-center justify-between px-6 md:px-10">
+        <div className="flex h-20 w-full items-center justify-between">
 
           {/* LOGO */}
           <Link href="/">
 
-            <div className="relative h-12 w-44">
+            <div className="relative h-10 w-32 md:h-12 md:w-44">
 
               <Image
                 src={navData.logo}
@@ -36,7 +36,7 @@ export default function Navbar() {
           </Link>
 
           {/* BUTTON */}
-          <button className="flex items-center gap-2 rounded-md bg-primary px-6 py-3 text-xs tracking-[3px] text-white transition-all hover:opacity-90">
+          <button className="flex items-center gap-2 rounded-[4px] bg-primary px-2 md:px-6 py-2 md:py-3 text-[10px] md:text-xs tracking-[2px] md:tracking-[3px] text-white transition-all hover:opacity-90">
 
             <span>{navData.button.label}</span>
 

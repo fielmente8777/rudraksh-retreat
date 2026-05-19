@@ -1,13 +1,13 @@
 "use client";
 import { usePathname } from "next/navigation";
-// import LandingFooter from "./LandingFooter";
+import LandingFooter from "./LandingFooter";
 
 const Footer = () => {
   const pathName = usePathname();
   switch (pathName) {
     case "/landing-page/":
-      return null ;
-
+      return <LandingFooter />;
+      
     default:
       return null ;
   }
