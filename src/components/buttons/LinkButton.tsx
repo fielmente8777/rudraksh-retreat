@@ -1,3 +1,4 @@
+import { CallIcon } from "@/utils/icons";
 import Link from "next/link";
 interface LinkButtonProps {
   href: string;
@@ -16,6 +17,7 @@ const LinkButton: React.FC<LinkButtonProps> = ({
   label,
   className = "",
   arrowIcon = true,
+  whatsAppIcon = false,
   ...props
 }) => {
   return (
@@ -24,7 +26,7 @@ const LinkButton: React.FC<LinkButtonProps> = ({
       className={`flex items-center gap-6 border w-fit px-4 py-2 font-semibold hover:scale-95 transition-all duration-300 ease-in-out hover:scale-x-105 active:scale-95 ${className}`}
       {...props}
     >
-      {/* {whatsAppIcon && <WhatsAppIcon />} */}
+      {whatsAppIcon && <CallIcon />}
       {label}
 
       {arrowIcon && (

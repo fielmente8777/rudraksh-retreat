@@ -2,7 +2,7 @@ export const enCodeText = encodeURIComponent(`Hello Saraaya Team
 I’m interested to know more about Saraaya.`);
 export const contact = {
   email: "Email:info@demoemail.com",
-  mapUrl:"#",
+  mapUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4080.8488123644524!2d78.38940897556856!3d30.42826287473255!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3908e3dceeddc813%3A0x51838aef37cdd930!2sThe%20Rudraksh%2C%20A%20Himalayan%20Retreat!5e1!3m2!1sen!2sin!4v1779205893011!5m2!1sen!2sin",
   phone: ["Call Us:+91 00000 00000"],
   address:
     "Address:Selur Village, Tehri Garhwal Uttarakhand 249122 · India 2.5 hrs from Rishikesh",
@@ -16,7 +16,7 @@ export const contact = {
   WhatsappCta: `#`,
   // formDomain: "saraayaglamps",
   formDomain: "testmulti", //for testing
-  formHid:"",
+  formHid: "",
 };
 
 interface data_Type {
@@ -222,4 +222,3 @@ export const countries: data_Type[] = [
   { name: "ZMB", code: "+260" },
   { name: "ZWE", code: "+263" },
 ];
- 

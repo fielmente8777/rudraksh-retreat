@@ -9,13 +9,13 @@ export default function PillarSection() {
     <SectionWithContainer
       defaultPadding={false}
       sectionClassName="relative min-h-screen overflow-hidden bg-secondary "
-      containerClassName="!max-w-full px-0"
+      containerClassName=""
     >
-      <div className="pointer-events-none absolute right-0 top-0 ">
+      <div className="pointer-events-none max-md:hidden absolute right-0 top-0 ">
         <OhmIcon />
       </div>
 
-      <div className="relative z-10 px-6 py-16 md:px-16 md:py-20">
+      <div className="relative z-10 py-16 md:px-16 md:py-20">
         {/* HEADING */}
         <div className="text-center">
           <p className="text-[12px] tracking-[4px] text-primary">
@@ -35,7 +35,7 @@ export default function PillarSection() {
           {pillarSection.cards.map((card, index) => (
             <div
               key={index}
-              className="border-[#4B392D] px-6 py-8 md:px-8 md:border-r last:border-r-0"
+              className="border-[#4B392D] py-8 md:px-8 md:border-r last:border-r-0"
             >
               <h3 className="text-6xl text-primary">{card.hindi}</h3>
 
@@ -63,15 +63,14 @@ export default function PillarSection() {
             return (
               <button
                 key={index}
-                className={`rounded-md px-8 py-4 text-xs tracking-[3px] transition-all
-          ${
-            button.variant === "primary"
-              ? "bg-primary text-white hover:opacity-90"
-              : "border border-primary text-primary hover:bg-primary hover:text-white"
-          }
+                className={`rounded-md px-8 max-md:w-full flex justify-center py-4 text-xs tracking-[3px] transition-all
+          ${button.variant === "primary"
+                    ? "bg-primary text-white hover:opacity-90"
+                    : "border border-primary text-primary hover:bg-primary hover:text-white"
+                  }
         `}
               >
-                <div className="flex items-center gap-2">
+                <div className="flex items-center gap-2 justify-center">
                   {button.variant === "primary" && Icon && <Icon />}
 
                   <span>{button.label}</span>

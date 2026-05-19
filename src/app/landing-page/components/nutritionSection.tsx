@@ -11,25 +11,24 @@ export default function NutritionSection() {
     <SectionWithContainer sectionClassName="bg-secondary">
       <div className="grid items-center gap-14 lg:grid-cols-2 lg:gap-20">
         {/* IMAGE */}
-        <div className="relative">
-          <div className="absolute -left-5 -top-5 z-0">
-            <SquareIcon />
+
+        <div className="relative aspect-[620/775] ">
+          <Image
+            src={nutritionSection.image}
+            alt="Garden to plate"
+            fill
+            className="object-cover rounded-[4px]"
+          />
+          <div className="w-30 lg:w-50 aspect-square border-[#C9A96F]  lg:border-l-[20px] lg:border-t-[20px] absolute -left-5 -top-5 z-10">
+            {/* <SquareIcon /> */}
           </div>
-          <div className="absolute -bottom-5 -right-5 z-0">
-            <SquareIcon />
-          </div>
-          <div className="relative aspect-[620/775] overflow-hidden rounded-[4px]">
-            <Image
-              src={nutritionSection.image}
-              alt="Garden to plate"
-              fill
-              className="object-cover"
-            />
+          <div className="w-30 lg:w-50 aspect-square border-[#C9A96F]  lg:border-r-[20px] lg:border-b-[20px] absolute -right-5 -bottom-5 z-10">
+            {/* <SquareIcon /> */}
           </div>
         </div>
 
         {/* CONTENT */}
-       <div className="mx-auto max-w-[500px] text-center lg:mx-0 lg:text-left">
+        <div className="mx-auto max-w-[500px] text-center lg:mx-0 lg:text-left">
           {/* SUBTITLE */}
           <p className="text-[12px] tracking-[px] text-primary">
             {nutritionSection.subtitle}
@@ -65,12 +64,11 @@ export default function NutritionSection() {
                 <button
                   key={index}
                   className={`
-                    flex items-center gap-2 rounded-md px-8 py-4
+                    flex items-center justify-center max-md:w-full gap-2 rounded-md px-8 py-4
                     text-[11px] tracking-[3px] transition-all
-                    ${
-                      button.variant === "primary"
-                        ? "bg-primary text-white hover:opacity-90"
-                        : "border border-primary text-primary hover:bg-primary hover:text-white"
+                    ${button.variant === "primary"
+                      ? "bg-primary text-white hover:opacity-90"
+                      : "border border-primary text-primary hover:bg-primary hover:text-white"
                     }
                   `}
                 >

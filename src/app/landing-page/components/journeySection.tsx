@@ -5,7 +5,7 @@ export default function JourneySection() {
   const { journeySection } = landingPageData;
 
   return (
-    <SectionWithContainer sectionClassName="bg-background">
+    <SectionWithContainer containerClassName="max-md:px-0!" sectionClassName="bg-background">
       {/* HEADING */}
       <div className="mx-auto max-w-[600px] text-center">
         <p className="text-xs tracking-[4px] text-p22">
@@ -22,23 +22,24 @@ export default function JourneySection() {
       </div>
 
       {/* TABLE ROWS */}
-      <div className="mt-20 border-y border-[#D8D0C4]">
+      <div className="mt-8 lg:mt-20 border-y border-[#D8D0C4]">
         {journeySection.journeys.map((item, index) => (
           <div
             key={index}
-            className="grid grid-cols-1 gap-6 border-b border-[#D8D0C4] px-4 py-8 md:grid-cols-[80px_1fr_1.4fr] md:gap-10 md:px-2"
+            className="grid grid-cols-1 gap-6 border-b border-[#D8D0C4] px-4 py-8 md:grid-cols-[1.4fr_1fr] md:gap-10 md:px-2"
           >
-            <div className="flex items-start pt-1">
-              {item.icon && <item.icon />}
+            <div className="flex items-center gap-2.5 lg:gap-12 pt-1">
+              {item.icon && <span className=""><item.icon /></span>}
+              {/* TITLE */}
+              <h3 className="font-primary text-xl lg:text-2xl text-secondary">
+                {item.title}
+              </h3>
             </div>
 
-            {/* TITLE */}
-            <h3 className="font-primary text-[30px] text-secondary">
-              {item.title}
-            </h3>
+
 
             {/* DESCRIPTION */}
-            <p className="max-w-[500px] text-[15px] text-tertiary">
+            <p className=" text-[15px] text-tertiary ">
               {item.description}
             </p>
           </div>
@@ -47,19 +48,18 @@ export default function JourneySection() {
 
       {/* BUTTONS */}
       {/* BUTTONS */}
-      <div className="mt-16 flex flex-wrap justify-center gap-4">
+      <div className=" mt-8 lg:mt-16 flex flex-wrap justify-center gap-4  max-md:px-4">
         {journeySection.buttons.map((button, index) => {
           const Icon = button.icon;
 
           return (
             <button
               key={index}
-              className={`rounded-md px-8 py-4 text-xs tracking-[3px] transition-all
-          ${
-            button.variant === "primary"
-              ? "bg-primary text-white hover:opacity-90"
-              : "border border-primary text-primary hover:bg-primary hover:text-white"
-          }
+              className={`rounded-md px-8 py-4 flex justify-center max-md:w-full text-xs tracking-[3px] transition-all
+          ${button.variant === "primary"
+                  ? "bg-primary text-white hover:opacity-90"
+                  : "border border-primary text-primary hover:bg-primary hover:text-white"
+                }
         `}
             >
               <div className="flex items-center gap-2">

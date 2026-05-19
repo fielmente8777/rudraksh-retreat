@@ -19,7 +19,7 @@ export default function HeroSection() {
         <LazyLoadedVideo src={heroSection.video} />
 
         {/* OVERLAY */}
-        <div className="absolute inset-0 z-10 bg-black/20" />
+        <div className="absolute inset-0 z-10 bg-black/50" />
 
         {/* CONTENT */}
         <div className="relative z-20 flex h-full items-center -mt-10 px-6 md:mt-0 md:px-12">
@@ -46,7 +46,7 @@ export default function HeroSection() {
             </p>
 
             {/* BUTTONS */}
-           <div className="flex flex-nowrap gap-3 overflow-x-auto">
+            <div className="flex flex-nowrap gap-3 overflow-x-auto">
               {heroSection.buttons.map((button, index) => {
                 const Icon = button.icon;
 
@@ -55,10 +55,9 @@ export default function HeroSection() {
                     key={index}
                     className={`rounded-md px-4 py-2.5 md:px-8 md:py-4 text-[10px] md:text-xs tracking-[2px] md:tracking-[3px] transition-all
                       
-                      ${
-                        button.variant === "primary"
-                          ? "bg-primary text-white hover:opacity-90"
-                          : "border border-white text-white hover:bg-primary hover:text-white"
+                      ${button.variant === "primary"
+                        ? "bg-primary text-white hover:opacity-90"
+                        : "border border-white text-white hover:bg-primary hover:text-white"
                       }
                     `}
                   >
