@@ -37,7 +37,6 @@ export default function HomePage() {
       <JourneySection />
       <NutritionSection />
       <ViewSection />
-      <LandingFooter />
     </main>
   );
 }
