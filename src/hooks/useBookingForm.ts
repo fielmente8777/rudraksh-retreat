@@ -226,7 +226,7 @@ const useBookingForm = ({
         setTimeout(() => {
           setSubmitSuccess(false);
         }, 3000);
-        window.open("/thank-you/", "_blank");
+        // window.open("/thank-you/", "_blank");
       } else {
         alert(data.message || "Something went wrong. Please try again.");
       }
