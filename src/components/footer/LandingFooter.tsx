@@ -1,149 +1,108 @@
-// import Link from "next/link";
-// import { Container } from "../sectionComponants";
-// import Image from "next/image";
-// import { footerData } from "./footerdata";
-// import LazyLoadedMap from "../map/LazyLoadedMap";
-// import LinkButton from "../buttons/LinkButton";
-// import { contact } from "@/utils/constent";
+import Link from "next/link";
+import { Container } from "../sectionComponants";
+import Image from "next/image";
+import { footerData } from "./footerdata";
+import LazyLoadedMap from "../map/LazyLoadedMap";
+import LinkButton from "../buttons/LinkButton";
+import { contact } from "@/utils/constent";
+import { FillCallIcon, FillLocationIcon, FillMailIcon } from "@/utils/icons";
 
-// const LandingFooter = () => {
-//   return (
-//     <footer className="max_screen_width bg-primary">
-//       <Container>
-//         <div className="grid md:py-14 py-8 grid-cols-1 md:grid-cols-2 lg:grid-cols-[1fr_2fr_1fr] gap-12 md:gap-16">
-//           <div className=" flex flex-col gap-6 md:max-w-50">
-//             <div
-//               className={`relative 
-//                   w-full aspect-4/1 md:aspect-[4/1.9] `}
-//             >
-//               <Image
-//                 src={footerData.logo}
-//                 alt="logo"
-//                 fill
-//                 sizes="100%"
-//                 className="object-contain"
-//               />
-//             </div>
+const LandingFooter = () => {
+  return (
+    <footer className="w-full bg-[#2C1F17] text-white">
+      <Container>
+        {/* MAIN GRID BLOCK: Tuned grid fraction tracks to mirror design placement metrics */}
+        <div className="grid py-12 md:py-16 grid-cols-1 lg:grid-cols-[1.2fr_1.5fr_1.3fr] gap-10 lg:gap-14 items-center">
+          
+          {/* COLUMN 1: LOGO & BUTTON ACTIONS */}
+          <div className="flex flex-col items-center lg:items-start gap-6">
+            <div className="relative w-full max-w-[200px] aspect-[4/2]">
+              <Image
+                src={footerData.logo}
+                alt="The Rudraksh Logo"
+                fill
+                sizes="(max-width: 768px) 100vw, 200px"
+                className="object-contain"
+              />
+            </div>
 
-//             <LinkButton
-//               href={footerData.cta.href}
-//               label={footerData.cta.label}
-//               target="_blank"
-//               rel="noopener noreferrer"
-//               className=" w-full flex justify-center text-secondary uppercase rounded-full max-md:mx-auto border-secondary"
-//             />
-//           </div>
+           
+            <div className="flex flex-row items-center gap-3 w-full justify-center lg:justify-start">
+              <LinkButton
+                href={footerData.cta.bookHref}
+                label="Call Now"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="px-5 py-2.5 text-[11px] font-medium tracking-wider bg-[#C5A880] text-[#2C1F17] uppercase rounded-[4px] hover:bg-opacity-90 transition-all border-none"
+              />
 
-//           {footerData.lists.map((list, index) => (
-//             <div
-//               className={`${index === 1 ? "lg:w-fit lg:ml-auto" : ""} flex flex-col gap-4 md:gap-6`}
-//               key={index}
-//             >
-//               <div className="md:space-y-4 space-y-2 line2">
-//                 <h2
-//                   className="md:text-5xl text-white font-eb  text-3xl font-primary"
-//                   dangerouslySetInnerHTML={{ __html: list.title ?? "" }}
-//                 />
+              <LinkButton
+                href={footerData.cta.callHref}
+                label="Book Your Stay"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="px-5 py-2.5 text-[11px] font-medium tracking-wider border border-[#C5A880] text-[#C5A880] uppercase rounded-[4px] hover:bg-[#C5A880] hover:text-[#2C1F17] transition-all"
+              />
+            </div>
+          </div>
 
-//                 <div className="w-28 h-0.5 bg-primary" />
-//               </div>
-//               <ul className={`flex flex-col md:gap-2 gap-4`}>
-//                 {list.links.map((item, suIndex) => (
-//                   <li
-//                     className={`flex gap-2 ${suIndex === 1 ? "flex-wrap" : ""}`}
-//                     key={suIndex}
-//                   >
-//                     <span
-//                       className={`mt-1 ${
-//                         index === 1
-//                           ? "text-white flex items-center justify-center rounded-sm bg-white w-10 aspect-square"
-//                           : "text-white inline-block"
-//                       }`}
-//                     >
-//                       {item.icon}
-//                       <span className="sr-only">{item.label}</span>
-//                     </span>
-//                     {/* {item.title && (
-//                       <span
-//                         className={`${
-//                           index === 1
-//                             ? "text-white font-aboreto text-2xl my-auto"
-//                             : "md:text-lg text-white inline-block"
-//                         }`}
-//                       >
-//                         {item.title}
-//                       </span>
-//                     )} */}
-//                     <Link
-//                       target="_blank"
-//                       rel="noopener noreferrer"
-//                       href={item.href}
-//                       className="flex gap-2"
-//                     >
-//                       <span
-//                         className={`${
-//                           index === 1
-//                             ? "text-white font-mont text-2xl my-auto"
-//                             : "md:text-lg text-white inline-block"
-//                         }`}
-//                       >
-//                         {item.label}
-//                       </span>
-//                     </Link>
-//                     {item.label2 && <span className="text-white -ml-1">,</span>}
-//                     {item.label2 && item.href2 && (
-//                       <Link
-//                         target="_blank"
-//                         rel="noopener noreferrer"
-//                         href={item.href2}
-//                         className="flex gap-2 max-md:ml-0"
-//                       >
-//                         <span
-//                           className={`${
-//                             index === 1
-//                               ? "text-white font-aboreto text-2xl my-auto"
-//                               : "md:text-lg text-white"
-//                           }`}
-//                         >
-//                           {item.label2}
-//                         </span>
-//                       </Link>
-//                     )}
-//                   </li>
-//                 ))}
-//               </ul>
-//             </div>
-//           ))}
+        
+          <div className="flex flex-col gap-4 text-center lg:text-left self-center lg:pl-6">
+            <p className="text-[11px] tracking-[3px] uppercase text-[#C5A880] font-semibold">
+              Contact
+            </p>
+            
+            <div className="space-y-3 text-sm text-white/80 font-light max-w-[360px] mx-auto lg:mx-0 leading-relaxed">
+              {/* ADDRESS */}
+              <div className="flex items-start justify-center lg:justify-start gap-2.5">
+                <span className="text-[#C5A880] mt-0.5"><FillLocationIcon/></span>
+                <p className="text-[16px]">
+                  Address: Selur Village, Tehri Garhwal, Uttarakhand 249122, India. 2.5 hrs from Rishikesh.
+                </p>
+              </div>
 
-//           <div className="w-full md:rounded-3xl rounded-xl overflow-hidden max-md:aspect-4/3">
-//             <LazyLoadedMap src={contact.mapUrl} />
-//           </div>
-//         </div>
-//       </Container>
-//       <div className="bg-white h-0.5 w-full max_width" />
-//       <Container className="py-4 flex max-md:flex-col items-center gap-3.5 justify-between">
-//         <div className="md:flex max-md:space-x-2 text-center flex-wrap items-center justify-center gap-2 text-white md:text-lg">
-//           {" "}
-//           <span className="text-white">
-//             © {new Date().getFullYear()} Saraaya
-//           </span>
-//           <span className="md:block hidden">|</span>
-//           <span className="text-white">All Rights Reserved</span>
-//           {/* <span className="md:block hidden">|</span> */}
-//         </div>
-//         <p className="text-white!">
-//           Crafted with care by{" "}
-//           <Link
-//             href="https://www.fielmente.com/"
-//             className="font-bold"
-//             target="_blank"
-//           >
-//             Fielmente
-//           </Link>
-//         </p>
-//       </Container>
-//     </footer>
-//   );
-// };
+              {/* PHONE */}
+              <div className="flex items-center justify-center lg:justify-start gap-2.5">
+                <span className="text-[#C5A880]"><FillCallIcon/></span>
+                <p className="text-[16px]">Call Us: +91 00000 00000</p>
+              </div>
 
-// export default LandingFooter;
+              {/* EMAIL */}
+              <div className="flex items-center justify-center lg:justify-start gap-2.5">
+                <span className="text-[#C5A880]"><FillMailIcon/></span>
+                <p className="text-[16px]">Email: info@domainmail.com</p>
+              </div>
+            </div>
+          </div>
+
+          {/* COLUMN 3: MAP CONTAINER ACCENT FRAME */}
+         <div className="w-full lg:w-[373px] h-[252px] rounded-[4px] overflow-hidden border border-white/10 relative mx-auto lg:mx-0">
+            {/* <LazyLoadedMap src={contact.mapUrl} /> */}
+          </div>
+
+        </div>
+      </Container>
+
+      {/* BOTTOM BASEBAR CONTAINER */}
+      <div className="border-t border-white/10">
+        <Container className="py-5 flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-white/50 tracking-wide">
+          <p>
+            © {new Date().getFullYear()} The Rudraksh Retreat. All rights reserved.
+          </p>
+          <p>
+            Powered by{" "}
+            <Link
+              href="https://www.fielmente.com/"
+              className="text-white/70 hover:text-[#C5A880] transition-colors font-medium"
+              target="_blank"
+            >
+              Fielmente
+            </Link>
+          </p>
+        </Container>
+      </div>
+    </footer>
+  );
+};
+
+export default LandingFooter;

@@ -11,27 +11,33 @@ import { landingPageData } from "./components/pageData";
 import { SectionWithContainer } from "@/components/sectionComponants";
 import StorySection from "./components/storySection";
 import Navbar from "@/components/navbar/navbar";
+import LandingFooter from "@/components/footer/LandingFooter";
+
 
 export default function HomePage() {
   return (
     <main>
-      <Navbar/>
+      <Navbar />
       <HeroSection />
-      <SlidingTitle items={landingPageData.titles} />
-       <SectionWithContainer
-        sectionClassName="bg-background"
-      >
-      <div className="md:rounded-3xl md:py-3 py-6 bg-secondary px-0">
-        <Form1 />
+      <div className="border-y border-[#D8D0C4] border-[0.8px]">
+        <SlidingTitle items={landingPageData.titles} />
       </div>
+      <SectionWithContainer
+        sectionClassName="bg-background"
+        containerClassName="max-md:!px-0"
+      >
+        <div className="md:rounded-3xl md:py-3 py-6 bg-secondary">
+          <Form1 />
+        </div>
       </SectionWithContainer>
-      <StorySection/>
+      <StorySection />
       <PillarSection />
       <RoomSection />
       <WellnessSection />
       <JourneySection />
       <NutritionSection />
       <ViewSection />
+      <LandingFooter />
     </main>
   );
 }

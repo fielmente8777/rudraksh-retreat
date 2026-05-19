@@ -29,14 +29,14 @@ export default function NutritionSection() {
         </div>
 
         {/* CONTENT */}
-        <div className="max-w-[560px]">
+       <div className="mx-auto max-w-[500px] text-center lg:mx-0 lg:text-left">
           {/* SUBTITLE */}
-          <p className="text-[12px] tracking-[4px] text-primary">
+          <p className="text-[12px] tracking-[px] text-primary">
             {nutritionSection.subtitle}
           </p>
 
           {/* TITLE */}
-          <h2 className="font-primary text-5xl font-light text-white md:text-6xl">
+          <h2 className="font-primary mt-4 text-4xl font-light text-white md:text-6xl">
             {nutritionSection.title.normal}{" "}
             <span className="italic text-primary">
               {nutritionSection.title.highlighted}

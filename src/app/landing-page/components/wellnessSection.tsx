@@ -19,7 +19,7 @@ export default function WellnessSection() {
     >
 
       {/* TOP CONTENT */}
-      <div className="flex flex-col gap-10 lg:flex-row lg:justify-between">
+     <div className="flex flex-col gap-8 lg:flex-row lg:items-start lg:justify-between">
 
         {/* LEFT */}
         <div className="px-10 max-w-[700px]">

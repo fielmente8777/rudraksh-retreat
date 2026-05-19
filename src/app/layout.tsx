@@ -31,7 +31,9 @@ export default function RootLayout({
       style={{ scrollBehavior: "smooth" }}
       suppressHydrationWarning={true}
     >
-      <body className="min-h-full flex flex-col">{children} <Footer/></body>
+      <body className="min-h-full flex flex-col">
+        {children} <Footer />
+      </body>
     </html>
   );
 }

@@ -1,11 +1,11 @@
 export const enCodeText = encodeURIComponent(`Hello Saraaya Team   
 I’m interested to know more about Saraaya.`);
 export const contact = {
-  email: "info@demoemail.com",
+  email: "Email:info@demoemail.com",
   mapUrl:"#",
-  phone: ["+91 00000 00000"],
+  phone: ["Call Us:+91 00000 00000"],
   address:
-    "Selur Village, Tehri Garhwal Uttarakhand 249122 · India 2.5 hrs from Rishikesh",
+    "Address:Selur Village, Tehri Garhwal Uttarakhand 249122 · India 2.5 hrs from Rishikesh",
   addressLink: "#",
   // socialMedia: {
   //   facebook: "https://www.facebook.com/share/1LsNztG2je/?mibextid=wwXIfr",
