@@ -1,19 +1,19 @@
 export const enCodeText = encodeURIComponent(`Hello Saraaya Team   
 I’m interested to know more about Saraaya.`);
 export const contact = {
-  email: "info@saraayaglamps.com",
-  mapUrl:"https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3206.2209332831317!2d76.263166!3d32.2817487!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391b5902d5fbd759%3A0x8e6104c5e18476fc!2sSaraaya%20Glamps!5e1!3m2!1sen!2sin!4v1777890910601!5m2!1sen!2sin",
-  phone: ["+91 78766 24372","+91 89883 34372"],
+  email: "info@demoemail.com",
+  mapUrl:"#",
+  phone: ["+91 00000 00000"],
   address:
-    "Village Nauhali, Dharamshala 176217",
-  addressLink: "https://maps.app.goo.gl/MErrEdUx4V9K7sHs8",
-  socialMedia: {
-    facebook: "https://www.facebook.com/share/1LsNztG2je/?mibextid=wwXIfr",
-    instagram: "https://www.instagram.com/saraaya.dharamshala?igsh=eWN4c24wcGI0bXdy",
-    linkedin: "",
-  },
-  callCta: `tel:+918988334372`,
-  WhatsappCta: `https://wa.me/+918988334372?text=${enCodeText}`,
+    "Selur Village, Tehri Garhwal Uttarakhand 249122 · India 2.5 hrs from Rishikesh",
+  addressLink: "#",
+  // socialMedia: {
+  //   facebook: "https://www.facebook.com/share/1LsNztG2je/?mibextid=wwXIfr",
+  //   instagram: "https://www.instagram.com/saraaya.dharamshala?igsh=eWN4c24wcGI0bXdy",
+  //   linkedin: "",
+  // },
+  callCta: `tel:+91 00000 00000`,
+  WhatsappCta: `#`,
   // formDomain: "saraayaglamps",
   formDomain: "testmulti", //for testing
   formHid:"",
@@ -23,7 +23,6 @@ interface data_Type {
   name: string;
   code: string;
 }
-
 
 
 
@@ -223,3 +222,4 @@ export const countries: data_Type[] = [
   { name: "ZMB", code: "+260" },
   { name: "ZWE", code: "+263" },
 ];
+ 

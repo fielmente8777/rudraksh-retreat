@@ -1,4 +1,215 @@
-export const OneIcon = () => (
+export const SquareIcon = () => (
+<svg
+  width={149}
+  height={152}
+  viewBox="0 0 149 152"
+  fill="none"
+  xmlns="http://www.w3.org/2000/svg"
+>
+  <rect width={149} height={152} rx={4} fill="#C9A96F" />
+</svg>
+);
+export const FillLocationIcon= () => (
+  <svg
+  width={20}
+  height={20}
+  viewBox="0 0 20 20"
+  fill="none"
+  xmlns="http://www.w3.org/2000/svg"
+>
+  <mask
+    id="mask0_13_398"
+    style={{ maskType: "alpha" }}
+    maskUnits="userSpaceOnUse"
+    x={0}
+    y={0}
+    width={20}
+    height={20}
+  >
+    <rect width={20} height={20} fill="#A5A5A5" />
+  </mask>
+  <g mask="url(#mask0_13_398)">
+    <path
+      d="M10.0015 9.88738C10.416 9.88738 10.7705 9.73974 11.0648 9.44447C11.3592 9.14919 11.5065 8.79426 11.5065 8.37967C11.5065 7.96509 11.3588 7.61058 11.0635 7.31613C10.7683 7.02183 10.4133 6.87467 9.99853 6.87467C9.58395 6.87467 9.22951 7.02231 8.9352 7.31759C8.64076 7.61287 8.49353 7.96787 8.49353 8.38259C8.49353 8.79717 8.64117 9.15162 8.93645 9.44592C9.23173 9.74023 9.58673 9.88738 10.0015 9.88738ZM9.99999 17.9243C7.90277 16.107 6.33013 14.4159 5.28207 12.8507C4.23402 11.2854 3.70999 9.84842 3.70999 8.53967C3.70999 6.61662 4.33201 5.05974 5.57603 3.86905C6.8202 2.67835 8.29485 2.08301 9.99999 2.08301C11.7051 2.08301 13.1798 2.67835 14.424 3.86905C15.668 5.05974 16.29 6.61662 16.29 8.53967C16.29 9.84842 15.766 11.2854 14.7179 12.8507C13.6699 14.4159 12.0972 16.107 9.99999 17.9243Z"
+      fill="white"
+    />
+  </g>
+</svg>
+
+);
+
+export const FillCallIcon = () => (
+<svg
+  width={20}
+  height={20}
+  viewBox="0 0 20 20"
+  fill="none"
+  xmlns="http://www.w3.org/2000/svg"
+>
+  <mask
+    id="mask0_13_406"
+    style={{ maskType: "alpha" }}
+    maskUnits="userSpaceOnUse"
+    x={0}
+    y={0}
+    width={20}
+    height={20}
+  >
+    <rect width={20} height={20} fill="#D9D9D9" />
+  </mask>
+  <g mask="url(#mask0_13_406)">
+    <path
+      d="M16.2002 17.0837C14.6298 17.0837 13.0521 16.7185 11.4671 15.9882C9.88224 15.258 8.42474 14.2278 7.0946 12.8978C5.76988 11.5677 4.74238 10.1114 4.0121 8.52908C3.28183 6.94685 2.91669 5.37053 2.91669 3.80012C2.91669 3.55012 3.00002 3.3404 3.16669 3.17095C3.33335 3.00165 3.54169 2.91699 3.79169 2.91699H6.5096C6.72002 2.91699 6.90565 2.98567 7.06648 3.12303C7.22731 3.26026 7.3296 3.42984 7.37335 3.63178L7.85106 6.08366C7.88412 6.31116 7.87717 6.50665 7.83023 6.67012C7.78315 6.83359 7.6987 6.97088 7.5769 7.08199L5.65231 8.95553C5.96203 9.52276 6.31592 10.0594 6.71398 10.5653C7.1119 11.0712 7.54273 11.5543 8.00648 12.0147C8.4637 12.4721 8.94981 12.8968 9.46481 13.2889C9.97981 13.681 10.5359 14.0458 11.1331 14.3835L13.0031 12.4972C13.1336 12.3615 13.2915 12.2664 13.4769 12.2118C13.6622 12.1573 13.8547 12.144 14.0546 12.1718L16.3686 12.643C16.579 12.6986 16.7507 12.806 16.8838 12.9651C17.0168 13.1243 17.0834 13.3048 17.0834 13.5068V16.2087C17.0834 16.4587 16.9987 16.667 16.8294 16.8337C16.66 17.0003 16.4502 17.0837 16.2002 17.0837Z"
+      fill="white"
+    />
+  </g>
+</svg>
+
+);
+
+export const FillMailIcon = () => (
+<svg
+  width={20}
+  height={20}
+  viewBox="0 0 20 20"
+  fill="none"
+  xmlns="http://www.w3.org/2000/svg"
+>
+  <mask
+    id="mask0_13_412"
+    style={{ maskType: "alpha" }}
+    maskUnits="userSpaceOnUse"
+    x={0}
+    y={0}
+    width={20}
+    height={20}
+  >
+    <rect width={20} height={20} fill="#D9D9D9" />
+  </mask>
+  <g mask="url(#mask0_13_412)">
+    <path
+      d="M3.5898 16.25C3.16883 16.25 2.81251 16.1042 2.52084 15.8125C2.22918 15.5208 2.08334 15.1645 2.08334 14.7435V5.25646C2.08334 4.83549 2.22918 4.47917 2.52084 4.1875C2.81251 3.89583 3.16883 3.75 3.5898 3.75H16.4102C16.8312 3.75 17.1875 3.89583 17.4792 4.1875C17.7708 4.47917 17.9167 4.83549 17.9167 5.25646V14.7435C17.9167 15.1645 17.7708 15.5208 17.4792 15.8125C17.1875 16.1042 16.8312 16.25 16.4102 16.25H3.5898ZM10 10.4648L16.6667 6.20187L16.5386 5L10 9.16667L3.46147 5L3.33334 6.20187L10 10.4648Z"
+      fill="white"
+    />
+  </g>
+</svg>
+
+);
+export const SliderPrevIcon = () => (
+  <svg
+  width={64}
+  height={48}
+  viewBox="0 0 64 48"
+  fill="none"
+  xmlns="http://www.w3.org/2000/svg"
+>
+  <g filter="url(#filter0_d_13_102)">
+    <rect
+      width={48}
+      height={32}
+      rx={16}
+      transform="matrix(-1 0 0 1 56 6)"
+      fill="white"
+    />
+    <path
+      d="M34.9746 30L36 28.8239L30.0508 22L36 15.1761L34.9746 14L28 22L34.9746 30Z"
+      fill="#C9A96F"
+    />
+  </g>
+  <defs>
+    <filter
+      id="filter0_d_13_102"
+      x={0}
+      y={0}
+      width={64}
+      height={48}
+      filterUnits="userSpaceOnUse"
+      colorInterpolationFilters="sRGB"
+    >
+      <feFlood floodOpacity={0} result="BackgroundImageFix" />
+      <feColorMatrix
+        in="SourceAlpha"
+        type="matrix"
+        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+        result="hardAlpha"
+      />
+      <feOffset dy={2} />
+      <feGaussianBlur stdDeviation={4} />
+      <feColorMatrix
+        type="matrix"
+        values="0 0 0 0 0.392157 0 0 0 0 0.392157 0 0 0 0 0.435294 0 0 0 0.2 0"
+      />
+      <feBlend
+        mode="normal"
+        in2="BackgroundImageFix"
+        result="effect1_dropShadow_13_102"
+      />
+      <feBlend
+        mode="normal"
+        in="SourceGraphic"
+        in2="effect1_dropShadow_13_102"
+        result="shape"
+      />
+    </filter>
+  </defs>
+</svg>
+
+); 
+export const SliderNextIcon= () => (
+  <svg
+  width={64}
+  height={48}
+  viewBox="0 0 64 48"
+  fill="none"
+  xmlns="http://www.w3.org/2000/svg"
+>
+  <g filter="url(#filter0_d_13_104)">
+    <rect x={8} y={6} width={48} height={32} rx={16} fill="white" />
+    <path
+      d="M29.0254 30L28.0001 28.8239L33.9493 22L28.0001 15.1761L29.0254 14L36.0001 22L29.0254 30Z"
+      fill="#C9A96F"
+    />
+  </g>
+  <defs>
+    <filter
+      id="filter0_d_13_104"
+      x={0}
+      y={0}
+      width={64}
+      height={48}
+      filterUnits="userSpaceOnUse"
+      colorInterpolationFilters="sRGB"
+    >
+      <feFlood floodOpacity={0} result="BackgroundImageFix" />
+      <feColorMatrix
+        in="SourceAlpha"
+        type="matrix"
+        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+        result="hardAlpha"
+      />
+      <feOffset dy={2} />
+      <feGaussianBlur stdDeviation={4} />
+      <feColorMatrix
+        type="matrix"
+        values="0 0 0 0 0.392157 0 0 0 0 0.392157 0 0 0 0 0.435294 0 0 0 0.2 0"
+      />
+      <feBlend
+        mode="normal"
+        in2="BackgroundImageFix"
+        result="effect1_dropShadow_13_104"
+      />
+      <feBlend
+        mode="normal"
+        in="SourceGraphic"
+        in2="effect1_dropShadow_13_104"
+        result="shape"
+      />
+    </filter>
+  </defs>
+</svg>
+
+);
+ export const OneIcon = () => (
 <svg
   width={18}
   height={10}

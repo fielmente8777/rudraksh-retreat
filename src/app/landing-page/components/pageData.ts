@@ -1,4 +1,4 @@
-import { ArrowIcon, CallIcon, FiveIcon, FourIcon, OneIcon, ThreeIcon, TwoIcon } from "@/utils/icons";
+import { ArrowIcon, ArrowUpIcons, CallIcon, FiveIcon, FourIcon, OneIcon, ThreeIcon, TwoIcon } from "@/utils/icons";
 export const landingPageData = {
   heroSection: {
     video: "/videos/heroSection.mp4",
@@ -283,4 +283,50 @@ export const landingPageData = {
     "FARM-TO-TABLE SATTVIC",
     "ZERO-POLLUTION STARGAZING",
   ],
+   storySection: {
+    subtitle: "OUR STORY",
+
+    title: {
+      normal: "Named after the",
+      highlighted: "divine tears",
+      end: "of Shiva.",
+    },
+
+    quote:
+      "The Rudraksh is more than a seed, it is a symbol of cosmic protection and unshakeable peace, born from the divine tears of Lord Shiva.",
+
+    description:
+      "Perched in the Land of Gods, our retreat is built to be a living extension of that energy. We host only a limited number of guests to preserve the sacred silence of the Selur mountains. Here, luxury is not measured in gold, but in the clarity of your breath.",
+
+    points: [
+      {
+        title: "Sustainable Soul",
+        description:
+          "Powered by local craftsmanship and zero-waste ideals.",
+        image: "/images/story1.jpg",
+      },
+
+      {
+        title: "Ancient Energy",
+        description:
+          "Near the Agaan Shiv temple, vibrating with ancient prana.",
+        image: "/images/story2.jpg",
+      },
+    ],
+
+    buttons: [
+      {
+        label: "CALL NOW",
+        variant: "primary",
+        icon: CallIcon,
+      },
+
+      {
+        label: "BOOK YOUR STAY",
+        variant: "secondary",
+        icon: ArrowIcon,
+      },
+    ],
+  },
+
 };

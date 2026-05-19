@@ -9,20 +9,23 @@ import WellnessSection from "./components/wellnessSection";
 import SlidingTitle from "@/components/sliders/SlidingTitle";
 import { landingPageData } from "./components/pageData";
 import { SectionWithContainer } from "@/components/sectionComponants";
+import StorySection from "./components/storySection";
+import Navbar from "@/components/navbar/navbar";
 
 export default function HomePage() {
   return (
     <main>
+      <Navbar/>
       <HeroSection />
       <SlidingTitle items={landingPageData.titles} />
        <SectionWithContainer
-        defaultPadding={false}
         sectionClassName="bg-background"
       >
       <div className="md:rounded-3xl md:py-3 py-6 bg-secondary px-0">
         <Form1 />
       </div>
       </SectionWithContainer>
+      <StorySection/>
       <PillarSection />
       <RoomSection />
       <WellnessSection />

@@ -10,43 +10,34 @@ export default function HeroSection() {
   return (
     <SectionWithContainer
       defaultPadding={false}
-      sectionClassName="bg-background"
-      containerClassName="max-w-[1440px] mx-auto"
+      sectionClassName="relative h-screen overflow-hidden"
+      containerClassName="!max-w-full !px-0"
     >
-
-      <div className="relative h-[800px] overflow-hidden rounded-xl">
-
+      <div className="relative h-screen overflow-hidden rounded-xl">
         {/* VIDEO */}
-        
-          <LazyLoadedVideo src={heroSection.video} />
+
+        <LazyLoadedVideo src={heroSection.video} />
 
         {/* OVERLAY */}
         <div className="absolute inset-0 z-10 bg-black/20" />
 
         {/* CONTENT */}
         <div className="relative z-20 flex h-full items-center px-6 md:px-12">
-
           <div className="max-w-[650px] text-white space-y-6">
-
             {/* HEADING */}
             <h1 className="font-primary text-5xl font-light md:text-7xl">
-
               <div>
                 {heroSection.title.first.normal}{" "}
-
                 <span className="italic text-primary">
                   {heroSection.title.first.highlighted}
                 </span>
               </div>
 
-              <div>
-                {heroSection.title.second}
-              </div>
+              <div>{heroSection.title.second}</div>
 
               <div className="italic text-primary">
                 {heroSection.title.third.highlighted}
               </div>
-
             </h1>
 
             {/* DESCRIPTION */}
@@ -56,7 +47,6 @@ export default function HeroSection() {
 
             {/* BUTTONS */}
             <div className="flex flex-wrap gap-4">
-
               {heroSection.buttons.map((button, index) => {
                 const Icon = button.icon;
 
@@ -68,35 +58,24 @@ export default function HeroSection() {
                       ${
                         button.variant === "primary"
                           ? "bg-primary text-white hover:opacity-90"
-                          : "border border-white text-white hover:bg-white hover:text-black"
+                          : "border border-white text-white hover:bg-primary hover:text-white"
                       }
                     `}
                   >
-
                     <div className="flex items-center gap-2">
-
-                      {button.variant === "primary" &&
-                        Icon && <Icon />}
+                      {button.variant === "primary" && Icon && <Icon />}
 
                       <span>{button.label}</span>
 
-                      {button.variant === "secondary" &&
-                        Icon && <Icon />}
-
+                      {button.variant === "secondary" && Icon && <Icon />}
                     </div>
-
                   </button>
                 );
               })}
-
             </div>
-
           </div>
-
         </div>
-
       </div>
-
     </SectionWithContainer>
   );
 }
