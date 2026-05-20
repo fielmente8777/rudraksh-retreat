@@ -4,6 +4,9 @@ import "./globals.css";
 import "./style.scss";
 import Footer from "@/components/footer/Footer";
 import Script from "next/script";
+import Call from "@/components/ContactButton/Call";
+import { contact } from "@/utils/constent";
+import Whatsapp from "@/components/ContactButton/WhatsApp";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -67,6 +70,8 @@ export default function RootLayout({
     >
       <body className="">
         {children} <Footer />
+        <Call callNumber={contact.phone[0]} />
+        <Whatsapp whatsAppNumber={contact.phone[0]} />
       </body>
       {/* <!-- Eazbot Script (Next.js) --> */}
       <Script id="chatbot-config" strategy="afterInteractive">
