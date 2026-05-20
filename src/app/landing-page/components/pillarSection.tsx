@@ -1,4 +1,4 @@
-import { OhmIcon } from "@/utils/icons";
+import { MoblieOhmIcon, OhmIcon } from "@/utils/icons";
 import { landingPageData } from "./pageData";
 import { SectionWithContainer } from "@/components/sectionComponants";
 
@@ -11,18 +11,21 @@ export default function PillarSection() {
       sectionClassName="relative min-h-screen overflow-hidden bg-secondary "
       containerClassName=""
     >
+      <div className="pointer-events-none absolute -right-[70px] top-[170px] md:hidden w-[260px]">
+        <MoblieOhmIcon />
+      </div>
       <div className="pointer-events-none max-md:hidden absolute right-0 top-0 ">
         <OhmIcon />
       </div>
 
-      <div className="relative z-10 py-16 md:px-16 md:py-20">
+      <div className="relative z-10 py-10 md:px-16 md:py-20">
         {/* HEADING */}
         <div className="text-center">
           <p className="text-[12px] tracking-[4px] text-primary">
             {pillarSection.subtitle}
           </p>
 
-          <h2 className="font-primary mt-4 text-5xl font-light text-white md:text-5xl">
+          <h2 className="font-primary mt-6 text-[32px] font-light text-white md:text-5xl">
             {pillarSection.title}{" "}
             <span className="italic text-primary">
               {pillarSection.highlightedText}
@@ -31,11 +34,11 @@ export default function PillarSection() {
         </div>
 
         {/* CARDS */}
-        <div className="mt-16 grid grid-cols-1 md:mt-20 md:grid-cols-3">
+        <div className="pl-4 md:pl-0 mt-16 grid grid-cols-1 md:mt-20 md:grid-cols-3">
           {pillarSection.cards.map((card, index) => (
             <div
               key={index}
-              className="border-[#4B392D] py-8 md:px-8 md:border-r last:border-r-0"
+              className="border-[#4B392D] py-8  border-b md:border-b-0 md:px-8 md:border-r last:border-r-0 "
             >
               <h3 className="text-6xl text-primary">{card.hindi}</h3>
 
@@ -56,7 +59,7 @@ export default function PillarSection() {
 
         {/* BUTTONS */}
 
-        <div className="mt-16 flex flex-wrap justify-center gap-4 md:mt-20">
+        <div className="mt-10 flex flex-wrap justify-center gap-4 md:mt-20">
           {pillarSection.buttons.map((button, index) => {
             const Icon = button.icon;
 
@@ -64,10 +67,11 @@ export default function PillarSection() {
               <button
                 key={index}
                 className={`rounded-md px-8 max-md:w-full flex justify-center py-4 text-xs tracking-[3px] transition-all
-          ${button.variant === "primary"
-                    ? "bg-primary text-white hover:opacity-90"
-                    : "border border-primary text-primary hover:bg-primary hover:text-white"
-                  }
+          ${
+            button.variant === "primary"
+              ? "bg-primary text-white hover:opacity-90"
+              : "border border-primary text-primary hover:bg-primary hover:text-white"
+          }
         `}
               >
                 <div className="flex items-center gap-2 justify-center">
