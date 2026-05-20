@@ -1,20 +1,20 @@
-export const enCodeText = encodeURIComponent(`Hello Saraaya Team   
-I’m interested to know more about Saraaya.`);
+export const enCodeText = encodeURIComponent(`Namaste 🙏 I would like to check availability and book my stay at The Rudraksh Retreat. Please share the best available rates. Thank you.`);
+
 export const contact = {
-  email: "Email:info@demoemail.com",
+  email: "info@therudrakshretreat.com",
   mapUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4080.8488123644524!2d78.38940897556856!3d30.42826287473255!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3908e3dceeddc813%3A0x51838aef37cdd930!2sThe%20Rudraksh%2C%20A%20Himalayan%20Retreat!5e1!3m2!1sen!2sin!4v1779205893011!5m2!1sen!2sin",
-  phone: ["Call Us:+91 00000 00000"],
+  phone: ["+91 88266 52343"],
   address:
-    "Address:Selur Village, Tehri Garhwal Uttarakhand 249122 · India 2.5 hrs from Rishikesh",
+    "The Rudraksh, A Himalayan Retreat Kandikhal, near Agaan Shiv Temple, Selur, Uttarakhand 249130",
   addressLink: "#",
   // socialMedia: {
   //   facebook: "https://www.facebook.com/share/1LsNztG2je/?mibextid=wwXIfr",
   //   instagram: "https://www.instagram.com/saraaya.dharamshala?igsh=eWN4c24wcGI0bXdy",
   //   linkedin: "",
   // },
-  callCta: `tel:+91 00000 00000`,
-  WhatsappCta: `#`,
-  // formDomain: "saraayaglamps",
+  callCta: `tel:+918826652343`,
+  WhatsappCta: `https://wa.me/918826652343?text=${enCodeText}`,
+  // formDomain: "therudrakshretreat",
   formDomain: "testmulti", //for testing
   formHid: "",
 };

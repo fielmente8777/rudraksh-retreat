@@ -1,8 +1,16 @@
-import { ArrowIcon, ArrowUpIcons, CallIcon, FiveIcon, FourIcon, OneIcon, ThreeIcon, TwoIcon } from "@/utils/icons";
+import {
+  ArrowIcon,
+  CallIcon,
+  FiveIcon,
+  FourIcon,
+  OneIcon,
+  ThreeIcon,
+  TwoIcon
+} from "@/utils/icons";
 export const landingPageData = {
   heroSection: {
     video: "/videos/heroSection.mp4",
-
+    videoPoster: "/videos/heroSection.png",
     title: {
       first: {
         normal: "A",
@@ -41,21 +49,24 @@ export const landingPageData = {
         hindi: "सत्",
         title: "Sat",
         tag: "BEING",
-        description: "Ground yourself in the truth of the present. Let the ancient peaks remind you of what is permanent within.",
+        description:
+          "Ground yourself in the truth of the present. Let the ancient peaks remind you of what is permanent within.",
       },
 
       {
         hindi: "चित्",
         title: "Chit",
         tag: "PURE MIND",
-        description: "Elevate consciousness through meditation that mirrors the crystalline clarity of the Himalayan sky.",
+        description:
+          "Elevate consciousness through meditation that mirrors the crystalline clarity of the Himalayan sky.",
       },
 
       {
         hindi: "आनन्द",
         title: "Ananda",
         tag: "BLISS",
-        description: "Return to eternal joy. Not discovered elsewhere, but remembered here, in the silence.",
+        description:
+          "Return to eternal joy. Not discovered elsewhere, but remembered here, in the silence.",
       },
     ],
 
@@ -102,6 +113,7 @@ export const landingPageData = {
   },
   viewSection: {
     video: "/videos/view.mp4",
+    videoPoster: "/videos/view.png",
     subtitle: "LIMITED AVAILABILITY",
 
     title: {
@@ -116,13 +128,11 @@ export const landingPageData = {
       {
         label: "CHECK AVAILABILITY VIA WHATSAPP",
         variant: "primary",
-       
       },
 
       {
         label: "BOOK YOUR STAY",
         variant: "secondary",
-      
       },
     ],
   },
@@ -144,14 +154,14 @@ export const landingPageData = {
       },
 
       {
-        icon:TwoIcon,
+        icon: TwoIcon,
         title: "Mindful Trekking",
         description:
           "Discover hidden waterfalls and ancient Pahadi temples with local naturalists.",
       },
 
       {
-        icon : ThreeIcon,
+        icon: ThreeIcon,
         title: "Village Immersion",
         description:
           "Walk through Selur and experience the authentic life of mountain dwellers.",
@@ -192,7 +202,7 @@ export const landingPageData = {
     title: {
       normal: "The garden-to-",
       highlighted: "plate",
-      end:"ritual",
+      end: "ritual",
     },
 
     quote: "As the food is, so is the mind. As the mind is, so is the soul.",
@@ -283,7 +293,7 @@ export const landingPageData = {
     "FARM-TO-TABLE SATTVIC",
     "ZERO-POLLUTION STARGAZING",
   ],
-   storySection: {
+  storySection: {
     subtitle: "OUR STORY",
 
     title: {
@@ -301,8 +311,7 @@ export const landingPageData = {
     points: [
       {
         title: "Sustainable Soul",
-        description:
-          "Powered by local craftsmanship and zero-waste ideals.",
+        description: "Powered by local craftsmanship and zero-waste ideals.",
         image: "/images/story1.jpg",
       },
 
@@ -328,5 +337,4 @@ export const landingPageData = {
       },
     ],
   },
-
 };

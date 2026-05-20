@@ -16,7 +16,7 @@ export default function HeroSection() {
       <div className="relative h-screen overflow-hidden rounded-xl">
         {/* VIDEO */}
 
-        <LazyLoadedVideo src={heroSection.video} />
+        <LazyLoadedVideo src={heroSection.video} poster={heroSection.videoPoster} />
 
         {/* OVERLAY */}
         <div className="absolute inset-0 z-10 bg-black/50" />

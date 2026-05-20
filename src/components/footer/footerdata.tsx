@@ -4,9 +4,9 @@ import { FillCallIcon, FillLocationIcon, FillMailIcon } from "@/utils/icons";
 interface FooterData {
   logo: string;
   cta: {
-    callHref: string;
-    bookHref: string;
-  };
+    label: string;
+    href: string;
+  }[];
   lists: {
     title?: string;
     links: {
@@ -22,31 +22,33 @@ interface FooterData {
 
 export const footerData: FooterData = {
   logo: "/images/footerlogo.png",
-  cta: {
-    callHref: `tel:${contact.phone[0]}`, 
-    bookHref: contact.callCta,           
-  },
+  cta: [
+    {
+      label: "call now",
+      href: `tel:${contact.phone[0]}`,
+    },
+    {
+      label: "Book your stay",
+      href: contact.WhatsappCta,
+    },
+  ],
   lists: [
     {
       title: "Contact",
       links: [
         {
           icon: <FillLocationIcon />,
-          label: contact.address,
+          label: "Address: " + contact.address,
           href: contact.addressLink,
         },
         {
-          title: "Call: ",
           icon: <FillCallIcon />,
-          label: contact.phone[0],
+          label: "Call Us: " + contact.phone[0],
           href: "tel:" + contact.phone[0],
-          label2: contact.phone[1],
-          href2: "tel:" + contact.phone[1],
         },
         {
-          title: "Email: ",
           icon: <FillMailIcon />,
-          label: contact.email,
+          label: "Email: " + contact.email,
           href: "mailto:" + contact.email,
         },
       ],
@@ -102,4 +104,3 @@ export const footerData: FooterData = {
 //       ],
 //     },
 //   ],
-
