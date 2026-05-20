@@ -2,6 +2,7 @@ import Image from "next/image";
 
 import { SectionWithContainer } from "@/components/sectionComponants";
 import { landingPageData } from "./pageData";
+import LinkButton from "@/components/buttons/LinkButton";
 
 export default function NutritionSection() {
   const { nutritionSection } = landingPageData;
@@ -11,27 +12,25 @@ export default function NutritionSection() {
       <div className="grid items-center gap-14 lg:grid-cols-2 lg:gap-20">
         {/* IMAGE */}
 
-        <div className="relative aspect-[620/775] ">
+        <div className="relative aspect-4/4.5 w-full max-md:w-[90%] mx-auto">
           <Image
             src={nutritionSection.image}
             alt="Garden to plate"
             fill
-            className="object-cover rounded-[4px]"
+            className="object-cover rounded-sm"
           />
-          <div className="w-30 lg:w-37.25 lg:h-38 rounded-sm border-primary  lg:border-l-[20px] lg:border-t-[20px] absolute -left-5 -top-5 z-10">
+          <div className="w-30 lg:w-37.25 lg:h-38 rounded-sm border-primary  lg:border-l-20 lg:border-t-20 border-t-lg border-l-lg absolute -left-5 -top-5 max-md:-left-30 z-10">
             {/* <SquareIcon /> */}
           </div>
-          <div className="w-30 lg:w-37.25 lg:h-38 rounded-sm border-primary  lg:border-r-[20px] lg:border-b-[20px] absolute -right-5 -bottom-5 z-10">
+          <div className="w-30 lg:w-37.25 lg:h-38 rounded-sm border-primary  lg:border-r-20 lg:border-b-20 border-b-lg border-r-lg absolute -right-5 -bottom-5 z-10">
             {/* <SquareIcon /> */}
           </div>
         </div>
 
         {/* CONTENT */}
-        <div className="mx-auto max-w-[500px] text-center lg:mx-0 lg:text-left">
+        <div className="flex flex-col gap-4">
           {/* SUBTITLE */}
-          <p className="text-[12px] tracking-[px] text-primary">
-            {nutritionSection.subtitle}
-          </p>
+          <p className="text-xs text-primary">{nutritionSection.subtitle}</p>
 
           {/* TITLE */}
           <h2 className="font-primary mt-4 text-4xl font-light text-white md:text-6xl">
@@ -45,7 +44,7 @@ export default function NutritionSection() {
           {/* QUOTE */}
           <div className="mt-8 border-l border-primary pl-5">
             <p className="font-primary text-[20px] italic text-white/80">
-              "{nutritionSection.quote}"
+              &quot;{nutritionSection.quote}&quot;
             </p>
           </div>
 
@@ -55,36 +54,18 @@ export default function NutritionSection() {
           </p>
 
           {/* BUTTONS */}
-          <div className="mt-10 flex flex-wrap gap-4">
-            {nutritionSection.buttons.map((button, index) => {
-              const Icon = button.icon;
-
-              return (
-                <button
-                  key={index}
-                  className={`
-                    flex items-center justify-center max-md:w-full gap-2 rounded-md px-8 py-4
-                    text-[11px] tracking-[3px] transition-all
-                    ${button.variant === "primary"
-                      ? "bg-primary text-white hover:opacity-90"
-                      : "border border-primary text-primary hover:bg-primary hover:text-white"
-                    }
-                  `}
-                >
-                  {/* LEFT ICON */}
-                  {button.variant === "primary" && Icon && (
-                    <Icon className="text-black" />
-                  )}
-
-                  <span>{button.label}</span>
-
-                  {/* RIGHT ICON */}
-                  {button.variant === "secondary" && Icon && (
-                    <Icon className="text-primary transition-colors group-hover:text-black" />
-                  )}
-                </button>
-              );
-            })}
+          <div className="mt-10 flex max-md:flex-col md:gap-4 gap-3 items-center ">
+            {nutritionSection.buttons.map((button, index) => (
+              <LinkButton
+                key={index}
+                {...button}
+                target="_blank"
+                rel="noopener noreferrer"
+                arrowIcon={index !== 0 && true}
+                whatsAppIcon={index === 0 && true}
+                className={`rounded-sm justify-center max-md:w-full gap-2! uppercase tracking-widest ${index === 0 ? "text-white bg-primary max-md:text-sm border-primary" : "text-primary bg-transparent border border-primary"}`}
+              />
+            ))}
           </div>
         </div>
       </div>

@@ -1,3 +1,4 @@
+import { contact } from "@/utils/constent";
 import { ArrowUpIcons } from "@/utils/icons";
 
 export const navData = {
@@ -6,8 +7,9 @@ export const navData = {
 
   button: {
     label: "BOOK STAY",
-    href: "#",
+    href: contact.WhatsappCta,
     icon: ArrowUpIcons,
+
   },
 
 

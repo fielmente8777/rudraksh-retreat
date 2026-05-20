@@ -1,3 +1,4 @@
+import { contact } from "@/utils/constent";
 import {
   ArrowIcon,
   CallIcon,
@@ -5,36 +6,25 @@ import {
   FourIcon,
   OneIcon,
   ThreeIcon,
-  TwoIcon
+  TwoIcon,
 } from "@/utils/icons";
 export const landingPageData = {
   heroSection: {
     video: "/videos/heroSection.mp4",
     videoPoster: "/videos/heroSection.png",
-    title: {
-      first: {
-        normal: "A",
-        highlighted: "Himalayan",
-      },
-
-      second: "Sanctuary Above the",
-
-      third: {
-        highlighted: "Clouds",
-      },
-    },
+    title:
+      'A <i class="text-primary">Himalayan</i> Sanctuary Above the <i class="text-primary">Clouds</i>', // 'A Himalayan Sanctuary Above the Clouds',
     description:
       "An exclusive eleven-suite, family-run sanctuary nestled in the Selur forests of the Garhwal Himalayas, a slow, scenic two-and-a-half hours from Rishikesh.",
     buttons: [
       {
         label: "CALL NOW",
-        variant: "primary",
-        icon: CallIcon,
+        href: contact.callCta,
       },
 
       {
         label: "EXPLORE SUITES",
-        variant: "secondary",
+        href: "#residences",
       },
     ],
   },
@@ -73,14 +63,12 @@ export const landingPageData = {
     buttons: [
       {
         label: "CALL NOW",
-        variant: "primary",
-        icon: CallIcon,
+        href: contact.callCta,
       },
 
       {
         label: "BOOK YOUR STAY",
-        variant: "secondary",
-        icon: ArrowIcon,
+        href: contact.WhatsappCta,
       },
     ],
   },
@@ -101,13 +89,13 @@ export const landingPageData = {
       {
         label: "CALL NOW",
         variant: "primary",
-        icon: CallIcon,
+        href: contact.callCta,
       },
 
       {
         label: "BOOK YOUR STAY",
         variant: "secondary",
-        icon: ArrowIcon,
+        href: contact.WhatsappCta,
       },
     ],
   },
@@ -127,12 +115,12 @@ export const landingPageData = {
     buttons: [
       {
         label: "CHECK AVAILABILITY VIA WHATSAPP",
-        variant: "primary",
+        href: contact.WhatsappCta,
       },
 
       {
         label: "BOOK YOUR STAY",
-        variant: "secondary",
+        href: contact.WhatsappCta,
       },
     ],
   },
@@ -186,13 +174,13 @@ export const landingPageData = {
       {
         label: "CALL NOW",
         variant: "primary",
-        icon: CallIcon,
+        href: contact.callCta,
       },
 
       {
         label: "BOOK YOUR STAY",
         variant: "secondary",
-        icon: ArrowIcon,
+        href: contact.WhatsappCta,
       },
     ],
   },
@@ -215,14 +203,12 @@ export const landingPageData = {
     buttons: [
       {
         label: "CALL NOW",
-        variant: "primary",
-        icon: CallIcon,
+        href: contact.callCta,
       },
 
       {
         label: "BOOK YOUR STAY",
-        variant: "secondary",
-        icon: ArrowIcon,
+        href: contact.WhatsappCta,
       },
     ],
   },
@@ -275,14 +261,12 @@ export const landingPageData = {
     buttons: [
       {
         label: "CALL NOW",
-        variant: "primary",
-        icon: CallIcon,
+        href: contact.callCta,
       },
 
       {
         label: "BOOK YOUR STAY",
-        variant: "secondary",
-        icon: ArrowIcon,
+        href: contact.WhatsappCta,
       },
     ],
   },
@@ -326,14 +310,12 @@ export const landingPageData = {
     buttons: [
       {
         label: "CALL NOW",
-        variant: "primary",
-        icon: CallIcon,
+        href: contact.callCta,
       },
 
       {
         label: "BOOK YOUR STAY",
-        variant: "secondary",
-        icon: ArrowIcon,
+        href: contact.WhatsappCta,
       },
     ],
   },

@@ -98,7 +98,7 @@ const Form1 = ({ gridView }: Props) => {
   return (
     <form
       onSubmit={handleSubmit}
-      className={`${gridView ? "flex flex-col divide-y divide-p1" : "grid md:grid-cols-5 items-center gap-3.5 "}font-body px-4 bg-transparent  max-md:divide-y divide-p1`}
+      className={`${gridView ? "flex flex-col divide-y divide-p1" : "grid md:grid-cols-5 items-center gap-3.5 "} font-body px-4 bg-transparent  max-md:divide-y divide-p1`}
     >
       {formFields.map((field, index) => (
         <React.Fragment key={index}>
@@ -185,7 +185,7 @@ const Form1 = ({ gridView }: Props) => {
       ))}
       <button
         type="submit"
-        className="bg-p1 bg-primary rounded-xl text-white text-lg py-3"
+        className="bg-p1 bg-primary rounded-sm text-white text-lg py-3"
       >
         {isSubmitting ? (
           "Submitting..."

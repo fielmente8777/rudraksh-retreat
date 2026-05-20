@@ -1,11 +1,12 @@
 import Image from "next/image";
 import { landingPageData } from "./pageData";
 import { SectionWithContainer } from "@/components/sectionComponants";
+import LinkButton from "@/components/buttons/LinkButton";
 
 export default function RoomSection() {
   const { roomSection } = landingPageData;
   return (
-    <SectionWithContainer sectionClassName="bg-background">
+    <SectionWithContainer sectionClassName="bg-background" sectionId="residences">
       {/* TOP CONTENT */}
       <div className="flex flex-col md:gap-10 lg:flex-row lg:items-start lg:justify-between">
         {/* LEFT */}
@@ -68,29 +69,16 @@ export default function RoomSection() {
       </div>
       {/* buttons */}
       <div className=" mt-4 md:mt-16 flex flex-wrap justify-center gap-4">
-        {roomSection.buttons.map((button, index) => {
-          const Icon = button.icon;
-
-          return (
-            <button
-              key={index}
-              className={`rounded-md px-8 py-4 flex justify-center max-md:w-full text-xs tracking-[3px] transition-all 
-                            ${button.variant === "primary"
-                  ? "bg-primary text-white hover:opacity-90"
-                  : "border border-primary text-primary hover:bg-primary hover:text-white"
-                }
-                         `}
-            >
-              <div className="flex items-center gap-2">
-                {button.variant === "primary" && Icon && <Icon />}
-
-                <span>{button.label}</span>
-
-                {button.variant === "secondary" && Icon && <Icon />}
-              </div>
-            </button>
-          );
-        })}
+        {roomSection.buttons.map((button, index) => 
+        <LinkButton
+            key={index}
+            {...button}
+            target="_blank"
+            rel="noopener noreferrer"
+            arrowIcon={index !== 0 && true}
+            whatsAppIcon={index === 0 && true}
+            className={`rounded-sm justify-center max-md:w-full gap-2! uppercase tracking-widest max-md:text-sm ${index === 0 ? "text-white bg-primary border-primary" : "text-primary bg-transparent border border-primary"}`}
+          />)}
       </div>
     </SectionWithContainer>
   );

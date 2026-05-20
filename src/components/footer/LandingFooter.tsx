@@ -14,7 +14,7 @@ const LandingFooter = () => {
           <div className=" flex flex-col gap-8 md:max-w-85">
             <div
               className={`relative 
-                  w-full aspect-4/1 md:aspect-4/2.25 `}
+                  w-full aspect-4/2.5 md:aspect-4/2.25 `}
             >
               <Image
                 src={footerData.logo}
@@ -24,7 +24,7 @@ const LandingFooter = () => {
                 className="object-contain"
               />
             </div>
-            <div className="flex gap-4 items-center justify-center">
+            <div className="flex max-md:flex-col md:gap-4 gap-3 items-center justify-center">
               {footerData.cta.map((item, index) => (
                 <LinkButton
                   label={item.label}
@@ -34,7 +34,7 @@ const LandingFooter = () => {
                   rel="noopener noreferrer"
                   arrowIcon={index !== 0 && true}
                   whatsAppIcon={index === 0 && true}
-                  className={`rounded-sm justify-center gap-2! uppercase text-sm ${index === 0 ? "text-white bg-primary border-none" : "text-primary bg-transparent border border-primary"}`}
+                  className={`rounded-sm justify-center max-md:w-full gap-2! uppercase tracking-widest text-xs ${index === 0 ? "text-white bg-primary border-none" : "text-primary bg-transparent border border-primary"}`}
                 />
               ))}
             </div>

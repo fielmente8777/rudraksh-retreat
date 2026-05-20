@@ -3,6 +3,7 @@ import { Inter, Cormorant_Garamond } from "next/font/google";
 import "./globals.css";
 import "./style.scss";
 import Footer from "@/components/footer/Footer";
+import Script from "next/script";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -67,6 +68,19 @@ export default function RootLayout({
       <body className="">
         {children} <Footer />
       </body>
+      {/* <!-- Eazbot Script (Next.js) --> */}
+      <Script id="chatbot-config" strategy="afterInteractive">
+        {`
+          window.eazbotConfig = {
+            ndid: "b40fa3eb-80b3-442d-a3e2-118c02a01648",
+            hid: "92404272",
+          };
+        `}
+      </Script>
+      <Script
+        src="https://cb-script.dyq28lyxrazm2.amplifyapp.com/widget/lead-chatbot.js"
+        strategy="afterInteractive"
+      />
     </html>
   );
 }

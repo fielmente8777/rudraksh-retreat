@@ -13,7 +13,6 @@ import StorySection from "./components/storySection";
 import Navbar from "@/components/navbar/navbar";
 import LandingFooter from "@/components/footer/LandingFooter";
 
-
 export default function HomePage() {
   return (
     <main>
@@ -24,11 +23,9 @@ export default function HomePage() {
       </div>
       <SectionWithContainer
         sectionClassName="bg-background"
-        containerClassName="max-md:!px-0"
+        containerClassName="md:rounded-2xl md:py-3 py-4 bg-secondary"
       >
-        <div className="md:rounded-3xl md:py-3 py-4 bg-secondary">
-          <Form1 />
-        </div>
+        <Form1 />
       </SectionWithContainer>
       <StorySection />
       <PillarSection />
