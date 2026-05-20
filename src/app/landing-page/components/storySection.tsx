@@ -26,7 +26,7 @@ export default function StorySection() {
           </h2>
 
           {/* BUTTONS */}
-         <div className="hidden md:flex mt-10 gap-4">
+          <div className="hidden md:flex mt-10 gap-4">
             {storySection.buttons.map((button, index) => {
               const Icon = button.icon;
 
@@ -70,43 +70,46 @@ export default function StorySection() {
           </p>
 
           {/* CARDS */}
-        {/* MOBILE */}
-<div className="space-y-6 md:hidden">
-  {storySection.points.map((point, index) => (
-    <div key={index}>
-      <h3 className="italic font-primary text-2xl text-secondary">
-        {point.title}
-      </h3>
+          {/* MOBILE */}
+          <div className="space-y-6 md:hidden">
+            {storySection.points.map((point, index) => (
+              <div key={index}>
+                <h3 className="italic font-primary text-2xl text-secondary">
+                  {point.title}
+                </h3>
 
-      <p className="mt-3 text-base text-tertiary">
-        {point.description}
-      </p>
-    </div>
-  ))}
+                <p className="mt-3 text-base text-tertiary">
+                  {point.description}
+                </p>
+              </div>
+            ))}
 
-  <div className="grid grid-cols-2 gap-3">
-    {storySection.points.map((point, index) => (
-      <div key={index} className="relative overflow-hidden">
-       <div className="relative aspect-[179/226] w-full">
-          <Image
-            src={point.image}
-            alt={point.title}
-            fill
-            className="object-cover"
-          />
-        </div>
-      </div>
-    ))}
-  </div>
-  {/* MOBILE BUTTONS */}
-<div className="mt-5 flex flex-col gap-2 md:hidden">
-  {storySection.buttons.map((button, index) => {
-    const Icon = button.icon;
+            <div className="grid grid-cols-2 gap-3">
+              {storySection.points.map((point, index) => (
+                <div
+                  key={index}
+                  className={`${index === 1 ? "pt-8" : ""} relative overflow-hidden`}
+                >
+                  <div className="relative aspect-[179/226] w-full">
+                    <Image
+                      src={point.image}
+                      alt={point.title}
+                      fill
+                      className="object-cover"
+                    />
+                  </div>
+                </div>
+              ))}
+            </div>
+            {/* MOBILE BUTTONS */}
+            <div className="mt-5 flex flex-col gap-2 md:hidden">
+              {storySection.buttons.map((button, index) => {
+                const Icon = button.icon;
 
-    return (
-      <button
-        key={index}
-        className={`rounded-md px-4 py-2 text-[10px] tracking-[2px] transition-all
+                return (
+                  <button
+                    key={index}
+                    className={`rounded-md px-4 py-2 text-[10px] tracking-[2px] transition-all
         
         ${
           button.variant === "primary"
@@ -114,45 +117,49 @@ export default function StorySection() {
             : "border border-primary text-primary hover:bg-primary hover:text-white"
         }
       `}
-      >
-        <div className="flex items-center justify-center gap-2">
-          {button.variant === "primary" && Icon && <Icon />}
+                  >
+                    <div className="flex items-center justify-center gap-2">
+                      {button.variant === "primary" && Icon && <Icon />}
 
-          <span>{button.label}</span>
+                      <span>{button.label}</span>
 
-          {button.variant === "secondary" && Icon && <Icon />}
-        </div>
-      </button>
-    );
-  })}
-</div>
-</div>
+                      {button.variant === "secondary" && Icon && <Icon />}
+                    </div>
+                  </button>
+                );
+              })}
+            </div>
+          </div>
 
-{/* DESKTOP */}
-<div className="hidden md:grid md:grid-cols-2 md:gap-8">
-  {storySection.points.map((point, index) => (
-    <div key={index} className={`${index === 1 ? " pt-15 md:pt-15" : ""}`}>
-      <h3 className="italic font-primary text-2xl text-secondary">
-        {point.title}
-      </h3>
+          {/* DESKTOP */}
+          <div className="hidden md:grid md:grid-cols-2 md:gap-8">
+            {storySection.points.map((point, index) => (
+              <div key={index}>
+                <h3 className="italic font-primary text-2xl text-secondary">
+                  {point.title}
+                </h3>
 
-      <p className="mt-4 text-base text-tertiary">
-        {point.description}
-      </p>
+                <p className="mt-4 text-base text-tertiary">
+                  {point.description}
+                </p>
 
-      <div className="relative mt-6 overflow-hidden">
-        <div className="relative h-[420px] w-full">
-          <Image
-            src={point.image}
-            alt={point.title}
-            fill
-            className="object-cover"
-          />
-        </div>
-      </div>
-    </div>
-  ))}
-</div>
+                <div
+                  className={`relative mt-6 overflow-hidden ${
+                    index === 1 ? "md:pt-15" : ""
+                  }`}
+                >
+                  <div className="relative h-[420px] w-full">
+                    <Image
+                      src={point.image}
+                      alt={point.title}
+                      fill
+                      className="object-cover"
+                    />
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     </SectionWithContainer>

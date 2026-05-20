@@ -1,8 +1,7 @@
 import Image from "next/image";
 
-import { landingPageData } from "./pageData";
 import { SectionWithContainer } from "@/components/sectionComponants";
-import { SquareIcon } from "@/utils/icons";
+import { landingPageData } from "./pageData";
 
 export default function NutritionSection() {
   const { nutritionSection } = landingPageData;
@@ -19,10 +18,10 @@ export default function NutritionSection() {
             fill
             className="object-cover rounded-[4px]"
           />
-          <div className="w-30 lg:w-50 aspect-square border-[#C9A96F]  lg:border-l-[20px] lg:border-t-[20px] absolute -left-5 -top-5 z-10">
+          <div className="w-30 lg:w-37.25 lg:h-38 rounded-sm border-primary  lg:border-l-[20px] lg:border-t-[20px] absolute -left-5 -top-5 z-10">
             {/* <SquareIcon /> */}
           </div>
-          <div className="w-30 lg:w-50 aspect-square border-[#C9A96F]  lg:border-r-[20px] lg:border-b-[20px] absolute -right-5 -bottom-5 z-10">
+          <div className="w-30 lg:w-37.25 lg:h-38 rounded-sm border-primary  lg:border-r-[20px] lg:border-b-[20px] absolute -right-5 -bottom-5 z-10">
             {/* <SquareIcon /> */}
           </div>
         </div>

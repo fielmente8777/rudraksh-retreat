@@ -26,7 +26,7 @@ export default function HomePage() {
         sectionClassName="bg-background"
         containerClassName="max-md:!px-0"
       >
-        <div className="md:rounded-3xl md:py-3 py-6 bg-secondary">
+        <div className="md:rounded-3xl md:py-3 py-4 bg-secondary">
           <Form1 />
         </div>
       </SectionWithContainer>
