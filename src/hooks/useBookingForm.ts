@@ -1,3 +1,4 @@
+"use client";
 import axios from "axios";
 import { useCallback, useEffect, useState } from "react";
 import { useDebounce } from "./useDebounce";
@@ -11,6 +12,8 @@ interface BookingFormData {
   checkIn?: string;
   checkOut?: string;
   message?: string;
+  city?: string;
+  [key: string]: string | undefined;
 }
 
 interface FormErrors {
@@ -19,6 +22,7 @@ interface FormErrors {
   email?: string;
   checkIn?: string;
   checkOut?: string;
+  city?: string;
   [key: string]: string | undefined;
 }
 
@@ -38,6 +42,7 @@ const initialFormData: BookingFormData = {
   checkIn: "",
   checkOut: "",
   message: "",
+  city: "",
 };
 
 const useBookingForm = ({
@@ -144,7 +149,7 @@ const useBookingForm = ({
 
   // handle form submission
   const handleChange = (
-    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>,
   ) => {
     const { name, value } = e.target;
     setFormData((prevFormData) => ({
@@ -198,6 +203,9 @@ const useBookingForm = ({
       if (includeMessage) {
         descriptionPart.push(`Message: ${formData.message}`);
       }
+      if (formData.city) {
+        descriptionPart.push(`City: ${formData.city}`);
+      }
       const description = descriptionPart.join("\n");
 
       const { data } = await axios.post(
@@ -213,7 +221,7 @@ const useBookingForm = ({
           created_from: "webform",
           source_url: window.location.href,
           hId: contact.formHid ? contact.formHid : formHid,
-        }
+        },
       );
 
       if (data.Status) {

@@ -1,5 +1,11 @@
 import { contact } from "@/utils/constent";
 import { FillCallIcon, FillLocationIcon, FillMailIcon } from "@/utils/icons";
+import {
+  FillFaceBookIcon,
+  OutLineInstagramIcon,
+  YouTube,
+} from "@/utils/SocialIcon";
+import { JSX } from "react";
 
 interface FooterData {
   logo: string;
@@ -12,6 +18,25 @@ interface FooterData {
     links: {
       title?: string;
       icon: React.ReactNode;
+      label: string;
+      href: string;
+      label2?: string;
+      href2?: string;
+    }[];
+  }[];
+}
+
+interface WebsiteFooterData {
+  logo: string;
+  description: string;
+  cta: {
+    label: string;
+    href: string;
+  };
+  lists: {
+    title?: string;
+    links: {
+      icon?: JSX.Element;
       label: string;
       href: string;
       label2?: string;
@@ -55,52 +80,79 @@ export const footerData: FooterData = {
     },
   ],
 };
-// export const websiteFooterData: WebsiteFooterData = {
-//   logo: "/logo.png",
-//   description: [
-//     "Sign up here to get the latest news, updates and special offers delivered to your inbox.",
-//     "Plus, you’ll be the first to know about our discounts!",
-//   ],
-//   lists: [
-//     {
-//       title: "Explore",
-//       links: [
-//         { label: "Home", href: "/" },
-//         { label: "Our Therapies", href: "/therapies" },
-//         { label: "Programs", href: "/experiences-at-naad" },
-//         { label: "Dining", href: "/dining-cuisine" },
-//         { label: "Blogs", href: "/blog" },
-//       ],
-//     },
-//     {
-//       title: "Policies",
-//       links: [
-//         { label: "About us", href: "/about-us" },
-//         { label: "Media Coverage", href: "/media-coverage" },
-//         { label: "Gallery", href: "/gallery" },
-//         { label: "Terms & conditions", href: "/centre-policy" },
-//         { label: "contact us", href: "/contact-us" },
-//       ],
-//     },
-//     {
-//       title: "Get help",
-//       subtitle: "Contact Us",
-//       links: [
-//         {
-//           label: "Facebook",
-//           href: contact.socialMedia.facebook,
-//           icon: <Facebook />,
-//         },
-//         {
-//           label: "linkedIn",
-//           href: contact.socialMedia.linkedin,
-//           icon: <LinkedIn />,
-//         },
-//         {
-//           label: "instagram",
-//           href: contact.socialMedia.instagram,
-//           icon: <Instagram />,
-//         },
-//       ],
-//     },
-//   ],
+export const websiteFooterData: WebsiteFooterData = {
+  logo: "/footerlogo2.png",
+  description: "Reserve Himalayan escape!",
+  cta: {
+    label: "Book stay",
+    href: contact.WhatsappCta,
+  },
+  lists: [
+    {
+      title: "QUICK LINKS",
+      links: [
+        { label: "Home", href: "/" },
+        { label: "About us", href: "/about-us" },
+        { label: "Accommodations", href: "/refined-living-spaces" },
+        { label: "Experiences", href: "/experiences" },
+        { label: "Contact us", href: "/contact-us" },
+      ],
+    },
+    {
+      title: "EXPLORE",
+      links: [
+        { label: "Wellness", href: "/holistic-wellness" },
+        { label: "Dining", href: "/farm-to-table" },
+        { label: "Host your retreat", href: "/host-your-retreat" },
+        { label: "Blogs", href: "/blogs" },
+      ],
+    },
+    {
+      title: "Policies",
+      links: [
+        { label: "Privacy Policy", href: "#" },
+        { label: "Terms & conditions", href: "#" },
+      ],
+    },
+    {
+      title: "Contact",
+      links: [
+        {
+          label: "Address: " + contact.address,
+          href: contact.addressLink,
+          icon: <FillLocationIcon />,
+        },
+        {
+          label: "Call Us: " + contact.phone[0],
+          href: "tel:" + contact.phone[0],
+          icon: <FillCallIcon />,
+        },
+        {
+          label: "Email: " + contact.email,
+          href: "mailto:" + contact.email,
+          icon: <FillMailIcon />,
+        },
+      ],
+    },
+    {
+      title: "Follow Us",
+      links: [
+        {
+          label: "Facebook",
+          href: contact.socialMedia.facebook,
+          icon: <FillFaceBookIcon />,
+        },
+        {
+          label: "instagram",
+          href: contact.socialMedia.instagram,
+          icon: <OutLineInstagramIcon />,
+        },
+        {
+          label: "youtube",
+          href: contact.socialMedia.youtube,
+          icon: <YouTube />,
+        },
+      ],
+    },
+  ],
+};

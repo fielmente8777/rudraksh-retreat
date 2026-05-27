@@ -7,6 +7,8 @@ import Script from "next/script";
 import Call from "@/components/ContactButton/Call";
 import { contact } from "@/utils/constent";
 import Whatsapp from "@/components/ContactButton/WhatsApp";
+import Navbar from "@/components/navbar/navbar";
+import { WebProvider } from "@/context-api/WebContext";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -62,12 +64,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html
-      lang="en"
-      className={` ${inter.variable} ${cormorant.variable} h-full antialiased`}
-      style={{ scrollBehavior: "smooth" }}
-      suppressHydrationWarning={true}
-    >
+    <html lang="en">
       <head>
         {/* <!-- Google Tag Manager --> */}
         <Script
@@ -83,7 +80,11 @@ export default function RootLayout({
           }}
         />
       </head>
-      <body className="">
+      <body
+        className={` ${inter.variable} ${cormorant.variable} h-full antialiased`}
+        style={{ scrollBehavior: "smooth" }}
+        suppressHydrationWarning={true}
+      >
         {/* <!-- Google Tag Manager (noscript) --> */}
         <noscript>
           <iframe
@@ -95,12 +96,16 @@ export default function RootLayout({
           ></iframe>
         </noscript>
         {/* <!-- End Google Tag Manager (noscript) --> */}
-        {children} <Footer />
-        <Call callNumber={contact.phone[0]} />
-        <Whatsapp whatsAppNumber={contact.phone[0]} />
+        <WebProvider>
+          <Navbar />
+          {children}
+          <Footer />
+          <Call callNumber={contact.phone[0]} />
+          <Whatsapp whatsAppNumber={contact.phone[0]} />
+        </WebProvider>
       </body>
       {/* <!-- Eazbot Script (Next.js) --> */}
-      <Script id="chatbot-config" strategy="afterInteractive">
+      {/* <Script id="chatbot-config" strategy="afterInteractive">
         {`
           window.eazbotConfig = {
             ndid: "b40fa3eb-80b3-442d-a3e2-118c02a01648",
@@ -111,7 +116,7 @@ export default function RootLayout({
       <Script
         src="https://cb-script.dyq28lyxrazm2.amplifyapp.com/widget/lead-chatbot.js"
         strategy="afterInteractive"
-      />
+      /> */}
     </html>
   );
 }

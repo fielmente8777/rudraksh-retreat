@@ -6,12 +6,13 @@ export const contact = {
   phone: ["+91 88266 52343"],
   address:
     "The Rudraksh, A Himalayan Retreat Kandikhal, near Agaan Shiv Temple, Selur, Uttarakhand 249130",
-  addressLink: "#",
-  // socialMedia: {
-  //   facebook: "https://www.facebook.com/share/1LsNztG2je/?mibextid=wwXIfr",
-  //   instagram: "https://www.instagram.com/saraaya.dharamshala?igsh=eWN4c24wcGI0bXdy",
-  //   linkedin: "",
-  // },
+  addressLink: "https://maps.app.goo.gl/136Y71PgpX4m2yAn8",
+  socialMedia: {
+    facebook: "https://www.facebook.com/therudrakshretreat/",
+    instagram: "https://www.instagram.com/therudrakshretreat/",
+    linkedin: "",
+    youtube: "https://www.youtube.com/@therudrakshretreat",
+  },
   callCta: `tel:+918826652343`,
   WhatsappCta: `https://wa.me/918826652343?text=${enCodeText}`,
   formDomain: "therudrakshretreat",

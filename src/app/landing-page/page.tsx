@@ -1,22 +1,19 @@
 import Form1 from "@/components/forms/Form1";
+import { SectionWithContainer } from "@/components/sectionComponants";
+import SlidingTitle from "@/components/sliders/SlidingTitle";
 import HeroSection from "./components/heroSection";
 import JourneySection from "./components/journeySection";
 import NutritionSection from "./components/nutritionSection";
+import { landingPageData } from "./components/pageData";
 import PillarSection from "./components/pillarSection";
 import RoomSection from "./components/roomSection";
+import StorySection from "./components/storySection";
 import ViewSection from "./components/viewSection";
 import WellnessSection from "./components/wellnessSection";
-import SlidingTitle from "@/components/sliders/SlidingTitle";
-import { landingPageData } from "./components/pageData";
-import { SectionWithContainer } from "@/components/sectionComponants";
-import StorySection from "./components/storySection";
-import Navbar from "@/components/navbar/navbar";
-import LandingFooter from "@/components/footer/LandingFooter";
 
 export default function HomePage() {
   return (
     <main>
-      <Navbar />
       <HeroSection />
       <div className="border-y border-[#D8D0C4] border-[0.8px]">
         <SlidingTitle items={landingPageData.titles} />

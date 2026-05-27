@@ -1,0 +1,99 @@
+import LinkButton from "@/components/buttons/LinkButton";
+import {
+  Container,
+  Section,
+  SectionWithContainer,
+} from "@/components/sectionComponants";
+import ImageSlider2 from "@/components/sliders/ImageSlider2";
+import { SectionHeading } from "@/components/typography";
+import Image from "next/image";
+
+export interface RoomsSectionProps {
+  cards: {
+    title: string;
+    subtitle: string;
+    description: string[];
+    images: string[];
+    slidingText: string[];
+    buttons: {
+      label: string;
+      href: string;
+    }[];
+    amenities?: {
+      title: string;
+      image: string;
+    }[];
+  }[];
+}
+const RoomsSection = ({ cards }: RoomsSectionProps) => {
+  return (
+    <Section className="bg-background md:space-y-20 space-y-14">
+      {cards.map((card, index) => (
+        <CardsComponent key={index} {...card} />
+      ))}
+    </Section>
+  );
+};
+
+export default RoomsSection;
+
+export const CardsComponent: React.FC<RoomsSectionProps["cards"][0]> = ({
+  title,
+  subtitle,
+  description,
+  images,
+  slidingText,
+  buttons,
+  amenities,
+}) => {
+  return (
+    <div className="md:space-y-14 space-y-10">
+      <Container className="text-center space-y-6">
+        <p className="text-lg text-primary text-center">{subtitle}</p>
+        <SectionHeading title={title} textCenter />
+      </Container>
+      <ImageSlider2 images={images} title={title} />
+      <Container className="flex flex-col gap-2 text-center max-w-6xl!">
+        {description.map((text, index) => (
+          <p key={index} className=" md:text-lg ">
+            {text}
+          </p>
+        ))}
+        {/* BUTTONS */}
+        <div className="flex max-md:flex-col justify-center md:gap-4 gap-3 items-center mt-6">
+          {buttons.map((button, index) => (
+            <LinkButton
+              key={index}
+              {...button}
+              target="_blank"
+              rel="noopener noreferrer"
+              arrowIcon={index !== 0 && true}
+              whatsAppIcon={index === 0 && true}
+              className={`rounded-sm justify-center max-md:w-full gap-2! uppercase tracking-widest ${index === 0 ? "text-white bg-primary max-md:text-sm border-primary" : "text-primary bg-transparent border border-primary"}`}
+            />
+          ))}
+        </div>
+      </Container>
+      {amenities && (
+        <SectionWithContainer sectionClassName="bg-secondary">
+          <div className="flex flex-wrap lg:justify-between justify-center gap-14 w-full">
+            {amenities.map((amenity, index) => (
+              <div
+                key={index}
+                className="flex flex-col text-white w-50 text-center items-center gap-6"
+              >
+                <Image
+                  src={amenity.image}
+                  alt={amenity.title}
+                  width={40}
+                  height={40}
+                />
+                <p className="text-lg">{amenity.title}</p>
+              </div>
+            ))}
+          </div>
+        </SectionWithContainer>
+      )}
+    </div>
+  );
+};

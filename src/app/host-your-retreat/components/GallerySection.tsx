@@ -16,7 +16,7 @@ const GallerySection = ({ images, description }: GallerySectionProps) => {
       <Container className="container mx-auto px-4">
         <div className="grid md:grid-cols-2 gap-12 mx-auto">
           {images.map((image, index) => (
-            <div key={index} className="relative w-full aspect-4/4.5">
+            <div key={index} className="relative w-full aspect-4/3.5">
               <Image
                 fill
                 src={image.src}

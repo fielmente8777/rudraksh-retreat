@@ -1,0 +1,40 @@
+import VideoBanner from "@/components/banners/VideoBanner";
+import { FarmToTablePageData } from "./componants/pageData";
+import AboutSection from "./componants/AboutSection";
+import {
+  Container,
+  Section,
+  SectionWithContainer,
+} from "@/components/sectionComponants";
+import { SectionHeading } from "@/components/typography";
+
+export default function FarmToTable() {
+  return (
+    <main>
+      <VideoBanner {...FarmToTablePageData.heroSection} />
+      <AboutSection {...FarmToTablePageData.aboutSection} />
+      <SectionWithContainer>
+        <SectionHeading title={FarmToTablePageData?.dine?.title} textCenter />
+        <div className="space-y-4 mt-8 text-center max-w-6xl mx-auto">
+          {FarmToTablePageData?.dine?.description?.map((text, index) => (
+            <p key={index} className="mb-4 text-lg text-gray-700">
+              {text}
+            </p>
+          ))}
+        </div>
+      </SectionWithContainer>
+      <Section
+        className={`relative bg-fixed w-full lg:aspect-16/7 aspect-video bg-cover bg-center bg-no-repeat flex items-center justify-center`}
+        style={{
+          backgroundImage: `url(${FarmToTablePageData.enquirySection.image})`,
+        }}
+      >
+        <Container className="flex lg:max-w-5xl! flex-col items-center gap-8">
+          <p className="text-white text-center lg:text-2xl  text-lg">
+            {FarmToTablePageData.enquirySection.description}
+          </p>
+        </Container>
+      </Section>
+    </main>
+  );
+}

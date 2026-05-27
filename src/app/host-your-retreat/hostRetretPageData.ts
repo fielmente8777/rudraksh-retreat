@@ -1,4 +1,8 @@
 export const hostRetretPageData = {
+    banner: {
+    title: "Host Your Own Retreat",
+    image: "/host-your-retreat/host-your-retreat.png",
+  },
   heroSection: {
     tag: "Book Now",
     symbol: `"सह"`,
@@ -12,11 +16,11 @@ export const hostRetretPageData = {
   gallerySection: {
     images: [
       {
-        src: "/images/nutrition.jpg",
+        src: "/host-your-retreat/host-img1.jpg",
         alt: "Retreat Experience",
       },
       {
-        src: "/images/nutrition.jpg",
+        src: "/host-your-retreat/host-img2.jpg",
         alt: "Yoga Session",
       },
     ],
@@ -25,7 +29,7 @@ export const hostRetretPageData = {
       "Our range of comfortable spaces, expert support, and the most peaceful ambiances, allows you to focus on what matters most: providing your guests with a retreat experience they will carry with them long after they leave.",
   },
   bannerSection: {
-    image: "/images/nutrition.jpg",
+    image: "/host-your-retreat/service2-prlx3.jpg",
   },
   ctaSection: {
     description:

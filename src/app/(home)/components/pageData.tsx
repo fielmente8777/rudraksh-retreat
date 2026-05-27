@@ -1,40 +1,40 @@
+import { contact } from "@/utils/constent";
+
 export const homePageData = {
   heroSection: {
-    subHeading: "A JOURNEY AWAITS",
-    video: "/assets/videos/hero-video.mp4",
-    videoPoster: "/assets/videos/hero-video.png",
+    title: "A JOURNEY AWAITS",
+    video: "/videos/heroSection.mp4",
+    videoPoster: "/videos/heroSection.png",
   },
 
   about: {
+    image: "/blogs/yoga-retreat-banner.png",
     title: "The Rudraksh A Himalayan Retreat",
-
     description: [
-      `
-      Rudraksh, rooted in the legend of Lord Shiva, whose divine tears are believed to have formed these sacred beads, symbolizes protection, clarity, and spiritual awakening, evoking a deep cosmic connection.
-    `,
-      `
-      At The Rudraksh Retreat, this essence invites guests to embrace peace, reconnect with themselves, & find solace in nature's serene embrace, much like the calming presence of the Himalayas and the sacred Tehri Lake.
+      `Rudraksh, rooted in the legend of Lord Shiva, whose divine tears are believed to have formed these sacred beads, symbolizes protection, clarity, and spiritual awakening, evoking a deep cosmic connection. At The Rudraksh Retreat, this essence invites guests to embrace peace, reconnect with themselves, & find solace in nature's serene embrace, much like the calming presence of the Himalayas and the sacred Tehri Lake.
     `,
     ],
   },
 
   wisdom: {
-    logo: "/assets/images/om-logo.png",
-    image: "/assets/images/hero-image.png",
+    logo: "/home/logo.png",
+    image: "/home/DJI_20240911181.jpg",
     description: `
       Set in the valleys that hold ancient wisdom, with the sacred Ganges flowing through them, lies Devbhoomi Uttarakhand, meaning “the abode of gods.”
     `,
   },
 
   beginYourJourney: {
+    title: "Escape into Stillness",
     button: {
       label: "Begin Your Journey",
       link: "/",
     },
     cards: [
       {
+        id: "01",
         title: "REFINED LIVING SPACES",
-        image: "/assets/images/refined-living-spaces.png",
+        image: "/home/lftrgt-img1.jpg",
         href: "/refined-living-spaces/",
         description: [
           "A serene escape with eight crafted guestrooms, set against the Himalayas and overlooking peaceful Tehri Lake. Rudraksh Retreat is a space to unwind, rejuvenate, and restore inner balance.",
@@ -42,52 +42,42 @@ export const homePageData = {
       },
 
       {
+        id: "02",
         title: "Holistic Wellness",
-        image: "/assets/images/mindful-trekking-retreats.png",
-        href: "/experiences/",
+        image: "/home/lftrgt-img2.jpg",
+        href: "/holistic-wellness/",
         description: [
           "Sat-cit-ānanda / lfPpnkuUn",
           "sat (सत्): Being, Existence",
           "cit (चित्): Consciousness or Spirit",
           "ānanda (आनन्द): Happiness, Joy, Bliss",
-          "Experience Sat-cit-ānanda with our curated offerings. Designed to detox, de-stress, and rejuvenate, our spa treatment, guided yoga sessions, and mindful nature walks."
+          "Experience Sat-cit-ānanda with our curated offerings. Designed to detox, de-stress, and rejuvenate, our spa treatment, guided yoga sessions, and mindful nature walks.",
         ],
       },
       {
+        id: "03",
         title: "Mindful Trekking Retreats",
-        image: "/assets/images/mindful-trekking-retreats.png",
+        image: "/home/lftrgt-img3.jpg",
         href: "/experiences/",
         description: [
           "Pause, and reconnect with the natural world at The Rudraksh.",
           " Perched on a hill, away from the city’s hustle, embark on hikes through lush forests, explore local villages, capture Himalayan biodiversity, or camp under the clear, starry skies.",
         ],
       },
+
       {
-        title: "Mindful Trekking Retreats",
-        image: "/assets/images/mindful-trekking-retreats.png",
-        href: "/experiences/",
+        id: "04",
+        title: "Farm To Table",
+        image: "/home/lftrgt-img4.jpg",
+        href: "/farm-to-table/",
         description: [
-          "Pause, and reconnect with the natural world at The Rudraksh.",
-          " Perched on a hill, away from the city’s hustle, embark on hikes through lush forests, explore local villages, capture Himalayan biodiversity, or camp under the clear, starry skies.",
+          "अन्नं ब्रह्म रसो विष्णुः",
+          "भोक्ता देवो महेश्वरः",
+          " Creative energy in the food is Brahma. Nourishing energy in the body is Vishnu. Transformation of food into pure consciousness is Shiva.",
+          "Experience farm-to-table dining with fresh, organic, locally sourced ingredients straight from our garden to your plate. Enjoy a vegetarian-inspired menu that celebrates the natural flavors of the earth.",
         ],
       },
     ],
-  },
-
-  farmToTableSection: {
-    title: "Farm To Table",
-
-    sanskrit: `
-      अन्नं ब्रह्म रसो विष्णुः भोक्ता देवो महेश्वरः
-    `,
-
-    translation: `
-      Creative energy in the food is Brahma. Nourishing energy in the body is Vishnu. Transformation of food into pure consciousness is Shiva.
-    `,
-
-    description: `
-      Experience farm-to-table dining with fresh, organic, locally sourced ingredients straight from our garden to your plate. Enjoy a vegetarian-inspired menu that celebrates the natural flavors of the earth.
-    `,
   },
 
   gettingHereSection: {
@@ -96,7 +86,7 @@ export const homePageData = {
     options: [
       {
         title: "By Road",
-
+        img: "/home/car-icon.png",
         description: `
           3 hours drive from Rishikesh
           2.5 hours drive from Mussoorie.
@@ -105,7 +95,7 @@ export const homePageData = {
 
       {
         title: "By Train",
-
+        img: "/home/train-icon.png",
         description: `
           4 hours drive from Haridwar & Dehradun Railway Station.
         `,
@@ -113,7 +103,7 @@ export const homePageData = {
 
       {
         title: "By Air",
-
+        img: "/home/plane-icon.png",
         description: `
           3 hours drive from Dehradun Airport.
         `,
@@ -123,56 +113,51 @@ export const homePageData = {
 
   storiesSection: {
     title: "Stories Of Satisfaction",
-
     reviews: [
       {
         title: "An incredible experience!",
-
         description: `
           The hotel itself is already wonderful, but the warmth and care from Mahesh and his family made us feel truly welcomed.
         `,
-
+        href: "https://www.tripadvisor.in/Hotel_Review-g25181975-d25136174-Reviews-The_Rudraksh_A_Himalayan_Retreat-Selur_Tehri_Garhwal_District_Uttarakhand.html",
         author: "Priscila Z",
+        image: "/home/review-img1.jpg",
       },
-
       {
         title: "A Beautiful Retreat",
-
         description: `
           Amazing retreat experience in the rudraksh. Beautifull place in the deep Himalayas around very Nice and authenthic comunities.
         `,
-
+        href: "https://www.tripadvisor.in/Hotel_Review-g25181975-d25136174-Reviews-The_Rudraksh_A_Himalayan_Retreat-Selur_Tehri_Garhwal_District_Uttarakhand.html",
         author: "Mariano",
+        image: "/home/review-img2.jpg",
       },
-
       {
         title: "Himalayan Medicine",
-
         description: `
           The love that went into food preparation and the staff who genuinely feel blessed to share their World with you.
         `,
-
+        href: "https://www.tripadvisor.in/Hotel_Review-g25181975-d25136174-Reviews-The_Rudraksh_A_Himalayan_Retreat-Selur_Tehri_Garhwal_District_Uttarakhand.html",
         author: "Glen S",
+        image: "/home/review-img3.jpg",
       },
-
       {
         title: "Away from the crowd, peaceful stay!",
-
         description: `
           About 2 hours away from Rishikesh, this place is nestled with one of the best views of the mountains and the lake.
         `,
-
+        href: "https://www.tripadvisor.in/Hotel_Review-g25181975-d25136174-Reviews-The_Rudraksh_A_Himalayan_Retreat-Selur_Tehri_Garhwal_District_Uttarakhand.html",
         author: "Aarthi I",
+        image: "/home/rve4.jpg",
       },
-
       {
         title: "An amazing vegetarian place with great service",
-
         description: `
           The moment we stepped in, we felt warmly welcomed by Mahesh ji and his friendly staff, who went above and beyond to make our stay truly special.
         `,
-
+        href: "https://www.tripadvisor.in/Hotel_Review-g25181975-d25136174-Reviews-The_Rudraksh_A_Himalayan_Retreat-Selur_Tehri_Garhwal_District_Uttarakhand.html",
         author: "Vinay Sharma",
+        image: "/home/rve5.jpg",
       },
     ],
 
@@ -227,14 +212,21 @@ export const homePageData = {
   },
 
   enquirySection: {
-    heading: `
-      A moment to pause, reconnect, and revel
-      in the simplicity of the present.
-    `,
+    title: "Limited Availability",
+    subtitle: "Ready for Himalayan Escape?",
+    description:
+      "Availability is limited. Book your stay directly via WhatsApp for the fastest response and best rates.",
+    image: "/G48095455.png",
+    buttons: [
+      {
+        label: "Check Availability via WhatsApp",
+        href: contact.WhatsappCta,
+      },
 
-    button: {
-      label: "ENQUIRE NOW",
-      link: "/contact-us",
-    },
+      {
+        label: "BOOK YOUR STAY",
+        href: "/contact-us",
+      },
+    ],
   },
 };
