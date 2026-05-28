@@ -2,7 +2,7 @@ import ImageBanner from "@/components/banners/ImageBanner";
 import { aboutUsPageData } from "./components/pageData";
 import { Container, Section, SectionWithContainer } from "@/components/sectionComponants";
 import { SectionHeading } from "@/components/typography";
-import PillarSection from "../landing-page/components/pillarSection";
+import PillarSection from "../../landing-page/components/pillarSection";
 import LinkButton from "@/components/buttons/LinkButton";
 
 export default function AboutUsPage() {

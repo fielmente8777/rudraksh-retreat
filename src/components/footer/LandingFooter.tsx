@@ -5,6 +5,7 @@ import LazyLoadedMap from "../map/LazyLoadedMap";
 import { Container } from "../sectionComponants";
 import { footerData } from "./footerdata";
 import LinkButton from "../buttons/LinkButton";
+import CurrentYear from "../CurrentYear";
 
 const LandingFooter = () => {
   return (
@@ -127,7 +128,6 @@ const LandingFooter = () => {
         <div className="md:flex max-md:space-x-2 text-center flex-wrap items-center justify-center gap-2 text-white text-sm">
           {/* {" "}
           <span className="text-white">
-            © {new Date().getFullYear()} Saraaya
           </span>
           <span className="md:block hidden">|</span>
           <span className="text-white">All Rights Reserved</span> */}

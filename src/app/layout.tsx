@@ -21,6 +21,7 @@ const cormorant = Cormorant_Garamond({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://therudrakshretreat.com"),
   title:
     "The Rudraksh Retreat | Luxury Himalayan Wellness Retreat in Tehri Garhwal",
   description:
@@ -99,13 +100,10 @@ export default function RootLayout({
         <WebProvider>
           <Navbar />
           {children}
-          <Footer />
-          <Call callNumber={contact.phone[0]} />
-          <Whatsapp whatsAppNumber={contact.phone[0]} />
         </WebProvider>
       </body>
       {/* <!-- Eazbot Script (Next.js) --> */}
-      {/* <Script id="chatbot-config" strategy="afterInteractive">
+      <Script id="chatbot-config" strategy="afterInteractive">
         {`
           window.eazbotConfig = {
             ndid: "b40fa3eb-80b3-442d-a3e2-118c02a01648",
@@ -116,7 +114,7 @@ export default function RootLayout({
       <Script
         src="https://cb-script.dyq28lyxrazm2.amplifyapp.com/widget/lead-chatbot.js"
         strategy="afterInteractive"
-      /> */}
+      />
     </html>
   );
 }

@@ -23,7 +23,6 @@ const nextConfig: NextConfig = {
     contentDispositionType: "attachment",
   },
 
-  cacheComponents: true,
   experimental: {
     optimizePackageImports: ["lucide-react", "react-icons", "swiper"],
 

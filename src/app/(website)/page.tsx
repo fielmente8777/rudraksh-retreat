@@ -1,11 +1,11 @@
 import { Container, Section } from "@/components/sectionComponants";
 import Image from "next/image";
-import AboutSection from "./components/AboutSection";
-import { homePageData } from "./components/pageData";
+import AboutSection from "@/components/home-components/AboutSection";
+import { homePageData } from "@/components/home-components/pageData";
 import VideoBanner from "../../components/banners/VideoBanner";
-import GettingHereSection from "./components/GettingHereSection";
-import StoriesSection from "./components/StoriesSection";
-import GlampsSection from "./components/GlampsSection";
+import GettingHereSection from "@/components/home-components/GettingHereSection";
+import StoriesSection from "@/components/home-components/StoriesSection";
+import GlampsSection from "@/components/home-components/GlampsSection";
 import { SectionHeading } from "@/components/typography";
 import LinkButton from "@/components/buttons/LinkButton";
 
