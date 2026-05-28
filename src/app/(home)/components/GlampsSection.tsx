@@ -104,6 +104,7 @@ const GlampsSection: React.FC<Props> = ({
               src={filtered[0].image}
               alt="Image"
               fill
+              sizes="(max-width: 768px) 100vw, 50vw"
               className={`object-cover transition-all duration-500 ease-in-out ${
                 animateImage ? "scale-110 opacity-0" : "scale-100 opacity-100"
               }`}
@@ -127,6 +128,7 @@ const GlampsSection: React.FC<Props> = ({
                     src={acc.image}
                     alt="Image"
                     fill
+                    sizes="100vw"
                     className="object-cover hover:scale-105 transition-transform duration-500"
                   />
                 </div>

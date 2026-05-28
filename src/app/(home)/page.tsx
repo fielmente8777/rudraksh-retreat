@@ -26,6 +26,7 @@ export default function LandingPage() {
               src={homePageData.wisdom.logo}
               alt="Rudraksh Logo"
               fill
+              sizes="140px"
               className="object-contain"
             />
           </div>

@@ -32,6 +32,7 @@ const GettingHereSection: React.FC<GettingHereSectionProps> = ({
                   src={option.img}
                   alt={option.title}
                   fill
+                  sizes="160px"
                   className="object-contain"
                 />
               </div>

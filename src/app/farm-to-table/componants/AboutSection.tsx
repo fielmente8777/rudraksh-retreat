@@ -27,6 +27,7 @@ const AboutSection: React.FC<AboutSectionProps> = ({
             fill
             src={images[0]}
             alt="Image"
+            sizes="(max-width: 768px) 100vw, 33vw"
             className="w-full h-full object-cover"
           />
         </div>
@@ -42,6 +43,7 @@ const AboutSection: React.FC<AboutSectionProps> = ({
             fill
             src={images[1]}
             alt="Image"
+            sizes="(max-width: 768px) 100vw, 33vw"
             className="w-full h-full object-cover"
           />
         </div>
@@ -58,6 +60,7 @@ const AboutSection: React.FC<AboutSectionProps> = ({
                 fill
                 src={image}
                 alt="Image"
+                sizes="(max-width: 768px) 100vw, 50vw"
                 className="w-full h-full object-cover"
               />
             </div>

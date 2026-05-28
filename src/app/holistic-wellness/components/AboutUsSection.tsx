@@ -25,6 +25,7 @@ const AboutUsSection: React.FC<AboutUsSectionProps> = ({ title, cards }) => {
                 src={card.image}
                 alt="card"
                 fill
+                sizes="(max-width: 768px) 100vw, 50vw"
                 className="object-cover"
               />
             </div>

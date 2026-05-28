@@ -22,6 +22,7 @@ export default function Blogs() {
                 src={card.image}
                 alt="Image"
                 fill
+                sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
                 className="object-cover rounded-xl"
               />
             </div>

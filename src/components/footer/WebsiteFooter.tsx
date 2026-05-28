@@ -5,6 +5,7 @@ import { websiteFooterData } from "./footerdata";
 import LinkButton from "../buttons/LinkButton";
 
 const WebsiteFooter = () => {
+  const year = new Date().getFullYear();
   return (
     <footer className="max_screen_width bg-secondary text-white">
       <Container>
@@ -117,7 +118,7 @@ const WebsiteFooter = () => {
         <Container className="py-4">
           <div className="flex max-md:flex-col items-center justify-between gap-2 text-white ">
             {" "}
-            <p className="">© {new Date().getFullYear()} The Rudraksh Retreat. All rights reserved.</p>
+            <p className="">© {year} The Rudraksh Retreat. All rights reserved.</p>
             <p className="">Powered by Fielmente</p>
           </div>
         </Container>

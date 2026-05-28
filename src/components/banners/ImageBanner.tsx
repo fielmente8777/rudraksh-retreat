@@ -15,7 +15,8 @@ const ImageBanner: React.FC<ImageBannerProps> = ({ title, image }) => {
         src={image}
         alt={title}
         fill
-        className="object-cover object-center"
+        className="object-cover"
+        sizes="100vw"
       />
       <div className="absolute inset-0 bg-black/50 z-20 flex items-center justify-center">
         <Container>

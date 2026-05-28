@@ -38,6 +38,7 @@ const StoriesSection: React.FC<StoriesSectionProps> = ({
               src={review.image}
               alt={review.author}
               fill
+              sizes="(max-width: 768px) 100vw, 50vw"
               className="object-cover"
             />
             <div className="absolute inset-0 bg-linear-to-t from-black/45 via-black/35 to-black/30" />
@@ -59,6 +60,7 @@ const StoriesSection: React.FC<StoriesSectionProps> = ({
           src="/home/tripadvisor.png"
           alt="Tripadvisor Logo"
           fill
+          sizes="224px"
           className="object-cover"
         />
       </div>

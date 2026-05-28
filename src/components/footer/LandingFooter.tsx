@@ -20,7 +20,7 @@ const LandingFooter = () => {
                 src={footerData.logo}
                 alt="logo"
                 fill
-                sizes="100%"
+                sizes="340px"
                 className="object-contain"
               />
             </div>
