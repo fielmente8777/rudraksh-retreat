@@ -47,11 +47,11 @@ const WebsiteFooter = () => {
               {websiteFooterData.description}
             </p>
             <div className="md:ml-auto max-md:mx-auto w-fit flex items-center">
-                <LinkButton
-                  href={websiteFooterData.cta.href}
-                  label={websiteFooterData.cta.label}
-                  className="text-sm md:text-base rounded-sm uppercase"
-                />
+              <LinkButton
+                href={websiteFooterData.cta.href}
+                label={websiteFooterData.cta.label}
+                className="text-sm md:text-base rounded-sm uppercase"
+              />
             </div>
           </div>
         </div>
@@ -116,10 +116,18 @@ const WebsiteFooter = () => {
       </Container>
       <div className="w-full  bg-primary">
         <Container className="py-4">
-          <div className="flex max-md:flex-col items-center justify-between gap-2 text-white ">
+          <div className="flex max-md:flex-col items-center justify-between gap-2 text-secondary ">
             {" "}
-            <p className="">© {new Date().getFullYear()} The Rudraksh Retreat. All rights reserved.</p>
-            <p className="">Powered by Fielmente</p>
+            <p className="">
+              © {new Date().getFullYear()} The Rudraksh Retreat. All rights
+              reserved.
+            </p>
+            <p className="">
+              Powered by{" "}
+              <Link href="https://fielmente.com/" target="_blank" rel="noreferrer" className="font-semibold">
+                Fielmente
+              </Link>
+            </p>
           </div>
         </Container>
       </div>
