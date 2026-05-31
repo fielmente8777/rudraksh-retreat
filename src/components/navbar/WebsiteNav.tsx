@@ -5,6 +5,7 @@ import { useEffect, useRef, useState } from "react";
 import LinkButton from "../buttons/LinkButton";
 import MenuButton from "./MenuButton";
 import NavMenu from "./NavMenu";
+import { contact } from "@/utils/constent";
 
 const WebsiteNav = () => {
   // const pathname = usePathname();
@@ -84,7 +85,7 @@ const WebsiteNav = () => {
           </div>
 
           <LinkButton
-            href="/"
+            href={contact.WhatsappCta}
             label="Book Stay"
             target="_blank"
             rel="noopener noreferrer"

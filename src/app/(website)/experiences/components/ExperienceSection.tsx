@@ -35,7 +35,7 @@ const ExperiencesSection = ({ items }: ExperiencesSectionProps) => {
               >
                 {/* Content */}
                 <div className="space-y-4">
-                  <h2 className="text-secondary uppercase md:text-3xl max-w-80 text-sm">
+                  <h2 className="text-secondary uppercase md:text-4xl text-2xl font-primary">
                     {item.title}
                   </h2>
 
