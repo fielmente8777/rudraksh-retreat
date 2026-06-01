@@ -13,8 +13,8 @@ export const contact = {
     linkedin: "",
     youtube: "https://www.youtube.com/@therudrakshretreat",
   },
-  callCta: `tel:+918826652343`,
-  WhatsappCta: `https://wa.me/918826652343?text=${enCodeText}`,
+  callCta: `tel:+917017582127`,
+  WhatsappCta: `https://wa.me/917017582127?text=${enCodeText}`,
   formDomain: "therudrakshretreat",
   // formDomain: "testmulti", //for testing
   formHid: "",
