@@ -4,6 +4,41 @@ import { Container, Section, SectionWithContainer } from "@/components/sectionCo
 import { SectionHeading } from "@/components/typography";
 import PillarSection from "../../landing-page/components/pillarSection";
 import LinkButton from "@/components/buttons/LinkButton";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  metadataBase: new URL("https://therudrakshretreat.com"),
+  title: "About Us | The Rudraksh Retreat Serene Escape in Uttarakhand",
+  description:
+    "Learn about The Rudraksh Retreat, an offbeat wellness destination offering yoga, organic dining, and peaceful stays in the heart of Uttarakhand.",
+
+  alternates: {
+    canonical: "https://therudrakshretreat.com/about-us/",
+  },
+
+  openGraph: {
+    title: "About Us | The Rudraksh Retreat Serene Escape in Uttarakhand",
+    description:
+      "Learn about The Rudraksh Retreat, an offbeat wellness destination offering yoga, organic dining, and peaceful stays in the heart of Uttarakhand.",
+    url: "https://therudrakshretreat.com/about-us/",
+    siteName: "The Rudraksh Retreat",
+    type: "website",
+  },
+
+  robots: {
+    index: true,
+    follow: true,
+    nocache: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
+};
+
 
 export default function AboutUsPage() {
   return (

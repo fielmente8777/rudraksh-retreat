@@ -9,7 +9,7 @@ const ImageBanner: React.FC<ImageBannerProps> = ({ title, image }) => {
   return (
     <Section
       defaultPadding={false}
-      className="relative w-full lg:aspect-16/7.5 aspect-video"
+      className="relative w-full lg:aspect-16/7.5 aspect-4/3.75 overflow-hidden"
     >
       <Image
         src={image}

@@ -7,6 +7,42 @@ import {
   SectionWithContainer,
 } from "@/components/sectionComponants";
 import { SectionHeading } from "@/components/typography";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  metadataBase: new URL("https://therudrakshretreat.com"),
+  title: "Farm-to-Table Dining | Pure Vegetarian Cuisine in Uttarakhand",
+  description:
+    "Pure Vegetarian Resorts in Uttarakhand. savor fresh, organic, farm-to-table meals at The Rudraksh Retreat. Enjoy delicious veg meals.",
+
+  alternates: {
+    canonical: "https://therudrakshretreat.com/farm-to-table/",
+  },
+
+  openGraph: {
+    title: "Farm-to-Table Dining | Pure Vegetarian Cuisine in Uttarakhand",
+    description:
+      "Pure Vegetarian Resorts in Uttarakhand. savor fresh, organic, farm-to-table meals at The Rudraksh Retreat. Enjoy delicious veg meals.",
+    url: "https://therudrakshretreat.com/farm-to-table/",
+    siteName: "The Rudraksh Retreat",
+    type: "website",
+  },
+
+  robots: {
+    index: true,
+    follow: true,
+    nocache: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
+};
+
+
 
 export default function FarmToTable() {
   return (

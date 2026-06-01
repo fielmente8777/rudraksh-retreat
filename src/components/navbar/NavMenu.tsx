@@ -22,19 +22,19 @@ const NavMenu = () => {
   return (
     <div
       className={`
-        absolute top-full left-0 w-full z-40
+        absolute top-0 left-0 w-full  z-40
         bg-primary text-white
         transition-all duration-700 ease-[cubic-bezier(0.76,0,0.24,1)]
         overflow-hidden
         ${
           isOpenNavBar
-            ? "max-h-[calc(100dvh-10px)] opacity-100"
+            ? "max-h-dvh h-dvh opacity-100"
             : "max-h-0 opacity-0"
         }
       `}
     >
       {/* Menu Content */}
-      <nav className="max_width py-12 md:py-16">
+      <nav className="max_width py-12 md:py-16 mt-20">
         <ul className="flex flex-col items-center gap-6 md:gap-8">
           {WebsiteNavData.links.map((link) => (
             <li key={link.label}>

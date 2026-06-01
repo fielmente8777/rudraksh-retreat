@@ -213,18 +213,18 @@ export const homePageData = {
 
   enquirySection: {
     title: "Limited Availability",
-    subtitle: "Ready for Himalayan Escape?",
+    subtitle: "In the Himalayas, doing less often means experiencing more",
     description:
-      "Availability is limited. Book your stay directly via WhatsApp for the fastest response and best rates.",
+      "A place to pause, reconnect, and simply be",
     image: "/G48095455.png",
     buttons: [
       {
-        label: "Check Availability via WhatsApp",
+        label: "Check Availability via Whatsapp",
         href: contact.WhatsappCta,
       },
 
       {
-        label: "BOOK YOUR STAY",
+        label: "Plan Your Stay",
         href: "/contact-us",
       },
     ],

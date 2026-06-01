@@ -3,6 +3,40 @@ import { RoomsPageData } from "./components/pageData";
 import { SectionWithContainer } from "@/components/sectionComponants";
 import { SectionHeading } from "@/components/typography";
 import RoomsSection from "./components/RoomsSection";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  metadataBase: new URL("https://therudrakshretreat.com"),
+  title: "Refined Living Spaces | Luxury Stay at The Rudraksh Retreat",
+  description:
+    "Experience refined living at The Rudraksh Retreat. Stay in elegant, comfortable spaces surrounded by nature for a peaceful and rejuvenating getaway.",
+
+  alternates: {
+    canonical: "https://therudrakshretreat.com/refined-living-spaces/",
+  },
+
+  openGraph: {
+    title: "Refined Living Spaces | Luxury Stay at The Rudraksh Retreat",
+    description:
+      "Experience refined living at The Rudraksh Retreat. Stay in elegant, comfortable spaces surrounded by nature for a peaceful and rejuvenating getaway.",
+    url: "https://therudrakshretreat.com/refined-living-spaces/",
+    siteName: "The Rudraksh Retreat",
+    type: "website",
+  },
+
+  robots: {
+    index: true,
+    follow: true,
+    nocache: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
+};
 
 export default function RefinedLivingSpaces() {
   return (
