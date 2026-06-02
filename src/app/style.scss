@@ -44,11 +44,13 @@
     @media (min-width: 1024px) {
       /* lg */
       max-width: 960px;
+      padding-inline: 0;
     }
 
     @media (min-width: 1280px) {
       /* xl */
       max-width: 1140px;
+      padding-inline: 0;
     }
 
     @media (min-width: 1536px) {

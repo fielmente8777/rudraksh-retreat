@@ -71,16 +71,17 @@ const WebsiteNav = () => {
       `}
       >
         {/* Top Navbar */}
-        <nav className="max_width flex items-center justify-between py-4">
-          <div className="relative aspect-4/4 lg:w-25 w-15">
+        <nav className="max_width flex items-center justify-between gap-5 py-4">
+          <Link href="/" className="relative block aspect-4/4 lg:w-25 w-15">
             <Image
               src={!scrolled ? "/logo-white.png" : "/logo-yellow.png"}
               alt="Logo"
               fill
               priority
+              sizes="(max-width: 1024px) 60px, 100px"
               className="object-contain"
             />
-          </div>
+          </Link>
 
           <ul className="hidden lg:flex items-center gap-8">
             {WebsiteNavData.links.slice(1).map((link) => (
@@ -88,7 +89,7 @@ const WebsiteNav = () => {
                 <Link
                   href={link.href}
                   className={`
-                  text-xl tracking-wide font-primary uppercase group font-medium
+                  xl:text-xl! text-sm! tracking-wide font-primary uppercase group font-medium
                   ${scrolled ? "text-primary" : "text-white"}
                    transition-colors duration-300
                    hover:text-primary/80
@@ -115,7 +116,7 @@ const WebsiteNav = () => {
             uppercase
             ${
               scrolled
-                ? "bg-transparent text-primary border border-primary/50"
+                ? "bg-transparent text-primary border xl:text-base! text-sm! font-primary font-medium border-primary/50"
                 : " text-white border border-white/50"
             }
             `}
