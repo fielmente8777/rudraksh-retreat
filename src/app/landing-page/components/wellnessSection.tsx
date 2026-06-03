@@ -48,9 +48,7 @@ export default function WellnessSection() {
       <div className="relative md:mt-14 mt-4 overflow-hidden ">
         <SwiperCarousel
           data={[
-            wellnessSection.image,
-            wellnessSection.image,
-            wellnessSection.image,
+            ...wellnessSection.images,
           ]}
           slidesPerView={1}
           loop

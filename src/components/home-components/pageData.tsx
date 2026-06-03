@@ -8,7 +8,7 @@ export const homePageData = {
   },
 
   about: {
-    image: "/blogs/yoga-retreat-banner.png",
+    image: "/DJI_2025.webp",
     title: "The Rudraksh A Himalayan Retreat",
     description: [
       `Rudraksh, rooted in the legend of Lord Shiva, whose divine tears are believed to have formed these sacred beads, symbolizes protection, clarity, and spiritual awakening, evoking a deep cosmic connection. At The Rudraksh Retreat, this essence invites guests to embrace peace, reconnect with themselves, & find solace in nature's serene embrace, much like the calming presence of the Himalayas and the sacred Tehri Lake.

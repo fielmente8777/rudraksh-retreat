@@ -8,6 +8,9 @@
   --tertiary: #695B50;
   --background: #F7F3EB;
   --background2: #EBE4D8;
+
+  --font-body: var(--font-inter);
+  --font-primary: var(--font-cormorant);
 }
 
 @theme inline {
@@ -22,7 +25,8 @@
 }
 
 body {
-  font-family: var(--font-body);
+  font-family: var(--font-inter);
+  
 }
 
 .wellness-prev::after,

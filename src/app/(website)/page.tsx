@@ -15,7 +15,7 @@ export default function LandingPage() {
       <VideoBanner {...homePageData.heroSection} />
       <AboutSection {...homePageData.about} />
       <Section
-        className={`relative bg-fixed object-bottom w-full lg:aspect-16/7 aspect-video bg-cover bg-center bg-no-repeat flex items-center justify-center`}
+        className="relative w-full lg:aspect-16/7 aspect-4/2 bg-cover bg-no-repeat bg-bottom lg:bg-center lg:bg-fixed flex items-center justify-center"
         style={{
           backgroundImage: `url(${homePageData.wisdom.image})`,
         }}
