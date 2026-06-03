@@ -15,7 +15,7 @@ export default function LandingPage() {
       <VideoBanner {...homePageData.heroSection} />
       <AboutSection {...homePageData.about} />
       <Section
-        className={`relative bg-fixed w-full lg:aspect-16/7 aspect-video bg-cover bg-center bg-no-repeat flex items-center justify-center`}
+        className={`relative bg-fixed object-bottom w-full lg:aspect-16/7 aspect-video bg-cover bg-center bg-no-repeat flex items-center justify-center`}
         style={{
           backgroundImage: `url(${homePageData.wisdom.image})`,
         }}
@@ -39,7 +39,7 @@ export default function LandingPage() {
       <GettingHereSection {...homePageData.gettingHereSection} />
       <StoriesSection {...homePageData.storiesSection} />
       <Section
-        className={`relative bg-fixed w-full  lg:aspect-16/7 aspect-video bg-cover bg-center bg-no-repeat flex items-center justify-center`}
+        className={`relative bg-fixed w-full  lg:aspect-16/7 aspect-4/4.25 bg-cover bg-center bg-no-repeat flex items-center justify-center`}
         style={{
           backgroundImage: `url(${homePageData.enquirySection.image})`,
         }}
@@ -47,9 +47,9 @@ export default function LandingPage() {
         <div className="absolute inset-0 bg-black/30"></div>
         <Container className="flex lg:max-w-5xl! flex-col items-center gap-4 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
           <div className="">
-            <p className="text-primary uppercase text-center">
+            {/* <p className="text-primary uppercase text-center">
               {homePageData.enquirySection.title}
-            </p>
+            </p> */}
             <SectionHeading
               title={homePageData?.enquirySection?.subtitle}
               textCenter

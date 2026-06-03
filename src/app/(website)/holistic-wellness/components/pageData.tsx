@@ -1,6 +1,6 @@
 export const wellnessPageData = {
   heroSection: {
-    title: "Farm To Table",
+    title: "Holistic Wellness",
     video: "/videos/Holistic-bnr.mp4",
     videoPoster: "/videos/Holistic-bnr.png",
   },

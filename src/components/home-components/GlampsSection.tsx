@@ -66,8 +66,8 @@ const GlampsSection: React.FC<Props> = ({
 
   return (
     <SectionWithContainer sectionClassName="bg-background">
-      <div className="grid grid-cols-1 lg:grid-cols-[1fr_1.4fr] lg:gap-8">
-        <div className="space-y-6">
+      <div className="grid grid-cols-1 lg:grid-cols-[1fr_1.4fr] lg:gap-8 gap-6">
+        <div className="md:space-y-6">
           <SectionHeading title={title} />
 
           <div className="lg:flex hidden flex-col mt-6 gap-2 divide-y divide-[#CACACA] border-y border-[#CACACA]">

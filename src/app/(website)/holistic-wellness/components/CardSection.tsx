@@ -65,10 +65,10 @@ const CardSection: React.FC<CardSectionProps> = ({ cards }) => {
                   {card.list.map((item, index) => (
                     <li
                       key={index}
-                      className="text-lg text-gray-700 flex gap-2"
+                      className="lg:text-lg text-gray-700 flex gap-2"
                     >
                       <span>
-                        <FaStar className="text-yellow-600 text-xl" />
+                        <FaStar className="text-yellow-600 " />
                       </span>{" "}
                       {item}
                     </li>

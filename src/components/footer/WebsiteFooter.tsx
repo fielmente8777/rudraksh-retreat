@@ -1,9 +1,8 @@
-import Link from "next/link";
-import { Container } from "../sectionComponants";
 import Image from "next/image";
-import { websiteFooterData } from "./footerdata";
+import Link from "next/link";
 import LinkButton from "../buttons/LinkButton";
-import CurrentYear from "../CurrentYear";
+import { Container } from "../sectionComponants";
+import { websiteFooterData } from "./footerdata";
 
 const WebsiteFooter = () => {
   return (
@@ -11,8 +10,8 @@ const WebsiteFooter = () => {
       <Container>
         <div className="flex max-md:flex-col gap-6 items-center justify-between py-6 md:py-10 border-b border-primary">
           {/* social media links */}
-          <div className="flex flex-col gap-4 items-start">
-            <p className="text-xl">Follow Us</p>
+          <div className="flex flex-col gap-4 items-start max-md:order-4 max-md:items-center">
+            <p className="text-xl font-semibold max-md:text-center md:block hidden">Follow Us</p>
             <ul className="flex items-center gap-4 max-md:order-2">
               {websiteFooterData.lists[4].links.map((item, index) => (
                 <li key={index}>
@@ -55,10 +54,10 @@ const WebsiteFooter = () => {
             </div>
           </div>
         </div>
-        <div className="grid md:py-12 py-8 grid-cols-1 md:grid-cols-2 lg:grid-cols-[1.1fr_1.1fr_1.1fr_1.4fr] gap-4 md:gap-4">
+        <div className="grid md:py-12 py-8 grid-cols-2 md:grid-cols-2 lg:grid-cols-[1.1fr_1.1fr_1.1fr_1.4fr] gap-6 md:gap-4">
           {websiteFooterData.lists.slice(0, 4).map((list, index) => (
-            <div key={index}>
-              <h2 className="md:text-lg tracking-widest uppercase text-2xl mb-4">
+            <div key={index} className={`${index === 3 ? "max-md:col-span-2" : ""}`}>
+              <h2 className="md:text-2xl text-nowrap tracking-widest uppercase text-xl lg:mb-4 mb-2">
                 {list.title}
               </h2>
               <ul className={`flex flex-col gap-2`}>
@@ -118,11 +117,11 @@ const WebsiteFooter = () => {
         <Container className="py-4">
           <div className="flex max-md:flex-col items-center justify-between gap-2 text-secondary ">
             {" "}
-            <p className="">
+            <p className="max-md:text-center">
               © {new Date().getFullYear()} The Rudraksh Retreat. All rights
               reserved.
             </p>
-            <p className="">
+            <p className="max-md:text-center">
               Powered by{" "}
               <Link href="https://fielmente.com/" target="_blank" rel="noreferrer" className="font-semibold">
                 Fielmente

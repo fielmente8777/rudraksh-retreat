@@ -29,7 +29,7 @@ const StoriesSection: React.FC<StoriesSectionProps> = ({
         {reviews.map((review, index) => (
           <Link
             href={review.href}
-            className="relative max-w-[32.1%] w-full aspect-4/3 lg:aspect-4/3.25 group"
+            className="relative md:max-w-[32.1%] w-full aspect-4/3 lg:aspect-4/3.25 group"
             key={index}
             target="_blank"
             rel="noopener noreferrer"
@@ -46,7 +46,7 @@ const StoriesSection: React.FC<StoriesSectionProps> = ({
               <h3 className="text-white text-2xl lg:text-4xl font-primary font-semibold">
                 {review.title}
               </h3>
-              <div className="max-w-md mx-auto mt-4 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-1000 ease-in-out translate-y-full opacity-0">
+              <div className="max-w-md mx-auto mt-4 active:translate-y-0 active:opacity-100 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-1000 ease-in-out translate-y-full opacity-0">
                 <p className="text-white lg:text-lg">{review.description}</p>
                 <p className="text-white text-2xl mt-2">{review.author}</p>
               </div>
