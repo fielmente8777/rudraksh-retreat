@@ -54,9 +54,9 @@ export const homePageData = {
 
   wisdom: {
     logo: "/home/logo.png",
-    image: "/home/DJI_20240911181.jpg",
+    image: "/home/Gemini.png",
     description: `
-      Set in the valleys that hold ancient wisdom, with the sacred Ganges flowing through them, lies Devbhoomi Uttarakhand, meaning “the abode of gods.”
+      Your retreat begins even before check-in. A serene 300-meter walk through a canopy of Silver Oak and Rhododendron trees leads you to The Rudraksh Retreat, inviting you to slow down, unwind, and connect with the natural beauty that surrounds you.
     `,
   },
 

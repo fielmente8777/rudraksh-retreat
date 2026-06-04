@@ -6,16 +6,21 @@ export const itineraryPageData = {
   },
   about: {
     title: "The Rudraksh Gangotri Pilgrimage",
+    subTitle: "A transformative journey through sacred landscapes",
     description: [
-      "With over 30 years of experience organizing treks in the Himalayas, The Rudraksh Retreat offers you the opportunity to embark on transformative journeys through sacred landscapes. Our Mindful Trekking Retreats are designed to guide you on a path of self-discovery and inner peace, allowing you to connect deeply with nature. Led by local experts, each trek offers moments of reflection and mindfulness, whether you’re walking the ancient paths to Gaumukh, the source of the Ganga, or exploring other stunning trails. These treks are not only physical journeys but also spiritual experiences, harmonizing body, mind, and spirit.",
-      "For customized treks or more information about other trekking options, please contact us. We’re here to curate an experience that suits your needs and desires.",
+      "With over 30 years of experience organizing treks in the Himalayas, The Rudraksh Retreat offers transformative journeys through sacred landscapes. Our Mindful Trekking Retreats guide you on a path of self-discovery and inner peace, connecting you deeply with nature. Led by local experts, each trek offers moments of reflection — whether walking the ancient paths to Gaumukh, the source of the Ganga, or exploring other stunning trails. These are not only physical journeys, but spiritual experiences harmonizing body, mind, and spirit.",
     ],
   },
   wanderer: {
-    title: "चरन्मार्गान्विजानाति <br/> A wanderer (eventually) knows the path",
+    title:
+      "चरन्मार्गान्विजानाति <br/> “A wanderer, eventually, knows the path.”",
     description: [
-      'True wisdom is discovered through exploration, and our Mindful Treks embody this ancient truth: "चरन्मार्गान्विजानाति." As you journey through the serene Himalayan landscape, every step takes you closer to self-discovery and the timeless wisdom of nature. These treks are designed to help you disconnect from the rush of daily life and immerse yourself in the present moment.',
+      "True wisdom is discovered through exploration. As you journey through the serene Himalayan landscape, every step takes you closer to self-discovery and the timeless wisdom of nature.",
     ],
+  },
+  dayByDay: {
+    title: "Day by Day",
+    subTitle: "The Path Unfolds",
   },
   cards: [
     {

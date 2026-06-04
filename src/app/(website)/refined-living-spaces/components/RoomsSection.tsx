@@ -77,12 +77,12 @@ export const CardsComponent: React.FC<RoomsSectionProps["cards"][0]> = ({
         </div>
       </Container>
       {amenities && (
-        <SectionWithContainer sectionClassName="bg-secondary">
-          <div className="flex flex-wrap lg:justify-between justify-center gap-14 w-full">
+        <SectionWithContainer sectionClassName="">
+          <div className="flex flex-wrap justify-center gap-14 w-full max-w-7xl mx-auto">
             {amenities.map((amenity, index) => (
               <div
                 key={index}
-                className="flex flex-col text-white w-50 text-center items-center gap-6"
+                className="flex flex-col text-white w-50 text-center items-center gap-6 bg-secondary px-4 py-6 rounded-2xl"
               >
                 <Image
                   src={amenity.image}
@@ -90,7 +90,7 @@ export const CardsComponent: React.FC<RoomsSectionProps["cards"][0]> = ({
                   width={40}
                   height={40}
                 />
-                <p className="text-lg">{amenity.title}</p>
+                <p className="">{amenity.title}</p>
               </div>
             ))}
           </div>

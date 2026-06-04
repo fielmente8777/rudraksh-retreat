@@ -38,15 +38,20 @@ export const metadata: Metadata = {
   },
 };
 
-
-
 export default function Itinerary() {
   return (
     <main>
       <VideoBanner {...itineraryPageData.heroSection} />
       <SectionWithContainer containerClassName="md:space-y-14 space-y-10">
         <div>
-          <SectionHeading title={itineraryPageData?.about?.title} textCenter />
+          <p className="text-xl text-secondary text-center uppercase mb-4">
+            {itineraryPageData?.about?.title}
+          </p>
+          <SectionHeading
+            title={itineraryPageData?.about?.subTitle}
+            textCenter
+            wrapperClassName="max-w-2xl mx-auto"
+          />
           <div className="text-center max-w-6xl mx-auto space-y-4 mt-6">
             {itineraryPageData?.about?.description?.map((text, index) => (
               <p key={index} className="mb-4 text-lg text-gray-700">

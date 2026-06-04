@@ -35,7 +35,8 @@ export default function LandingPage() {
           backgroundImage: `url(${homePageData.wisdom.image})`,
         }}
       >
-        <Container className="flex lg:max-w-5xl! flex-col items-center gap-8">
+        <div className="absolute inset-0 bg-black/30 "></div>
+        <Container className="flex lg:max-w-5xl! flex-col items-center gap-8 z-20">
           <div className="w-35 relative aspect-square">
             <Image
               src={homePageData.wisdom.logo}

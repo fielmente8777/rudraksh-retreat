@@ -54,10 +54,7 @@ export const RoomsPageData = {
             title: "Wardrobe Facility",
             image: "/rooms/closet.png",
           },
-          {
-            title: "Sustainably sourced coffee and tea-making facility",
-            image: "/rooms/coffee-cup.png",
-          },
+
           {
             title: "Writing Desk",
             image: "/rooms/table.png",
@@ -65,6 +62,10 @@ export const RoomsPageData = {
           {
             title: "Free High-Speed Wifi",
             image: "/rooms/internet.png",
+          },
+          {
+            title: "Sustainably sourced coffee & tea-making facility",
+            image: "/rooms/coffee-cup.png",
           },
         ],
       },
