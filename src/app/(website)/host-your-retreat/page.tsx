@@ -47,7 +47,7 @@ const page = () => {
     <main>
       <ImageBanner {...hostRetretPageData.banner} />
       <HeroSection {...hostRetretPageData.heroSection} />
-      <GallerySection {...hostRetretPageData.gallerySection} />
+      {/* <GallerySection {...hostRetretPageData.gallerySection} /> */}
       <BannerSection {...hostRetretPageData.bannerSection} />
       <CTASection {...hostRetretPageData.ctaSection} />
     </main>

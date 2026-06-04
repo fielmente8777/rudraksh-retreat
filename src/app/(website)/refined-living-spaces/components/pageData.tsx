@@ -3,7 +3,7 @@ import { contact } from "@/utils/constent";
 export const RoomsPageData = {
   heroSection: {
     title: "Refined Living Spaces",
-    image: "/rooms/bnr.jpeg",
+    image: "/rooms/bnr-new.webp",
   },
   aboutUsSection: {
     title:

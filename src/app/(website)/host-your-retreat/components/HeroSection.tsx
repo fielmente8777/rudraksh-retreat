@@ -1,11 +1,23 @@
+import Image from "next/image";
+
 interface HeroSectionProps {
   tag: string;
   symbol: string;
   title: string;
   paragraphs: string[];
+  cards: {
+    paragraphs: string[];
+    image: string;
+  }[];
 }
 
-const HeroSection = ({ tag, symbol, title, paragraphs }: HeroSectionProps) => {
+const HeroSection = ({
+  tag,
+  symbol,
+  title,
+  paragraphs,
+  cards,
+}: HeroSectionProps) => {
   return (
     <section className="py-24">
       <div className="container mx-auto px-4">
@@ -17,13 +29,32 @@ const HeroSection = ({ tag, symbol, title, paragraphs }: HeroSectionProps) => {
           <h1 className="mt-3 text-4xl md:text-5xl font-light text-primary">
             {title}
           </h1>
-
-          <div className="mt-12 space-y-6 text-neutral-700 leading-8">
-            {paragraphs.map((paragraph, index) => (
-              <p key={index}>{paragraph}</p>
-            ))}
-          </div>
         </div>
+        {cards.map((card, index) => (
+          <div
+            key={index}
+            className="grid md:grid-cols-2 grid-cols-1 gap-8 items-center max-w-6xl mx-auto mt-6 md:mt-12"
+          >
+            <div
+              className={`w-full relative aspect-4/4 ${index % 2 !== 0 ? "md:order-2" : ""}`}
+            >
+              <Image
+                src={card.image}
+                alt="card"
+                fill
+                sizes="(max-width: 768px) 100vw, 50vw"
+                className="object-cover rounded-2xl"
+              />
+            </div>
+            <div className="space-y-4">
+              {card.paragraphs.map((paragraph, index) => (
+                <p key={index} className="md:text-xl">
+                  {paragraph}
+                </p>
+              ))}
+            </div>
+          </div>
+        ))}
       </div>
     </section>
   );

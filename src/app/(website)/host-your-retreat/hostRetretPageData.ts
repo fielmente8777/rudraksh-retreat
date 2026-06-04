@@ -12,23 +12,24 @@ export const hostRetretPageData = {
 
       `At Rudraksh Retreat, we offer thoughtfully designed spaces that cater to a variety of retreats, from deep yoga sessions in our fully equipped Yogshala to creative workshops and wellness programs. Our venues are designed to inspire, with modern amenities such as high-speed Wi-Fi, advanced audio systems, and flexible layouts to suit your needs.`,
     ],
-  },
-  cards: [
-    {
-      paragraphs: [
-        `"सह (saha)" embodies the essence of togetherness and we celebrate this profound connection by inviting you to host your retreat amidst the serene embrace of the Himalayas with us.`,
+    cards: [
+      {
+        paragraphs: [
+          `"सह (saha)" embodies the essence of togetherness and we celebrate this profound connection by inviting you to host your retreat amidst the serene embrace of the Himalayas with us.`,
 
-        `At Rudraksh Retreat, we offer thoughtfully designed spaces that cater to a variety of retreats, from deep yoga sessions in our fully equipped Yogshala to creative workshops and wellness programs. Our venues are designed to inspire, with modern amenities such as high-speed Wi-Fi, advanced audio systems, and flexible layouts to suit your needs.`,
-      ],
-      image: "/host-your-retreat/host-img1.jpg",
-    },
-    {
-      paragraphs: [
-        "Our range of comfortable spaces, expert support, and the most peaceful ambiances, allows you to focus on what matters most: providing your guests with a retreat experience they will carry with them long after they leave.",
-      ],
-      image: "/host-your-retreat/host-img2.jpg",
-    },
-  ],
+          `At Rudraksh Retreat, we offer thoughtfully designed spaces that cater to a variety of retreats, from deep yoga sessions in our fully equipped Yogshala to creative workshops and wellness programs. Our venues are designed to inspire, with modern amenities such as high-speed Wi-Fi, advanced audio systems, and flexible layouts to suit your needs.`,
+        ],
+        image: "/host-your-retreat/host-img1.jpg",
+      },
+      {
+        paragraphs: [
+          "Our range of comfortable spaces, expert support, and the most peaceful ambiances, allows you to focus on what matters most: providing your guests with a retreat experience they will carry with them long after they leave.",
+        ],
+        image: "/host-your-retreat/host-img2.jpg",
+      },
+    ],
+  },
+
   gallerySection: {
     images: [
       {
