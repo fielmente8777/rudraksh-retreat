@@ -85,7 +85,7 @@ export const websiteFooterData: WebsiteFooterData = {
   description: "Reserve Himalayan escape!",
   cta: {
     label: "Book stay",
-    href: contact.WhatsappCta,
+    href: contact.bookingLink,
   },
   lists: [
     {

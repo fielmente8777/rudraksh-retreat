@@ -106,17 +106,17 @@ const WebsiteNav = () => {
           </ul>
 
           <LinkButton
-            href={contact.WhatsappCta}
+            href={contact.bookingLink}
             label="Book Stay"
             target="_blank"
             rel="noopener noreferrer"
             className={`
             w-fit rounded-lg
             max-md:hidden
-            uppercase
+            uppercase font-primary
             ${
               scrolled
-                ? "bg-transparent text-primary border xl:text-base! text-sm! font-primary font-medium border-primary/50"
+                ? "bg-transparent text-primary border xl:text-base! text-sm!  font-medium border-primary/50"
                 : " text-white border border-white/50"
             }
             `}

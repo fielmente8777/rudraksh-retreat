@@ -65,7 +65,7 @@ const GlampsSection: React.FC<Props> = ({
   };
 
   return (
-    <SectionWithContainer sectionClassName="bg-background">
+    <SectionWithContainer sectionClassName="bg-image bg-left bg-w-small ">
       <div className="grid grid-cols-1 lg:grid-cols-[1fr_1.4fr] lg:gap-8 gap-6">
         <div className="md:space-y-6">
           <SectionHeading title={title} />
@@ -105,7 +105,7 @@ const GlampsSection: React.FC<Props> = ({
               alt="Image"
               fill
               sizes="(max-width: 768px) 100vw, 50vw"
-              className={`object-cover transition-all duration-500 ease-in-out ${
+              className={`object-cover rounded-2xl transition-all duration-500 ease-in-out ${
                 animateImage ? "scale-110 opacity-0" : "scale-100 opacity-100"
               }`}
             />
@@ -129,7 +129,7 @@ const GlampsSection: React.FC<Props> = ({
                     alt="Image"
                     fill
                     sizes="100vw"
-                    className="object-cover hover:scale-105 transition-transform duration-500"
+                    className="object-cover rounded-2xl"
                   />
                 </div>
 

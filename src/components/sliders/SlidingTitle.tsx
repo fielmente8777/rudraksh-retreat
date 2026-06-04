@@ -5,7 +5,7 @@ export default function SlidingTitle({ items }: { items: string[] }) {
   const titles = [...items, ...items];
 
   return (
-    <div className="relative overflow-hidden py-6 text-tertiary max_screen_width bg-background2/40">
+    <div className="relative border-y border-[#D8D0C4] border-[0.5px] overflow-hidden py-6 text-tertiary max_screen_width bg-background2/40">
       <div className="marquee-wrapper">
         <div className="marquee-track">
           {titles.map((t, i) => (

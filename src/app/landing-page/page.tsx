@@ -15,9 +15,8 @@ export default function HomePage() {
   return (
     <main>
       <HeroSection />
-      <div className="border-y border-[#D8D0C4] border-[0.8px]">
-        <SlidingTitle items={landingPageData.titles} />
-      </div>
+      <SlidingTitle items={landingPageData.titles} />
+
       <SectionWithContainer
         sectionClassName="bg-background"
         containerClassName="md:rounded-2xl md:py-3 py-4 bg-secondary"

@@ -42,7 +42,7 @@ export const RoomsPageData = {
           },
           {
             label: "BOOK YOUR STAY",
-            href: contact.WhatsappCta,
+            href: contact.bookingLink,
           },
         ],
         amenities: [
@@ -95,7 +95,7 @@ export const RoomsPageData = {
           },
           {
             label: "BOOK YOUR STAY",
-            href: contact.WhatsappCta,
+            href: contact.bookingLink,
           },
         ],
         // amenities: [

@@ -1,4 +1,8 @@
-import { Container, Section } from "@/components/sectionComponants";
+import {
+  Container,
+  Section,
+  SectionWithContainer,
+} from "@/components/sectionComponants";
 import Image from "next/image";
 import AboutSection from "@/components/home-components/AboutSection";
 import { homePageData } from "@/components/home-components/pageData";
@@ -8,11 +12,21 @@ import StoriesSection from "@/components/home-components/StoriesSection";
 import GlampsSection from "@/components/home-components/GlampsSection";
 import { SectionHeading } from "@/components/typography";
 import LinkButton from "@/components/buttons/LinkButton";
+import SlidingTitle from "@/components/sliders/SlidingTitle";
+import Form1 from "@/components/forms/Form1";
 
 export default function LandingPage() {
   return (
     <main>
       <VideoBanner {...homePageData.heroSection} />
+      <SlidingTitle items={homePageData.slidingText} />
+      <SectionWithContainer
+        defaultPadding={false}
+        sectionClassName="bg-background pt-12"
+        containerClassName="md:rounded-2xl md:py-3 py-4 bg-secondary"
+      >
+        <Form1 />
+      </SectionWithContainer>
       <AboutSection {...homePageData.about} />
       <Section
         className="relative w-full lg:aspect-16/7 aspect-4/2 bg-cover bg-no-repeat bg-bottom lg:bg-center lg:bg-fixed flex items-center justify-center"

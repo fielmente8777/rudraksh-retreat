@@ -1,8 +1,12 @@
-export const enCodeText = encodeURIComponent(`Namaste 🙏 I would like to check availability and book my stay at The Rudraksh Retreat. Please share the best available rates. Thank you.`);
+export const enCodeText = encodeURIComponent(
+  `Namaste 🙏 I would like to check availability and book my stay at The Rudraksh Retreat. Please share the best available rates. Thank you.`,
+);
 
 export const contact = {
+  bookingLink: "https://bookings.therudrakshretreat.com/?propertyId=8699",
   email: "info@therudrakshretreat.com",
-  mapUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4080.8488123644524!2d78.38940897556856!3d30.42826287473255!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3908e3dceeddc813%3A0x51838aef37cdd930!2sThe%20Rudraksh%2C%20A%20Himalayan%20Retreat!5e1!3m2!1sen!2sin!4v1779205893011!5m2!1sen!2sin",
+  mapUrl:
+    "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4080.8488123644524!2d78.38940897556856!3d30.42826287473255!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3908e3dceeddc813%3A0x51838aef37cdd930!2sThe%20Rudraksh%2C%20A%20Himalayan%20Retreat!5e1!3m2!1sen!2sin!4v1779205893011!5m2!1sen!2sin",
   phone: ["+91 70175 82127"],
   address:
     "The Rudraksh, A Himalayan Retreat Kandikhal, near Agaan Shiv Temple, Selur, Uttarakhand 249130",
@@ -24,8 +28,6 @@ interface data_Type {
   name: string;
   code: string;
 }
-
-
 
 export const countries: data_Type[] = [
   { name: "AFG", code: "+93" },

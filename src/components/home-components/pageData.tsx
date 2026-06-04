@@ -6,13 +6,49 @@ export const homePageData = {
     video: "/videos/heroSection.mp4",
     videoPoster: "/videos/heroSection.png",
   },
-
+  slidingText: [
+    "Himalayan Yoga",
+    "Tehri Lake Panoramas",
+    "Ayurvedic Healing",
+    "Farm-to-Table Sattvic",
+    "Zero-Pollution Stargazing",
+  ],
   about: {
-    image: "/DJI_2025.webp",
-    title: "The Rudraksh A Himalayan Retreat",
+    images: ["/images/story1.jpg", "/images/story2.jpg"],
+    subTitle: "Our STORY",
+    title: "Named after the <i class='text-p22'>divine tears</i> of Shiva.",
+    note: "Discover the Art of Slow Living in the Himalayas",
+    cards: [
+      {
+        title: "Sustainable Soul",
+        description: "Powered by local craftsmanship and zero-waste ideals.",
+      },
+      {
+        title: "Ancient Energy",
+        description:
+          "Near the Agaan Shiv temple, vibrating with ancient prana.",
+      },
+    ],
     description: [
-      `Rudraksh, rooted in the legend of Lord Shiva, whose divine tears are believed to have formed these sacred beads, symbolizes protection, clarity, and spiritual awakening, evoking a deep cosmic connection. At The Rudraksh Retreat, this essence invites guests to embrace peace, reconnect with themselves, & find solace in nature's serene embrace, much like the calming presence of the Himalayas and the sacred Tehri Lake.
-    `,
+      "Perched above Tehri Lake, The Rudraksh is a boutique Himalayan sanctuary for those seeking genuine time in nature, restorative silence, and holistic wellbeing.",
+      "Named after the sacred Rudraksh bead, a timeless symbol of clarity, protection, and inner balance, the retreat embraces a philosophy of mindful living where mountain landscapes, thoughtful hospitality, and moments of stillness come together in harmony.",
+    ],
+    listsText: [
+      "Family Hosted",
+      "Organic Vegetarian & Vegan Meals",
+      "<span class='font-body'>11</span> Rooms",
+      "Holistic Wellness",
+    ],
+    buttons: [
+      {
+        label: "CALL NOW",
+        href: contact.callCta,
+      },
+
+      {
+        label: "Know More About Us",
+        href: "/about-us",
+      },
     ],
   },
 
@@ -214,8 +250,7 @@ export const homePageData = {
   enquirySection: {
     title: "Limited Availability",
     subtitle: "In the Himalayas, doing less often means experiencing more",
-    description:
-      "A place to pause, reconnect, and simply be",
+    description: "A place to pause, reconnect, and simply be",
     image: "/G48095455.png",
     buttons: [
       {
