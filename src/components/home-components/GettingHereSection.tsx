@@ -16,16 +16,15 @@ const GettingHereSection: React.FC<GettingHereSectionProps> = ({
   options,
 }) => {
   return (
-    <SectionWithContainer sectionClassName="">
+    <SectionWithContainer sectionClassName="bg-image bg-left-bottom bg-w-small">
       <div className="md:space-y-14 space-y-10">
-        <SectionHeading
-          title={title}
-          textCenter
-          titleClassName="uppercase"
-        />
-        <div className="flex flex-wrap justify-center lg:justify-between md:gap-10 gap-8">
+        <SectionHeading title={title} textCenter titleClassName="uppercase" />
+        <div className="flex flex-wrap justify-center lg:justify-between gap-8 max-w-5xl mx-auto">
           {options.map((option, index) => (
-            <div key={index} className="flex flex-col items-center gap-4 w-70">
+            <div
+              key={index}
+              className="flex flex-col items-center gap-4 w-70 bg-secondary rounded-2xl lg:rounded-4xl shadow-xl p-6"
+            >
               <div className="w-20 aspect-square relative">
                 <Image
                   src={option.img}
@@ -35,10 +34,12 @@ const GettingHereSection: React.FC<GettingHereSectionProps> = ({
                   className="object-contain"
                 />
               </div>
-              <h3 className="text-secondary text-2xl font-primary font-semibold">
-                {option.title}
-              </h3>
-              <p className="text-light text-center">{option.description}</p>
+              <div className="space-y-3">
+                <h3 className="text-white md:text-4xl text-2xl text-center font-primary font-semibold">
+                  {option.title}
+                </h3>
+                <p className="text-white text-center">{option.description}</p>
+              </div>
             </div>
           ))}
         </div>

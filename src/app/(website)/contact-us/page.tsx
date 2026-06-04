@@ -3,6 +3,8 @@ import ContactSection from "./components/ContactSection";
 import { contactPageData } from "./contactPageData";
 import ImageBanner from "@/components/banners/ImageBanner";
 import { Metadata } from "next";
+import SlidingTitle from "@/components/sliders/SlidingTitle";
+import { homePageData } from "@/components/home-components/pageData";
 
 
 export const metadata: Metadata = {
@@ -44,6 +46,7 @@ const page = () => {
   return (
     <main>
       <ImageBanner {...contactPageData?.heroSection} />
+      <SlidingTitle items={homePageData.slidingText} />
       <ContactSection contactInfo={contactPageData?.contactInfo} />
     </main>
   );

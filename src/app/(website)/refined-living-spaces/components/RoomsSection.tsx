@@ -5,6 +5,7 @@ import {
   SectionWithContainer,
 } from "@/components/sectionComponants";
 import ImageSlider2 from "@/components/sliders/ImageSlider2";
+import SlidingTitle from "@/components/sliders/SlidingTitle";
 import { SectionHeading } from "@/components/typography";
 import Image from "next/image";
 
@@ -53,6 +54,7 @@ export const CardsComponent: React.FC<RoomsSectionProps["cards"][0]> = ({
         <SectionHeading title={title} textCenter />
       </Container>
       <ImageSlider2 images={images} title={title} />
+      <SlidingTitle items={slidingText} />
       <Container className="flex flex-col gap-2 text-center max-w-6xl!">
         {description.map((text, index) => (
           <p key={index} className=" md:text-lg ">

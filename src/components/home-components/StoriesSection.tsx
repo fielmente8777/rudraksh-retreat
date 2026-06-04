@@ -1,7 +1,12 @@
+"use client";
 import { SectionWithContainer } from "@/components/sectionComponants";
 import SectionHeading from "@/components/typography/SectionHeading";
 import Image from "next/image";
-import Link from "next/link";
+import LinkButton from "../buttons/LinkButton";
+import { LazyLoadedVideo } from "../Video";
+import ReviewsSlider from "./slider/ReviewsSlider";
+import { useWebContext } from "@/context-api/WebContext";
+import { MdKeyboardArrowLeft, MdKeyboardArrowRight } from "react-icons/md";
 
 interface StoriesSectionProps {
   title: string;
@@ -22,47 +27,55 @@ const StoriesSection: React.FC<StoriesSectionProps> = ({
   reviews,
   button,
 }) => {
+  const { current, total } = useWebContext();
+
   return (
     <SectionWithContainer containerClassName="md:space-y-14 space-y-10">
-      <SectionHeading title={title} textCenter titleClassName="uppercase" />
-      <div className="flex flex-wrap justify-center  gap-6 w-full">
-        {reviews.map((review, index) => (
-          <Link
-            href={review.href}
-            className="relative md:max-w-[32.1%] w-full aspect-4/3 lg:aspect-4/3.25 group"
-            key={index}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+      <div className="grid lg:grid-cols-2 grid-cols-1 gap-8 items-center">
+        <div className="w-full aspect-square relative rounded-2xl overflow-hidden">
+          <LazyLoadedVideo
+            src="/home/Property-Video.mp4"
+            poster="/home/Property-Video.png"
+            loop
+            muted
+            autoPlay
+            controls={false}
+          />
+        </div>
+        <div className="flex flex-col  gap-8">
+          <div className="relative w-[215px] aspect-4/1">
             <Image
-              src={review.image}
-              alt={review.author}
+              src="/home/tripadvisor2.png"
+              alt="Rudraksh Logo"
               fill
-              sizes="(max-width: 768px) 100vw, 50vw"
-              className="object-cover"
+              sizes="215px"
+              className="object-contain"
             />
-            <div className="absolute inset-0 bg-linear-to-t from-black/45 via-black/35 to-black/30" />
-            <div className="absolute inset-0 p-4 flex flex-col justify-center text-center">
-              <h3 className="text-white text-2xl lg:text-4xl font-primary font-semibold">
-                {review.title}
-              </h3>
-              <div className="max-w-md mx-auto mt-4 active:translate-y-0 active:opacity-100 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-1000 ease-in-out translate-y-full opacity-0">
-                <p className="text-white lg:text-lg">{review.description}</p>
-                <p className="text-white text-2xl mt-2">{review.author}</p>
-              </div>
-            </div>
-          </Link>
-        ))}
-      </div>
-
-      <div className="mx-auto mt-10 w-56 relative aspect-[4/2.6]">
-        <Image
-          src="/home/tripadvisor.png"
-          alt="Tripadvisor Logo"
-          fill
-          sizes="224px"
-          className="object-cover"
-        />
+          </div>
+          <SectionHeading title={title} titleClassName="uppercase" />
+          <ReviewsSlider cards={reviews} />
+          <div className="flex items-center gap-4">
+            <button className="text-secondary border flex items-center justify-center gap-2 testimonials-prev w-8 aspect-square text-2xl active:scale-95 pointer-events-auto">
+              <span className="sr-only">Previous</span>
+              <MdKeyboardArrowLeft />
+            </button>
+            <span className="text-secondary">
+              0{current} - 0{total}
+            </span>
+            <button className="text-secondary border flex items-center justify-center gap-2 testimonials-next w-8 aspect-square text-2xl active:scale-95 pointer-events-auto">
+              <span className="sr-only">Next</span>
+              <MdKeyboardArrowRight />
+            </button>
+          </div>
+          <LinkButton
+            label={button.label}
+            href={button.link}
+            target="_blank"
+            arrowIcon={false}
+            rel="noopener noreferrer"
+            className="mt-6 text-primary border-primary hover:bg-primary/10 hover:text-primary  duration-300 rounded-sm uppercase tracking-widest"
+          />
+        </div>
       </div>
     </SectionWithContainer>
   );

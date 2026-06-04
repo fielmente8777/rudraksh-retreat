@@ -76,7 +76,7 @@ export default function RootLayout({
         />
       </head>
       <body
-        className={` ${inter.variable} ${cormorant.variable} h-full antialiased`}
+        className={` ${inter.variable} ${cormorant.variable} h-full antialiased `}
         style={{ scrollBehavior: "smooth" }}
         suppressHydrationWarning={true}
       >

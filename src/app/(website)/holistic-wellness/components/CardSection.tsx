@@ -36,7 +36,7 @@ const CardSection: React.FC<CardSectionProps> = ({ cards }) => {
                   src={card.image}
                   alt="card"
                   fill
-                  className="object-cover"
+                  className="object-cover rounded-2xl"
                 />
               </div>
             )}
@@ -75,12 +75,12 @@ const CardSection: React.FC<CardSectionProps> = ({ cards }) => {
                   ))}
                 </ul>
                 {card.image && card.list && (
-                  <div className="w-full relative aspect-4/3">
+                  <div className="w-full relative aspect-4/2.75">
                     <Image
                       src={card.image}
                       alt="card"
                       fill
-                      className="object-cover"
+                      className="object-cover rounded-2xl object-bottom-[50%]"
                     />
                   </div>
                 )}

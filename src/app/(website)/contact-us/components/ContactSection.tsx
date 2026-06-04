@@ -32,7 +32,7 @@ const ContactSection = ({ contactInfo }: ContactSectionProps) => {
 
   const enquiryForm = {
     subtitle: "ENQUIRE NOW",
-    title: "Let's Plan your Stay at The Rudraksh",
+    title: "Let's Plan your Stay at <i class='text-p22'>The Rudraksh</i>",
     buttonText: "GET A CALL BACK ",
     fields: [
       {
@@ -75,12 +75,12 @@ const ContactSection = ({ contactInfo }: ContactSectionProps) => {
 
   return (
     <Section className="bg-primary/30">
-      <Container >
+      <Container>
         <div className="grid lg:grid-cols-2 grid-cols-1 gap-10 items-start">
           {/* Left Side */}
           <div>
-            <h2 className="text-3xl mb-8">
-              Contact <span className="text-[#C68642]">Details!</span>
+            <h2 className="text-3xl mb-8 font-primary">
+              Contact <i className="text-p22">Details!</i>
             </h2>
 
             <div className="space-y-6 text-lg">
@@ -88,7 +88,9 @@ const ContactSection = ({ contactInfo }: ContactSectionProps) => {
                 <span>
                   <MapPin size={20} className="mt-1" />
                 </span>
-                <Link href={contact.addressLink} className="text-wrap">{contactInfo.address}</Link>
+                <Link href={contact.addressLink} className="text-wrap">
+                  {contactInfo.address}
+                </Link>
               </div>
 
               <div className="flex items-center gap-2">
@@ -113,11 +115,14 @@ const ContactSection = ({ contactInfo }: ContactSectionProps) => {
 
           {/* Right Side */}
           <div className="border border-primary/40 bg-primary/10 rounded-2xl lg:p-8 p-4 max-w-xl w-full ml-auto">
-            <p className="uppercase tracking-[3px] text-[#C68642] text-sm">
-              {enquiryForm.subtitle}
+            <p className="uppercase tracking-[3px] text-[#C68642] flex items-center gap-2">
+             <span className="w-8 h-px inline-block bg-[#C68642]"></span> {enquiryForm.subtitle}
             </p>
 
-            <h3 className="text-3xl mt-2 mb-8">{enquiryForm.title}</h3>
+            <h3
+              className="text-3xl mt-2 mb-8 font-primary"
+              dangerouslySetInnerHTML={{ __html: enquiryForm.title }}
+            ></h3>
 
             <form className="space-y-4" onSubmit={handleSubmit}>
               {/* Name Field */}

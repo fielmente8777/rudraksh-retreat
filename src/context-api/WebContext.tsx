@@ -1,11 +1,19 @@
 "use client";
 import { createContext, useContext, useState } from "react";
 interface WebContextType {
+  current: number;
+  total: number;
+  setCurrent: (current: number) => void;
+  setTotal: (total: number) => void;
   isOpenNavBar: boolean;
   setIsOpenNavBar: (open: boolean) => void;
 }
 
 const WebContext = createContext<WebContextType>({
+  current: 1,
+  total: 0,
+  setCurrent: () => {},
+  setTotal: () => {},
   isOpenNavBar: false,
   setIsOpenNavBar: () => {},
 });
@@ -15,8 +23,20 @@ interface WebProviderProps {
 }
 export const WebProvider = ({ children }: WebProviderProps) => {
   const [isOpenNavBar, setIsOpenNavBar] = useState(false);
+  const [total, setTotal] = useState(0);
+  const [current, setCurrent] = useState(1);
+
   return (
-    <WebContext.Provider value={{ isOpenNavBar, setIsOpenNavBar }}>
+    <WebContext.Provider
+      value={{
+        isOpenNavBar,
+        setIsOpenNavBar,
+        total,
+        setTotal,
+        current,
+        setCurrent,
+      }}
+    >
       {children}
     </WebContext.Provider>
   );

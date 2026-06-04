@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 interface CTASectionProps {
   description: string;
 
@@ -14,7 +16,7 @@ const CTASection = ({ description, button }: CTASectionProps) => {
         <div className="max-w-4xl mx-auto text-center">
           <p className="leading-8 text-neutral-700">{description}</p>
 
-          <a
+          <Link
             href={button.href}
             className="
               inline-flex
@@ -30,7 +32,7 @@ const CTASection = ({ description, button }: CTASectionProps) => {
             "
           >
             {button.label}
-          </a>
+          </Link>
         </div>
       </div>
     </section>

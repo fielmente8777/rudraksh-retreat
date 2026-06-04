@@ -14,6 +14,7 @@ import { SectionHeading } from "@/components/typography";
 import LinkButton from "@/components/buttons/LinkButton";
 import SlidingTitle from "@/components/sliders/SlidingTitle";
 import Form1 from "@/components/forms/Form1";
+import ExperienceSection from "@/components/home-components/ExperienceSection";
 
 export default function LandingPage() {
   return (
@@ -51,6 +52,7 @@ export default function LandingPage() {
       </Section>
       <GlampsSection {...homePageData.beginYourJourney} />
       <GettingHereSection {...homePageData.gettingHereSection} />
+      <ExperienceSection {...homePageData.experienceSection} />
       <StoriesSection {...homePageData.storiesSection} />
       <Section
         className={`relative bg-fixed w-full  lg:aspect-16/7 aspect-4/4.25 bg-cover bg-center bg-no-repeat flex items-center justify-center`}

@@ -93,7 +93,7 @@ export const homePageData = {
       {
         id: "03",
         title: "Mindful Trekking Retreats",
-        image: "/home/lftrgt-img3.jpg",
+        image: "/home/lftrgt-im.jpg",
         href: "/experiences/",
         description: [
           "Pause, and reconnect with the natural world at The Rudraksh.",
@@ -146,9 +146,26 @@ export const homePageData = {
       },
     ],
   },
+  experienceSection: {
+    title: "Experiences ",
+    items: [
+      {
+        title: "Mindfull trekking retreats",
+        image: "/blogs/service2-prlx.jpg",
+      },
 
+      {
+        title: "Ayurvedic cooking classes",
+        image: "/blogs/WhatsApp-Image-2025-05-13-at-2.03.56-PM-scaled.jpeg",
+      },
+      {
+        title: "Sustainability and local support",
+        image: "/blogs/1-e1747165008992.png",
+      },
+    ],
+  },
   storiesSection: {
-    title: "Stories Of Satisfaction",
+    title: "Stories Of <i class='text-primary'>Satisfaction</i>",
     reviews: [
       {
         title: "An incredible experience!",

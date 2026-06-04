@@ -116,6 +116,22 @@
   }
 }
 
+.bg-left-bottom {
+  &::before {
+    left: -185px;
+    bottom: -25%;
+    transform: translateY(-25%);
+  }
+}
+
+.bg-right-bottom {
+  &::before {
+    right: -185px;
+    bottom: -25%;
+    transform: translateY(-25%);
+  }
+}
+
 .bg-right {
   &::before {
     right: -50px;

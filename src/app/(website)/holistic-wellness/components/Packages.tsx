@@ -1,5 +1,6 @@
 import LinkButton from "@/components/buttons/LinkButton";
 import { SectionWithContainer } from "@/components/sectionComponants";
+import { contact } from "@/utils/constent";
 import Link from "next/link";
 
 interface Props {
@@ -27,7 +28,7 @@ const Packages: React.FC<Props> = ({ packages }) => {
         </div>
       </SectionWithContainer>
       <div className="py-16 flex items-center justify-center">
-        <LinkButton label="Begin Your Journey" href="/contact-us" className="rounded-md bg-primary text-white justify-center gap-2 lg:text-2xl" arrowIcon={false} />
+        <LinkButton label="Begin Your Journey" href={contact.bookingLink} target="_blank" className="rounded-md bg-primary text-white justify-center gap-2 lg:text-2xl" arrowIcon={false} />
       </div>
     </section>
   );

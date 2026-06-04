@@ -22,24 +22,33 @@ const ExperiencesSection = ({ items }: ExperiencesSectionProps) => {
   return (
     <Section>
       <Container>
-        <div className="space-y-24">
+        <div className="md:space-y-24 space-y-12">
           {items.map((item, index) => {
             const reverse = index % 2 !== 0;
 
             return (
               <div
                 key={index}
-                className={`grid md:grid-cols-2 gap-10 items-center ${
-                  reverse ? "md:[&>*:first-child]:order-2" : ""
+                className={`grid lg:grid-cols-2 gap-10 items-center ${
+                  reverse ? "lg:[&>*:first-child]:order-2 lg:[&>*:first-child]:text-right " : ""
                 }`}
+                id={item.title.toLowerCase().replace(/\s+/g, "-")}
               >
                 {/* Content */}
                 <div className="space-y-4">
                   <h2 className="text-secondary uppercase md:text-4xl text-2xl font-primary">
                     {item.title}
                   </h2>
-
-                  <p className="text-lg font-light max-w-70">{item.subtitle}</p>
+                  <div className="w-full relative aspect-4/3 lg:hidden">
+                    <Image
+                      src={item.image}
+                      alt={item.title}
+                      fill
+                      sizes="(max-width: 768px) 100vw, 50vw"
+                      className="w-full h-auto rounded-2xl object-cover"
+                    />
+                  </div>
+                  <p className="text-lg font-light">{item.subtitle}</p>
 
                   {item.quote && (
                     <blockquote className="italic text-gray-600 mb-4">
@@ -57,20 +66,20 @@ const ExperiencesSection = ({ items }: ExperiencesSectionProps) => {
                     <LinkButton
                       label={item.cta.label}
                       href={item.cta.href}
-                      className="bg-primary text-white capitalize font-primary"
+                      className={`bg-primary text-white capitalize font-primary ${reverse ? "lg:ml-auto" : ""}`}
                       arrowIcon={false}
                     />
                   </div>
                 </div>
 
                 {/* Image */}
-                <div>
+                <div className="w-full relative aspect-4/3 lg:block hidden">
                   <Image
                     src={item.image}
                     alt={item.title}
-                    width={700}
-                    height={500}
-                    className="w-full h-auto object-cover"
+                    fill
+                    sizes="(max-width: 768px) 100vw, 50vw"
+                    className="w-full h-auto rounded-2xl object-cover"
                   />
                 </div>
               </div>

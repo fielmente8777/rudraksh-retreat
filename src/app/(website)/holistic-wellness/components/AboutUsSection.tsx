@@ -26,7 +26,7 @@ const AboutUsSection: React.FC<AboutUsSectionProps> = ({ title, cards }) => {
                 alt="card"
                 fill
                 sizes="(max-width: 768px) 100vw, 50vw"
-                className="object-cover"
+                className="object-cover rounded-2xl"
               />
             </div>
             <p className="md:text-xl">{card.description}</p>
