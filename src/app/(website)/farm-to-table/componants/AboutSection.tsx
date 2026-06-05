@@ -14,14 +14,13 @@ const AboutSection: React.FC<AboutSectionProps> = ({
   images,
 }) => {
   return (
-    <SectionWithContainer containerClassName="md:space-y-14 space-y-10">
+    <SectionWithContainer containerClassName="md:space-y-14 space-y-10" sectionClassName="bg-image bg-left-bottom bg-w-small">
       <div className="flex flex-col items-center justify-center gap-4">
         {description.slice(2).map((desc, index) => (
-          <p key={index} className="md:text-2xl text-xl text-primary">
-            {desc}
-          </p>
+          <p key={index} className="md:text-4xl font-semibold text-3xl text-center text-secondary" dangerouslySetInnerHTML={{__html: desc}}/>
+           
         ))}
-        <div className="grid md:grid-cols-2 grid-cols-1 gap-8">
+        <div className="grid grid-cols-2 gap-8">
           {images.slice(2, 4).map((image, index) => (
             <div key={index} className="w-24 relative aspect-4/4">
               <Image
@@ -45,7 +44,7 @@ const AboutSection: React.FC<AboutSectionProps> = ({
             className="w-full h-full object-cover rounded-2xl"
           />
         </div>
-        <div className="text-center flex flex-col gap-4">
+        <div className="text-center flex flex-col gap-4 lg:gap-10">
           <SectionHeading
             title={title}
             textCenter

@@ -44,7 +44,7 @@ export default function AboutUsPage() {
   return (
     <main>
       <ImageBanner {...aboutUsPageData?.heroSection} />
-      <SectionWithContainer>
+      <SectionWithContainer sectionClassName="bg-image bg-left bg-w-small">
         <SectionHeading
           title={aboutUsPageData?.aboutUsSection?.title}
           textCenter

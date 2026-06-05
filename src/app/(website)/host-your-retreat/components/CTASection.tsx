@@ -14,7 +14,7 @@ const CTASection = ({ description, button }: CTASectionProps) => {
     <section className="py-24">
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto text-center">
-          <p className="leading-8 text-neutral-700">{description}</p>
+          <p className="leading-8 md:text-xl text-primary">{description}</p>
 
           <Link
             href={button.href}
@@ -29,6 +29,7 @@ const CTASection = ({ description, button }: CTASectionProps) => {
               transition
               hover:bg-primary
               hover:text-white
+              rounded-xl
             "
           >
             {button.label}

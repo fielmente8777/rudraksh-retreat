@@ -14,7 +14,7 @@ export default function SlidingTitle2({ items }: { items: string[] }) {
               className="marquee-item font-primary text-xl"
             >
               <span dangerouslySetInnerHTML={{ __html: t }}></span>
-              <span className="separator w-4 bg-primary aspect-square rounded-full"></span>
+              <span className="separator w-2 bg-primary aspect-square rounded-full"></span>
             </span>
           ))}
         </div>

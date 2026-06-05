@@ -20,7 +20,7 @@ const ImageSlider2: React.FC<
     (title && title.split(" ")[1].replace(/[^\\n\\w\\s-]/g, "")) + "prev" ||
     "button-prev";
   return (
-    <div className="w-full aspect-[4/1.37] relative">
+    <div className="w-full aspect-[4/1.37] relative max-md:px-4">
       <SwiperCarousel
         data={images}
         slidesPerView={1}
@@ -47,7 +47,7 @@ const ImageSlider2: React.FC<
         }}
         renderSlide={(image, index) => (
           <div
-            className={`w-full relative rounded-3xl transition-all duration-300 ease-in-out overflow-hidden ${index === activeIndex ? "md:aspect-4/2.5 aspect-square" : "md:aspect-[4/2.15] aspect-square md:mt-8"}`}
+            className={`w-full relative lg:rounded-3xl rounded-2xl transition-all duration-300 ease-in-out overflow-hidden ${index === activeIndex ? "md:aspect-4/2.5 aspect-square" : "md:aspect-[4/2.15] aspect-square md:mt-8"}`}
           >
             <Image
               src={image}
@@ -61,12 +61,12 @@ const ImageSlider2: React.FC<
       />
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-10 max-w-228 w-full flex items-center justify-between">
         <button
-          className={`w-12 aspect-square rounded-full bg-background flex items-center justify-center rotate-180 ${buttonPrevClassName}`}
+          className={`w-12 box-shadow aspect-square rounded-full bg-background flex items-center justify-center rotate-180 ${buttonPrevClassName}`}
         >
           <ButtonNext />
         </button>
         <button
-          className={`w-12 aspect-square rounded-full bg-background flex items-center justify-center ${buttonNextClassName}`}
+          className={`w-12 box-shadow aspect-square rounded-full bg-background flex items-center justify-center ${buttonNextClassName}`}
         >
           <ButtonNext />
         </button>

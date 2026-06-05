@@ -88,8 +88,22 @@ const AboutSection: React.FC<AboutSectionProps> = ({
               ))}
             </ul>
           </div>
-          <div className="lg:hidden block">
+          <div className="lg:hidden block space-y-6">
             <SlidingTitle2 items={listsText} />
+            {images.map((image, index) => (
+              <div
+                key={index}
+                className={`w-full aspect-4/4.5 relative ${index === 0 ? "" : "lg:mt-8"}`}
+              >
+                <Image
+                  src={image}
+                  alt="Image"
+                  fill
+                  className="object-cover rounded-2xl"
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                />
+              </div>
+            ))}
           </div>
         </div>
         <div>
@@ -107,7 +121,7 @@ const AboutSection: React.FC<AboutSectionProps> = ({
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-8 mt-8">
             {cards.map((card, index) => (
               <div key={index}>
-                <h3 className="italic text-2xl font-primary text-[#23180F]">
+                <h3 className="italic text-2xl font-primary text-secondary">
                   {card.title}
                 </h3>
                 <p className="text-tertiary mt-2">{card.description}</p>
@@ -116,13 +130,13 @@ const AboutSection: React.FC<AboutSectionProps> = ({
             {images.map((image, index) => (
               <div
                 key={index}
-                className={`w-full aspect-4/4.5 relative ${index === 0 ? "" : "lg:mt-8"}`}
+                className={`w-full aspect-4/4.5 lg:block hidden relative ${index === 0 ? "" : "lg:mt-8"}`}
               >
                 <Image
                   src={image}
                   alt="Image"
                   fill
-                  className="object-cover"
+                  className="object-cover rounded-2xl"
                   sizes="(max-width: 768px) 100vw, 50vw"
                 />
               </div>

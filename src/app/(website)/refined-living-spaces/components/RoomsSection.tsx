@@ -28,7 +28,7 @@ export interface RoomsSectionProps {
 }
 const RoomsSection = ({ cards }: RoomsSectionProps) => {
   return (
-    <Section className="bg-background md:space-y-20 space-y-14">
+    <Section className=" md:space-y-20 space-y-14 bg-image bg-right bg-w-small bg-color">
       {cards.map((card, index) => (
         <CardsComponent key={index} {...card} />
       ))}
@@ -48,7 +48,7 @@ export const CardsComponent: React.FC<RoomsSectionProps["cards"][0]> = ({
   amenities,
 }) => {
   return (
-    <div className="md:space-y-14 space-y-10">
+    <div className="md:space-y-14 space-y-10 ">
       <Container className="text-center space-y-6">
         <p className="text-lg text-primary text-center">{subtitle}</p>
         <SectionHeading title={title} textCenter />
@@ -78,7 +78,7 @@ export const CardsComponent: React.FC<RoomsSectionProps["cards"][0]> = ({
       </Container>
       {amenities && (
         <SectionWithContainer sectionClassName="">
-          <div className="flex flex-wrap justify-center gap-14 w-full max-w-7xl mx-auto">
+          <div className="flex flex-wrap justify-center lg:gap-14 gap-8 w-full max-w-7xl mx-auto">
             {amenities.map((amenity, index) => (
               <div
                 key={index}
@@ -87,10 +87,10 @@ export const CardsComponent: React.FC<RoomsSectionProps["cards"][0]> = ({
                 <Image
                   src={amenity.image}
                   alt={amenity.title}
-                  width={40}
-                  height={40}
+                  width={48}
+                  height={48}
                 />
-                <p className="">{amenity.title}</p>
+                <p className="lg:text-xl">{amenity.title}</p>
               </div>
             ))}
           </div>

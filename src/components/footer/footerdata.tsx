@@ -89,7 +89,7 @@ export const websiteFooterData: WebsiteFooterData = {
   },
   lists: [
     {
-      title: "QUICK LINKS",
+      title: "Quick Links",
       links: [
         { label: "Home", href: "/" },
         { label: "About us", href: "/about-us" },
@@ -99,7 +99,7 @@ export const websiteFooterData: WebsiteFooterData = {
       ],
     },
     {
-      title: "EXPLORE",
+      title: "Explore",
       links: [
         { label: "Wellness", href: "/holistic-wellness" },
         { label: "Dining", href: "/farm-to-table" },

@@ -98,7 +98,7 @@ const Form1 = ({ gridView }: Props) => {
   return (
     <form
       onSubmit={handleSubmit}
-      className={`${gridView ? "flex flex-col divide-y divide-p1" : "grid md:grid-cols-5 items-center gap-3.5 "} font-body px-4 bg-transparent  max-md:divide-y divide-p1`}
+      className={`${gridView ? "flex flex-col divide-y divide-p1" : "grid md:grid-cols-5 items-center gap-3.5 "} lg:px-6 bg-transparent  max-md:divide-y divide-white/30`}
     >
       {formFields.map((field, index) => (
         <React.Fragment key={index}>
@@ -134,7 +134,7 @@ const Form1 = ({ gridView }: Props) => {
               <label className="text-secondary">{field.icon}</label>
               <div className="relative">
                 <select
-                  className="ps-2 cursor-pointer border-p1 appearance-none w-full placeholder:text-white focus:outline-none text-white"
+                  className="ps-2 cursor-pointer font-body border-p1 hide-scroll appearance-none w-full placeholder:text-white focus:outline-none text-white"
                   name="countryCode"
                   value={formData.countryCode}
                   onChange={(e) => setFieldValue("countryCode", e.target.value)}
@@ -142,12 +142,12 @@ const Form1 = ({ gridView }: Props) => {
                   aria-label="Country Code"
                 >
                   {countries.map((country, index) => (
-                    <option key={index} value={country.code} className="">
+                    <option key={index} value={country.code} className="bg-secondary">
                       {country.code}
                     </option>
                   ))}
                 </select>
-                <span className="absolute right-0 top-1/2 -translate-y-1/2 pointer-events-none">
+                <span className="absolute right-0 top-1/2 -translate-y-1/2 pointer-events-none text-white">
                   <FromDropDown />
                 </span>
               </div>
@@ -185,7 +185,7 @@ const Form1 = ({ gridView }: Props) => {
       ))}
       <button
         type="submit"
-        className="bg-p1 bg-primary rounded-sm text-white text-lg py-3"
+        className="bg-p1 bg-primary rounded-xl text-white text-lg lg:py-3 py-2"
       >
         {isSubmitting ? (
           "Submitting..."

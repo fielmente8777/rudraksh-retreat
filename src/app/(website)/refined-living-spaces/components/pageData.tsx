@@ -2,12 +2,12 @@ import { contact } from "@/utils/constent";
 
 export const RoomsPageData = {
   heroSection: {
-    title: "Refined Living Spaces",
+    title: "Refined Living <i>Spaces</i>",
     image: "/rooms/bnr-new.webp",
   },
   aboutUsSection: {
     title:
-      "सर्वं खल्विदं ब्रह्म <br/>“Consciousness is all there is. All is One, One is All!”",
+      `<span class='text-primary'>सर्वं खल्विदं ब्रह्म </span><br/> <i class='text-p22 mr-2'>“Consciousness</i> is all there is. All is One, One is All!”`,
     description: [
       "‘Sarvam Khalu Idam Brahma’, is the belief that all existence is interconnected and divine. At Rudraksh Retreat, every corner resonates with this profound wisdom, where our 8 crafted villas are thoughtfully designed to immerse you in the serenity of nature. Here, you are not just a guest but part of the retreat's living spirit, where the calmness of nature and the warmth of our spaces inspire a deeper connection with your inner self.",
       "Our two exclusive stays are Angan and Machan, where our rooms are named after Uttarakhand's sacred blooms: Buransh, Shiuli, Fyonli, and Tesu, embracing a minimalist, nature-inspired elegance that reflects the natural beauty of the region.",
@@ -51,20 +51,20 @@ export const RoomsPageData = {
             image: "/rooms/toiletries.png",
           },
           {
-            title: "Wardrobe Facility",
+            title: "Wardrobe facility",
             image: "/rooms/closet.png",
           },
 
           {
-            title: "Writing Desk",
+            title: "Writing desk",
             image: "/rooms/table.png",
           },
           {
-            title: "Free High-Speed Wifi",
+            title: "Free high-speed wifi",
             image: "/rooms/internet.png",
           },
           {
-            title: "Sustainably sourced coffee & tea-making facility",
+            title: "Coffee & tea-making facility",
             image: "/rooms/coffee-cup.png",
           },
         ],

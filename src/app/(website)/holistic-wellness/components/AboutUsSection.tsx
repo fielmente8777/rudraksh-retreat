@@ -12,7 +12,7 @@ interface AboutUsSectionProps {
 
 const AboutUsSection: React.FC<AboutUsSectionProps> = ({ title, cards }) => {
   return (
-    <SectionWithContainer>
+    <SectionWithContainer sectionClassName="bg-image bg-left bg-w-small">
       <SectionHeading title={title} textCenter />
       <div className="space-y-10 mt-6 md:mt-12">
         {cards.map((card, index) => (

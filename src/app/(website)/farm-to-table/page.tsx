@@ -49,7 +49,7 @@ export default function FarmToTable() {
     <main>
       <VideoBanner {...FarmToTablePageData.heroSection} />
       <AboutSection {...FarmToTablePageData.aboutSection} />
-      <SectionWithContainer>
+      <SectionWithContainer >
         <SectionHeading title={FarmToTablePageData?.dine?.title} textCenter />
         <div className="space-y-4 mt-8 text-center max-w-6xl mx-auto">
           {FarmToTablePageData?.dine?.description?.map((text, index) => (

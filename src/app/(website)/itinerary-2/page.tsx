@@ -44,7 +44,7 @@ export default function Itinerary() {
       <VideoBanner {...itineraryPageData.heroSection} />
       <SectionWithContainer containerClassName="md:space-y-14 space-y-10">
         <div>
-          <p className="text-xl text-secondary text-center uppercase mb-4">
+          <p className="text-xl text-primary text-center uppercase mb-4">
             {itineraryPageData?.about?.title}
           </p>
           <SectionHeading

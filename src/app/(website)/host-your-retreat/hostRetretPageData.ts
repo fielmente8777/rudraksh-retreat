@@ -1,12 +1,12 @@
 export const hostRetretPageData = {
   banner: {
-    title: "Host Your Own Retreat",
+    title: "Host Your Own <i>Retreat</i>",
     image: "/host-your-retreat/host-your-retreat.png",
   },
   heroSection: {
     tag: "Book Now",
     symbol: `"सह"`,
-    title: "The Joy of Togetherness",
+    title: "The Joy of <i class='text-p22'>Togetherness</i>",
     paragraphs: [
       `"सह (saha)" embodies the essence of togetherness and we celebrate this profound connection by inviting you to host your retreat amidst the serene embrace of the Himalayas with us.`,
 
@@ -50,11 +50,11 @@ export const hostRetretPageData = {
   },
   ctaSection: {
     description:
-      "Whether you're guiding a yoga session, leading a musical workshop, or curating a wellness program, if you can imagine it, we will make it happen.",
+      `"Whether you're guiding a yoga session, leading a musical workshop, or curating a wellness program, if you can imagine it, we will make it happen."`,
 
     button: {
       label: "Host Your Retreat",
-      href: "#contact",
+      href: "/contact-us",
     },
   },
 };

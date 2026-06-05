@@ -67,7 +67,7 @@ const GlampsSection: React.FC<Props> = ({
   return (
     <SectionWithContainer sectionClassName="bg-image bg-right-bottom bg-w-small bg-color">
       <div className="grid grid-cols-1 lg:grid-cols-[1fr_1.4fr] lg:gap-8 gap-6">
-        <div className="md:space-y-6">
+        <div className="md:space-y-6 space-y-4">
           <SectionHeading title={title} />
 
           <div className="lg:flex hidden flex-col mt-6 gap-2 divide-y divide-[#CACACA] border-y border-[#CACACA]">
@@ -136,7 +136,7 @@ const GlampsSection: React.FC<Props> = ({
                 {acc.description.map((desc, index) => (
                   <p key={index}>{desc}</p>
                 ))}
-                <Link href={acc.href} className="w-fit">
+                <Link href={acc.href} className="w-fit border-b border-primary">
                   View Details
                 </Link>
               </div>

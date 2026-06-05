@@ -16,14 +16,15 @@ interface CardSectionProps {
 
 const CardSection: React.FC<CardSectionProps> = ({ cards }) => {
   return (
-    <SectionWithContainer containerClassName="md:space-y-20 space-y-10">
+    <SectionWithContainer containerClassName="md:space-y-20 space-y-10" sectionClassName=" bg-image bg-left bg-w-small ">
       {cards.map((card, index) => (
         <div className="md:space-y-8 space-y-4" key={index}>
-          <SectionHeading title={card.title} />
+          {card.image && card.list && <SectionHeading title={card.title} />}
           <div
             className={`${card.image && !card.list ? "grid md:grid-cols-2 grid-cols-1 gap-4 items-center" : ""}`}
           >
             <div className="space-y-4">
+              {card.image && !card.list && <SectionHeading title={card.title} />}
               {card.description?.map((text, index) => (
                 <p key={index} className="mb-4 text-lg text-gray-700">
                   {text}
@@ -43,7 +44,7 @@ const CardSection: React.FC<CardSectionProps> = ({ cards }) => {
           </div>
           <div className="space-y-4">
             {card.subtitle && (
-              <h2 className="text-2xl font-semibold font-primary text-secondary">
+              <h2 className="text-2xl font-semibold font-primary text-primary">
                 {card.subtitle}
               </h2>
             )}
@@ -53,7 +54,7 @@ const CardSection: React.FC<CardSectionProps> = ({ cards }) => {
               </p>
             ))}
             {card.listTitle && (
-              <p className="text-xl font-semibold font-primary text-secondary">
+              <p className="text-xl font-semibold font-primary text-primary">
                 {card.listTitle}
               </p>
             )}
@@ -61,7 +62,7 @@ const CardSection: React.FC<CardSectionProps> = ({ cards }) => {
               <div
                 className={`w-full ${card.image ? "grid md:grid-cols-2 grid-cols-1 gap-4" : ""}`}
               >
-                <ul className="space-y-4 ps-4">
+                <ul className="space-y-4">
                   {card.list.map((item, index) => (
                     <li
                       key={index}

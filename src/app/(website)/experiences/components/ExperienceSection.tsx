@@ -36,9 +36,8 @@ const ExperiencesSection = ({ items }: ExperiencesSectionProps) => {
               >
                 {/* Content */}
                 <div className="space-y-4">
-                  <h2 className="text-secondary uppercase md:text-4xl text-2xl font-primary">
-                    {item.title}
-                  </h2>
+                  <h2 className="text-secondary md:text-4xl text-2xl font-primary" dangerouslySetInnerHTML={{__html:item.title}}/>
+                    
                   <div className="w-full relative aspect-4/3 lg:hidden">
                     <Image
                       src={item.image}
@@ -48,7 +47,7 @@ const ExperiencesSection = ({ items }: ExperiencesSectionProps) => {
                       className="w-full h-auto rounded-2xl object-cover"
                     />
                   </div>
-                  <p className="text-lg font-light">{item.subtitle}</p>
+                  <p className="text-lg text-primary">{item.subtitle}</p>
 
                   {item.quote && (
                     <blockquote className="italic text-gray-600 mb-4">
@@ -59,7 +58,7 @@ const ExperiencesSection = ({ items }: ExperiencesSectionProps) => {
                   <div className="space-y-4">
                     {item.description &&
                       item.description.map((item, index) => (
-                        <p key={index} className="text-gray-600">
+                        <p key={index} className="text-gray-600 lg:text-lg">
                           {item}
                         </p>
                       ))}

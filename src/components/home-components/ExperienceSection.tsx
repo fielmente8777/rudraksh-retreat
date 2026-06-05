@@ -29,7 +29,7 @@ const ExperienceSection: React.FC<ExperienceSectionProps> = ({
                 className="object-cover rounded-2xl"
               />
             </div>
-            <p className="text-secondary text-2xl font-primary capitalize text-center">{item.title}</p>
+            <p className="text-secondary text-xl font-medium font-primary capitalize text-center">{item.title}</p>
           </div>
         ))}
       </div>

@@ -18,7 +18,7 @@ const GettingHereSection: React.FC<GettingHereSectionProps> = ({
   return (
     <SectionWithContainer sectionClassName="bg-image bg-left-bottom bg-w-small">
       <div className="md:space-y-14 space-y-10">
-        <SectionHeading title={title} textCenter titleClassName="uppercase" />
+        <SectionHeading title={title} textCenter titleClassName="capitalize" />
         <div className="flex flex-wrap justify-center lg:justify-between gap-8 max-w-5xl mx-auto">
           {options.map((option, index) => (
             <div
@@ -35,7 +35,7 @@ const GettingHereSection: React.FC<GettingHereSectionProps> = ({
                 />
               </div>
               <div className="space-y-3">
-                <h3 className="text-white md:text-4xl text-2xl text-center font-primary font-semibold">
+                <h3 className="text-white md:text-[28px] text-2xl text-center font-primary">
                   {option.title}
                 </h3>
                 <p className="text-white text-center">{option.description}</p>

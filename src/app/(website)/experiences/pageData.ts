@@ -1,6 +1,6 @@
 export const experiencePageData = {
   heroSection: {
-    title: "A JOURNEY AWAITS",
+    title: "A Journey <i>Awaits</i>",
     video: "/videos/view.mp4",
     videoPoster: "/videos/view.png",
   },
@@ -16,12 +16,13 @@ export const experiencePageData = {
   experiencesSection: {
     items: [
       {
-        title: "Mindfull trekking retreats",
+        title: "Mindfull Trekking <i class='text-p22'>Retreats</i>",
         subtitle: `गच्छन्ति ते मूढा गंगामूलं तपःसाधना।
          सुखं शान्तिं च मोक्षं च प्राप्यते तद्गतिः शुभा॥
         `,
         description: [
-          `"Those who journey to the sacred source of the Ganga in pursuit of spiritual practice attain peace, joy, and liberation through its auspicious path." Follow in the footsteps of ancient sages who traversed the sacred Gaumukh Tapovan trail to the source o the Ganga, seeking enlightenment and connection with the divine. These mindful treks immerse you in th spiritual essence of the Himalayas, blending adventure with reflection. Each step through these hallowe landscapes nurtures harmony of body, mind, and spirit, offering a journey of transformation an self-discovery."`,
+          '"Those who journey to the sacred source of the Ganga in pursuit of spiritual practice attain peace, joy, and liberation through its auspicious path." ',
+          `Follow in the footsteps of ancient sages who traversed the sacred Gaumukh Tapovan trail to the source o the Ganga, seeking enlightenment and connection with the divine. These mindful treks immerse you in th spiritual essence of the Himalayas, blending adventure with reflection. Each step through these hallowe landscapes nurtures harmony of body, mind, and spirit, offering a journey of transformation an self-discovery."`,
         ],
         image: "/blogs/service2-prlx.jpg",
         cta:{
@@ -31,7 +32,7 @@ export const experiencePageData = {
       },
 
       {
-        title: "Ayurvedic cooking classes",
+        title: "Ayurvedic Cooking <i class='text-p22'>Classes</i>",
         subtitle: "अन्नं विष्णुं प्रजापतिं।",
         description: [
           `"Food is the medicine of life and the foundation of well-being."`,
@@ -45,7 +46,7 @@ export const experiencePageData = {
       },
 
       {
-        title: "Sustainability and local support",
+        title: "Sustainability And Local <i class='text-p22'>Support</i>",
         subtitle: `दीनं दुःखितं लोकं य: सहायं प्राप्नुयात्।
 सदा सुखमणि पश्येत्, तस्य कार्यं सदा शुभम्।`,
         description: [

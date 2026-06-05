@@ -20,9 +20,10 @@ const ImageBanner: React.FC<ImageBannerProps> = ({ title, image }) => {
       />
       <div className="absolute inset-0 bg-black/50 z-20 flex items-center justify-center">
         <Container>
-          <h1 className="text-white text-4xl font-semibold font-primary uppercase text-center">
-            {title}
-          </h1>
+          <h1
+            className="text-white text-4xl font-semibold font-primary text-center"
+            dangerouslySetInnerHTML={{ __html: title }}
+          />
         </Container>
       </div>
     </Section>

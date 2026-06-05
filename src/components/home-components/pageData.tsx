@@ -2,7 +2,7 @@ import { contact } from "@/utils/constent";
 
 export const homePageData = {
   heroSection: {
-    title: "A JOURNEY AWAITS",
+    title: "A Journey <i>Awaits</i>",
     video: "/videos/heroSection.mp4",
     videoPoster: "/videos/heroSection.png",
   },
@@ -61,7 +61,7 @@ export const homePageData = {
   },
 
   beginYourJourney: {
-    title: "Escape into Stillness",
+    title: "Escape into <i class='text-p22'>Stillness</i>",
     button: {
       label: "Begin Your Journey",
       link: "/",
@@ -117,11 +117,11 @@ export const homePageData = {
   },
 
   gettingHereSection: {
-    title: "Getting here",
+    title: "Getting <i class='text-p22'>here</i>",
 
     options: [
       {
-        title: "By Road",
+        title: "Road",
         img: "/home/car-icon.png",
         description: `
           3 hours drive from Rishikesh
@@ -130,7 +130,7 @@ export const homePageData = {
       },
 
       {
-        title: "By Train",
+        title: "Train",
         img: "/home/train-icon.png",
         description: `
           4 hours drive from Haridwar & Dehradun Railway Station.
@@ -138,7 +138,7 @@ export const homePageData = {
       },
 
       {
-        title: "By Air",
+        title: "Air",
         img: "/home/plane-icon.png",
         description: `
           3 hours drive from Dehradun Airport.
@@ -147,7 +147,7 @@ export const homePageData = {
     ],
   },
   experienceSection: {
-    title: "Experiences ",
+    title: "Explore Our <i class='text-p22'>Experiences</i>",
     items: [
       {
         title: "Mindfull trekking retreats",
@@ -266,12 +266,12 @@ export const homePageData = {
 
   enquirySection: {
     title: "Limited Availability",
-    subtitle: "In the Himalayas, doing less often means experiencing more",
+    subtitle: "In the <i>Himalayas</i>, doing less often means experiencing <i>more!</i>",
     description: "A place to pause, reconnect, and simply be",
     image: "/G48095455.png",
     buttons: [
       {
-        label: "Check Availability via Whatsapp",
+        label: "Check Availability",
         href: contact.WhatsappCta,
       },
 

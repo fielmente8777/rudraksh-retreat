@@ -101,7 +101,7 @@ const ContactSection = ({ contactInfo }: ContactSectionProps) => {
                 </Link>
               </div>
 
-              <div className="flex items-center gap-2">
+              <div className="flex items-center gap-2 font-body">
                 <Phone size={20} className="" />
 
                 <Link href={contactInfo.phone}>+91 8826652343</Link>
@@ -114,9 +114,9 @@ const ContactSection = ({ contactInfo }: ContactSectionProps) => {
           </div>
 
           {/* Right Side */}
-          <div className="border border-primary/40 bg-primary/10 rounded-2xl lg:p-8 p-4 max-w-xl w-full ml-auto">
+          <div className="border border-primary/40 bg-primary/10 rounded-2xl lg:p-6 p-4 max-w-xl w-full ml-auto">
             <p className="uppercase tracking-[3px] text-[#C68642] flex items-center gap-2">
-             <span className="w-8 h-px inline-block bg-[#C68642]"></span> {enquiryForm.subtitle}
+             {enquiryForm.subtitle}
             </p>
 
             <h3
@@ -124,7 +124,7 @@ const ContactSection = ({ contactInfo }: ContactSectionProps) => {
               dangerouslySetInnerHTML={{ __html: enquiryForm.title }}
             ></h3>
 
-            <form className="space-y-4" onSubmit={handleSubmit}>
+            <form className="space-y-3" onSubmit={handleSubmit}>
               {/* Name Field */}
               <div>
                 <input
@@ -145,7 +145,7 @@ const ContactSection = ({ contactInfo }: ContactSectionProps) => {
                 <div className="flex gap-2">
                   <div className="relative w-[110px]">
                     <select
-                      className="w-full rounded-md border border-gray-300 bg-white px-3 py-3 outline-none appearance-none cursor-pointer pr-8"
+                      className="w-full rounded-md font-body border border-gray-300 bg-white px-3 py-3 outline-none appearance-none cursor-pointer pr-8"
                       name="countryCode"
                       value={formData.countryCode}
                       onChange={(e) =>

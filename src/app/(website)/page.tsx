@@ -23,33 +23,38 @@ export default function LandingPage() {
       <SlidingTitle items={homePageData.slidingText} />
       <SectionWithContainer
         defaultPadding={false}
-        sectionClassName="bg-background pt-12"
-        containerClassName="md:rounded-2xl md:py-3 py-4 bg-secondary"
+        sectionClassName="bg-background lg:pt-12"
+        containerClassName="md:rounded-2xl  md:py-3 pt-4 "
       >
-        <Form1 />
+        <div className="bg-secondary rounded-2xl p-4">
+          <Form1 />
+        </div>
       </SectionWithContainer>
+
       <AboutSection {...homePageData.about} />
-      <Section
-        className="relative w-full lg:aspect-16/7 aspect-4/2 bg-cover bg-no-repeat bg-bottom lg:bg-center lg:bg-fixed flex items-center justify-center"
-        style={{
-          backgroundImage: `url(${homePageData.wisdom.image})`,
-        }}
-      >
-        <div className="absolute inset-0 bg-black/30 "></div>
-        <Container className="flex lg:max-w-5xl! flex-col items-center gap-8 z-20">
-          <div className="w-35 relative aspect-square">
-            <Image
-              src={homePageData.wisdom.logo}
-              alt="Rudraksh Logo"
-              fill
-              sizes="140px"
-              className="object-contain"
-            />
-          </div>
-          <p className="text-white text-center lg:text-2xl  text-lg">
-            {homePageData.wisdom.description}
-          </p>
-        </Container>
+      <Section className="bg-background "  defaultPadding={false}>
+        <Section
+          className="relative w-full lg:aspect-16/7 aspect-4/2 bg-cover bg-no-repeat bg-bottom lg:bg-center lg:bg-fixed flex items-center justify-center"
+          style={{
+            backgroundImage: `url(${homePageData.wisdom.image})`,
+          }}
+        >
+          <div className="absolute inset-0 bg-black/30 "></div>
+          <Container className="flex lg:max-w-5xl! flex-col items-center gap-8 z-20">
+            <div className="w-35 relative aspect-square">
+              <Image
+                src={homePageData.wisdom.logo}
+                alt="Rudraksh Logo"
+                fill
+                sizes="140px"
+                className="object-contain"
+              />
+            </div>
+            <p className="text-white text-center lg:text-2xl  text-lg">
+              {homePageData.wisdom.description}
+            </p>
+          </Container>
+        </Section>
       </Section>
       <GlampsSection {...homePageData.beginYourJourney} />
       <GettingHereSection {...homePageData.gettingHereSection} />
@@ -73,10 +78,10 @@ export default function LandingPage() {
               titleColor="white"
             />
           </div>
-          <p className="text-white text-center lg:max-w-xl!">
+          <p className="text-white text-center lg:text-xl lg:max-w-xl!">
             {homePageData.enquirySection.description}
           </p>
-          <div className="flex flex-col gap-2 max-w-sm w-full">
+          <div className="flex flex-col gap-4 max-w-sm w-full">
             {homePageData.enquirySection.buttons.map((button, index) => (
               <LinkButton
                 key={index}
@@ -84,7 +89,8 @@ export default function LandingPage() {
                 target="_blank"
                 rel="noopener noreferrer"
                 arrowIcon={false}
-                className={`rounded-sm justify-center w-full uppercase tracking-widest max-md:text-sm ${index === 0 ? "text-white bg-primary border-primary" : "text-primary bg-transparent border border-primary"}`}
+                whatsAppIcon2={index === 0}
+                className={`rounded-sm justify-center w-full uppercase tracking-widest max-md:text-sm! ${index === 0 ? "text-white bg-primary border-primary" : "text-primary bg-transparent border border-primary"}`}
               />
             ))}
           </div>

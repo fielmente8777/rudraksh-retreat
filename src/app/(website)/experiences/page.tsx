@@ -51,10 +51,14 @@ const page = () => {
       <IntroSection {...experiencePageData?.introSection} />
       <BannerSection {...experiencePageData?.bannerSection} />
       <ExperiencesSection {...experiencePageData?.experiencesSection} />
-      <SectionWithContainer
-        containerClassName="md:rounded-2xl md:py-3 py-4 bg-secondary"
+       <SectionWithContainer
+        defaultPadding={false}
+        sectionClassName="bg-background lg:py-12 py-6"
+        containerClassName="md:py-3"
       >
-        <Form1 />
+        <div className="bg-secondary rounded-2xl p-4">
+          <Form1 />
+        </div>
       </SectionWithContainer>
     </main>
   );

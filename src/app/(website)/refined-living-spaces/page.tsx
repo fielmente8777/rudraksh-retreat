@@ -42,7 +42,7 @@ export default function RefinedLivingSpaces() {
   return (
     <main>
       <ImageBanner {...RoomsPageData?.heroSection} />
-      <SectionWithContainer>
+      <SectionWithContainer sectionClassName="bg-image bg-left bg-w-small">
         <SectionHeading
           title={RoomsPageData?.aboutUsSection?.title}
           textCenter

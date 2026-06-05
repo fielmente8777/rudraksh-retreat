@@ -22,13 +22,12 @@ const HeroSection = ({
     <section className="py-24">
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto text-center">
-          <p className="text-xs uppercase tracking-[3px] text-primary">{tag}</p>
+          {/* <p className="text-xs uppercase tracking-[3px] text-primary">{tag}</p> */}
 
-          <p className="mt-4 text-primary text-xl">{symbol}</p>
+          <p className="mt-4 text-primary lg:text-4xl text-xl">{symbol}</p>
 
-          <h1 className="mt-3 text-4xl md:text-5xl font-light text-primary">
-            {title}
-          </h1>
+          <h1 className="mt-3 text-4xl md:text-5xl font-medium text-secondary" dangerouslySetInnerHTML={{ __html: title }}/>
+           
         </div>
         {cards.map((card, index) => (
           <div

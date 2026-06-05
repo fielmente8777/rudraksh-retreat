@@ -1,18 +1,23 @@
 import Navbar from "@/components/navbar/navbar";
 import { WebProvider } from "@/context-api/WebContext";
-import { Cormorant_Garamond, Inter } from "next/font/google";
+import { Inter, Raleway } from "next/font/google";
+import Image from "next/image";
 import Script from "next/script";
 import "./globals.css";
 import "./style.scss";
-import Image from "next/image";
 
 const inter = Inter({
   variable: "--font-inter",
   subsets: ["latin"],
 });
 
-const cormorant = Cormorant_Garamond({
-  variable: "--font-cormorant",
+// const cormorant = Cormorant_Garamond({
+//   variable: "--font-cormorant",
+//   subsets: ["latin"],
+// });
+
+const raleway = Raleway({
+  variable: "--font-raleway",
   subsets: ["latin"],
 });
 
@@ -76,7 +81,7 @@ export default function RootLayout({
         />
       </head>
       <body
-        className={` ${inter.variable} ${cormorant.variable} h-full antialiased `}
+        className={` ${inter.variable} ${raleway.variable} h-full antialiased `}
         style={{ scrollBehavior: "smooth" }}
         suppressHydrationWarning={true}
       >

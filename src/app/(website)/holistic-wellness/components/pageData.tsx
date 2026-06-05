@@ -1,11 +1,11 @@
 export const wellnessPageData = {
   heroSection: {
-    title: "Holistic Wellness",
+    title: "Holistic <i>Wellness</i>",
     video: "/videos/Holistic-bnr.mp4",
     videoPoster: "/videos/Holistic-bnr.png",
   },
   AboutUsSection: {
-    title: "समत्वं योग उच्यते <br/> Evenness of Mind is known as Yoga.",
+    title: "<span class='text-primary'>समत्वं योग उच्यते</span> <br/> Evenness of Mind is known as <i class='text-p22'>Yoga.</i>",
     cards: [
       {
         description:
@@ -22,7 +22,7 @@ export const wellnessPageData = {
   cards: [
     {
       image: "/blogs/host-img2.jpg",
-      title: "Serene Spa Treatments",
+      title: "Serene Spa <i class='text-p22'>Treatments</i>",
       subtitle: "THE RUDRAKSH WELLNESS PLAN",
       description: [
         "Let your mind and body relax with our calming spa therapies. Each treatment is designed to release tension, rejuvenate your skin, and promote overall well-being. Surrounded by nature, these spa treatments help you reconnect with yourself in a deeply soothing environment, restoring balance to your body.",
@@ -43,7 +43,7 @@ export const wellnessPageData = {
       ],
     },
     {
-      title: "Sacred Detox & Cleansing Retreat",
+      title: "Sacred Detox & Cleansing <i class='text-p22'>Retreat</i>",
       description: [
         "Our yoga sessions, inspired by ancient principles of balance and harmony, offer a deeply enriching experience whether held in our spacious yoga room with serene mountain views or outdoors amidst nature.",
         "The Rudraksh Yogshala is equipped with essentials, including yoga mats, blocks, bolsters, Iyengar chairs, and blankets. For a unique therapeutic touch, we also provide Tibetan bowls, tongue drums, and tabla sets for sound healing therapy.",
@@ -51,7 +51,7 @@ export const wellnessPageData = {
       ],
     },
     {
-      title: "THE RUDRAKSH YOGA EXPERIENCES",
+      title: "The Rudraksh Yoga <i class='text-p22'>Experience</i>",
       description: [
         "Harmonize your mind, body, and spirit through the timeless wisdom of yoga and Ayurveda with our rejuvenating Yogic Detox. This retreat enhances self-awareness, inner harmony, and mental clarity, while boosting physical energy and managing stress. You'll leave feeling deeply connected to nature, with a radiant inner and outer glow, and an overall sense of well-being.",
       ],
@@ -59,7 +59,7 @@ export const wellnessPageData = {
     },
     {
       image: "/blogs/DSC07562-scaled.jpg",
-      title: "Ayurveda Panchakarma (7 or 10 Nights)",
+      title: "Ayurveda <i class='text-p22'>Panchakarma</i> (7 or 10 Nights)",
       subtitle: "Benefits:",
       description: [
         "A sacred cleansing ritual that purifies the body and restores the spirit, Panchakarma follows a specific protocol with a defined minimum duration. This program offers a transformative escape, blending the wisdom of Ayurveda with modern wellness practices for deep detoxification and rejuvenation.",
@@ -95,7 +95,7 @@ export const wellnessPageData = {
     },
   ],
   natureWalks: {
-    title: "Nature Walks & Himalayan Trails!",
+    title: "Nature <i class='text-p22'>Walks</i> & <i class='text-p22'>Himalayan</i> Trails!",
     image: "/wellness/sami.jpg",
     description: [
       "Let the Himalayan landscape soothe your mind with peaceful nature walks. Just 15 minutes from The Rudraksh Retreat, discover the enchanting lord Shiva’s temple ‘Agaan’, set in a meadow with breathtaking sunrise and sunset.",

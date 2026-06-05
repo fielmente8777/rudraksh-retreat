@@ -1,5 +1,4 @@
-import { Container, Section, SectionWithContainer } from "@/components/sectionComponants";
-import React from "react";
+import { Section, SectionWithContainer } from "@/components/sectionComponants";
 
 interface IntroSectionProps {
   title: string;
@@ -17,8 +16,8 @@ const IntroSection = ({ title, subTitle, description }: IntroSectionProps) => {
       </div>
       <SectionWithContainer>
         <div className="space-y-6">
-          <h2 className="md:text-3xl text-center text-primary">{subTitle}</h2>
-          <p className="text-center text-xl/loose">{description}</p>
+          <h2 className="md:text-3xl text-xl text-center text-primary">{subTitle}</h2>
+          <p className="text-center lg:text-lg text-gray-600">{description}</p>
         </div>
       </SectionWithContainer>
     </Section>

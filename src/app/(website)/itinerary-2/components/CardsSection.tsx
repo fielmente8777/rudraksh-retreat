@@ -33,7 +33,7 @@ const CardsSection: React.FC<CardsSectionProps> = ({ cards }) => {
             <CardsComponent {...card} />
           </div>
         ))}
-        <div className="absolute h-full bg-primary w-2 rounded-2xl z-10 top-0 left-8 lg:left-1/2 lg:-translate-x-1/2"></div>
+        <div className="absolute h-full bg-primary w-1 rounded-2xl z-10 top-0 left-4.5 lg:left-1/2 lg:-translate-x-1/2"></div>
       </div>
     </SectionWithContainer>
   );
@@ -49,7 +49,7 @@ export const CardsComponent = ({
 }: CardsSectionProps["cards"][0]) => {
   return (
     <div className="lg:w-1/2 flex flex-col lg:items-center items-end">
-      <div className="relative space-y-4 lg:w-[80%] w-[75%] bg-white border-x-[0.2px] border-y-3 shadow-lg border-primary rounded-2xl md:p-8 p-4">
+      <div className="relative space-y-4 lg:w-[80%] w-[75%] bg-[#fffcf6] border-x-[0.2px] border-y-3 shadow-lg border-p22 rounded-2xl md:p-8 p-4">
         <p
           className={`text-lg text-p22 max-md:text-center ${day % 2 !== 0 ? "lg:text-right" : ""}`}
         >
@@ -70,11 +70,11 @@ export const CardsComponent = ({
         >
           {description}
         </p>
-        <div
+        {/* <div
           className={`w-10 h-10 absolute top-12 bg-primary rotate-45 -z-10 ${
             day % 2 !== 0 ? "lg:-right-5 max-lg:-left-5" : "-left-5"
           }`}
-        />
+        /> */}
       </div>
       <div className="absolute top-10 -left-2 lg:left-1/2 lg:-translate-x-1/2 z-20 bg-white w-14 aspect-square rounded-full border-4 border-primary flex items-center justify-center">
         <i className="text-primary font-semibold">0{day}</i>

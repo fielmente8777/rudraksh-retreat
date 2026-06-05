@@ -13,7 +13,7 @@ export const itineraryPageData = {
   },
   wanderer: {
     title:
-      "चरन्मार्गान्विजानाति <br/> “A wanderer, eventually, knows the path.”",
+      "<span class='text-primary'>चरन्मार्गान्विजानाति</span> <br/> “A wanderer, eventually, knows the path.”",
     description: [
       "True wisdom is discovered through exploration. As you journey through the serene Himalayan landscape, every step takes you closer to self-discovery and the timeless wisdom of nature.",
     ],

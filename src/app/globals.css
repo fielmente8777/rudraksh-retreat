@@ -21,11 +21,11 @@
   --color-background2: #EBE4D8;
   --color-p22: #A55A37;
   --font-body: var(--font-inter);
-  --font-primary: var(--font-cormorant);
+  /* --font-primary: var(--font-cormorant); */
 }
 
 body {
-  font-family: var(--font-inter);
+  font-family: var(--font-raleway);
   
 }
 
