@@ -12,7 +12,7 @@ export const FarmToTablePageData = {
       "Vegan and Gluten Free Meals <i class='text-p22'>Available</i>",
     ],
     images: [
-      "/farm-to-table/IMG_1328-1.png",
+      "/farm-to-table/Organic-Farming-Collage.png",
       "/farm-to-table/IMG_1334.png",
       "/farm-to-table/leaf-icon.png",
       "/farm-to-table/gluten-icon.png",
@@ -23,6 +23,7 @@ export const FarmToTablePageData = {
     description: [
       "Our dining hall, with its expansive views of the majestic mountains, is the perfect setting to enjoy these wholesome meals. Guests can also request customized diet plans, tailored to suit individual preferences and needs. Whether you're savoring a warm, hearty meal or indulging in light, saatvik cuisine, the serene environment enhances your experience—where healthy eating meets the tranquility of nature.",
     ],
+    image: "/farm-to-table/IMG_1328-1.png",
   },
   enquirySection: {
     description:

@@ -80,6 +80,7 @@ export const RoomsPageData = {
           "/rooms/machan/machan1.jpg",
           "/rooms/machan/machan2.jpg",
           "/rooms/machan/machan3.jpg",
+          "/rooms/caption.jpeg",
           "/rooms/machan/machan4.jpg",
         ],
         slidingText: [

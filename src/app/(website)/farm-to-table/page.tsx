@@ -8,6 +8,7 @@ import {
 } from "@/components/sectionComponants";
 import { SectionHeading } from "@/components/typography";
 import { Metadata } from "next";
+import Image from "next/image";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://therudrakshretreat.com"),
@@ -42,21 +43,42 @@ export const metadata: Metadata = {
   },
 };
 
-
-
 export default function FarmToTable() {
   return (
     <main>
       <VideoBanner {...FarmToTablePageData.heroSection} />
       <AboutSection {...FarmToTablePageData.aboutSection} />
-      <SectionWithContainer >
-        <SectionHeading title={FarmToTablePageData?.dine?.title} textCenter />
-        <div className="space-y-4 mt-8 text-center max-w-6xl mx-auto">
-          {FarmToTablePageData?.dine?.description?.map((text, index) => (
-            <p key={index} className="mb-4 text-lg text-gray-700">
-              {text}
-            </p>
-          ))}
+      <SectionWithContainer
+        sectionClassName="bg-image bg-right bg-w-small"
+        containerClassName="grid lg:grid-cols-2 grid-cols-1 gap-8 items-center"
+      >
+        <div className="w-full relative aspect-4/3 lg:block hidden">
+          <Image
+            src={FarmToTablePageData?.dine?.image}
+            alt="Image"
+            fill
+            sizes="(max-width: 768px) 100vw, 50vw"
+            className="object-cover rounded-2xl"
+          />
+        </div>
+        <div className="space-y-4">
+          <SectionHeading title={FarmToTablePageData?.dine?.title} />
+          <div className="w-full relative aspect-4/3 lg:hidden">
+            <Image
+              src={FarmToTablePageData?.dine?.image}
+              alt="Image"
+              fill
+              sizes="(max-width: 768px) 100vw, 50vw"
+              className="object-cover rounded-2xl"
+            />
+          </div>
+          <div className="space-y-4 mt-8 max-w-6xl mx-auto">
+            {FarmToTablePageData?.dine?.description?.map((text, index) => (
+              <p key={index} className="mb-4 text-lg text-gray-700">
+                {text}
+              </p>
+            ))}
+          </div>
         </div>
       </SectionWithContainer>
       <Section
