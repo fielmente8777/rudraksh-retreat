@@ -83,7 +83,7 @@ export const homePageData = {
         image: "/home/lftrgt-img2.jpg",
         href: "/holistic-wellness/",
         description: [
-          "Sat-cit-ānanda / lfPpnkuUn",
+          "Sat-cit-ānanda / सच्चिदानन्द",
           "sat (सत्): Being, Existence",
           "cit (चित्): Consciousness or Spirit",
           "ānanda (आनन्द): Happiness, Joy, Bliss",
