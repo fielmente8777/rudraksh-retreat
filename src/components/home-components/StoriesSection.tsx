@@ -32,13 +32,13 @@ const StoriesSection: React.FC<StoriesSectionProps> = ({
   const activeReview = reviews[(current || 1) - 1] ?? reviews[0];
 
   const reviewImage = (
-  <Image
-    src={activeReview.image}
-    alt={activeReview.title}
-    fill
-    className="object-cover transition-all duration-500"
-  />
-);
+    <Image
+      src={activeReview.image}
+      alt={activeReview.title}
+      fill
+      className="object-cover transition-all duration-500"
+    />
+  );
 
   return (
     <SectionWithContainer containerClassName="md:space-y-14 space-y-10">
@@ -52,7 +52,7 @@ const StoriesSection: React.FC<StoriesSectionProps> = ({
             autoPlay
             controls={false}
           /> */}
-           {reviewImage}
+          {reviewImage}
         </div>
         <div className="flex flex-col  gap-8">
           <div className="relative w-[215px] aspect-4/1">
@@ -66,7 +66,7 @@ const StoriesSection: React.FC<StoriesSectionProps> = ({
           </div>
           <SectionHeading title={title} titleClassName="uppercase" />
           <div className="lg:hidden w-full aspect-square relative rounded-2xl overflow-hidden">
-             {reviewImage}
+            {reviewImage}
           </div>
           <ReviewsSlider cards={reviews} />
           <div className="flex items-center gap-4">
