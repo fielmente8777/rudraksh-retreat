@@ -168,49 +168,72 @@ export const homePageData = {
     title: "Stories Of <i class='text-primary'>Satisfaction</i>",
     reviews: [
       {
-        title: "An incredible experience!",
+                 title: "Heaven on earth.",
         description: `
-          The hotel itself is already wonderful, but the warmth and care from Mahesh and his family made us feel truly welcomed.
+          Rudraksh is a place that can only be described one way. Magic.
+
+This place has all the amenities one can imagine, but what makes it so good are its owners. Mahesh, Roopali and Shubhang make you feel at home and like one of their family.
+
+The food is simply spectacular. Fresh, organic and delicious.
+
+The rooms are very comfortable and have an amazing mountain view.
+
+I recommend this place for those who want to know a piece of heaven on earth.
+        `,
+        
+//         title: "El cielo en la tierra.",
+//         description: `
+//           Rudraksh es un lugar que solo se puede describir de una manera. Mágico. 
+
+// Este lugar tiene todas las comodidades que uno se pueda imaginar, pero lo que lo hace tan bueno son su dueños. Mahesh, Roopali y Shubhang te hacen sentir como en casa y como uno más de su familia.
+
+// La comida es simplemente espectacular. Fresca, orgánica y deliciosa. 
+
+// Las habitaciones son muy cómodas y tienen una vista a las montañas increíble. 
+
+// Recomiendo este lugar para aquellas personas que quieran conocer un pedazo de cielo en la tierra.
+
+        href: "https://www.tripadvisor.in/Hotel_Review-g25181975-d25136174-Reviews-The_Rudraksh_A_Himalayan_Retreat-Selur_Tehri_Garhwal_District_Uttarakhand.html",
+        author: "Luis Felipe F",
+        image: "/home/review1.jpg",
+      },
+      {
+        title: "Deep in the Himalayas: A Remote and Authentic Retreat",
+        description: `
+         Experience the Himalayas in their purest form. This secluded sanctuary provides a genuine mountain escape, complete with stunning lake vistas, organic meals, and a dedicated staff. The quiet, clean atmosphere and remote location create an unforgettable, immersive experience.
+        `,
+        href: "https://www.tripadvisor.in/Hotel_Review-g25181975-d25136174-Reviews-The_Rudraksh_A_Himalayan_Retreat-Selur_Tehri_Garhwal_District_Uttarakhand.html",
+        author: "SK Singh",
+        image: "/home/review2.jpg",
+      },
+      {
+
+        title: "An incredible experience",
+        description: `
+          An incredible experience! The hotel itself is already wonderful, but the warmth and care from Mahesh and his family made us feel truly welcomed. Every detail was carefully thought out. I will carry these memories in my heart! Amaizing!!!!
         `,
         href: "https://www.tripadvisor.in/Hotel_Review-g25181975-d25136174-Reviews-The_Rudraksh_A_Himalayan_Retreat-Selur_Tehri_Garhwal_District_Uttarakhand.html",
         author: "Priscila Z",
-        image: "/home/review-img1.jpg",
+        image: "/home/review3.jpg",
       },
       {
-        title: "A Beautiful Retreat",
+        title: "Don't hesitate. Just book a room!",
         description: `
-          Amazing retreat experience in the rudraksh. Beautifull place in the deep Himalayas around very Nice and authenthic comunities.
+          Go! Just go. It was the highlight of my month-long first time trip to India. These 2 reviews give a wonderfully detailed and accurate description of the place, that I don't need to repeat. (Anjita Shroff wrote a review Feb 2024) (Kim Sands wrote a review Jan 2024). I'll add that the owners have made a real commitment to being a responsible part of the community, hiring local people, helping teach the local people about products they can grow and helping them to find a market for them, partnering with the schools, etc. My favorite part of the stay was the quiet (hearing the chant of morning puja from the valley as the sun rose), and the joy watching some young schoolgirls do a folk dance. Again, just go!
         `,
         href: "https://www.tripadvisor.in/Hotel_Review-g25181975-d25136174-Reviews-The_Rudraksh_A_Himalayan_Retreat-Selur_Tehri_Garhwal_District_Uttarakhand.html",
-        author: "Mariano",
-        image: "/home/review-img2.jpg",
+        author: "Erin R",
+        image: "/home/review4.jpg",
       },
       {
-        title: "Himalayan Medicine",
+        title: "🌸 The Best Retreat Experience 🌸",
         description: `
-          The love that went into food preparation and the staff who genuinely feel blessed to share their World with you.
+          Rudraksha Retreat is a peaceful, nature-filled escape surrounded by mountains. The cozy cottages, beautiful gardens, and tranquil atmosphere make it perfect for yoga, meditation, and relaxation. The food is homely and delicious. The host and staff were exceptionally friendly and the warm hospitality made us feel truly at home. 🥰❤️Thank you 🙏🏻Mahesh ji and Roopali ji, for your kindness and care!
+          SHRI ❤️ GANESH
         `,
         href: "https://www.tripadvisor.in/Hotel_Review-g25181975-d25136174-Reviews-The_Rudraksh_A_Himalayan_Retreat-Selur_Tehri_Garhwal_District_Uttarakhand.html",
-        author: "Glen S",
-        image: "/home/review-img3.jpg",
-      },
-      {
-        title: "Away from the crowd, peaceful stay!",
-        description: `
-          About 2 hours away from Rishikesh, this place is nestled with one of the best views of the mountains and the lake.
-        `,
-        href: "https://www.tripadvisor.in/Hotel_Review-g25181975-d25136174-Reviews-The_Rudraksh_A_Himalayan_Retreat-Selur_Tehri_Garhwal_District_Uttarakhand.html",
-        author: "Aarthi I",
-        image: "/home/rve4.jpg",
-      },
-      {
-        title: "An amazing vegetarian place with great service",
-        description: `
-          The moment we stepped in, we felt warmly welcomed by Mahesh ji and his friendly staff, who went above and beyond to make our stay truly special.
-        `,
-        href: "https://www.tripadvisor.in/Hotel_Review-g25181975-d25136174-Reviews-The_Rudraksh_A_Himalayan_Retreat-Selur_Tehri_Garhwal_District_Uttarakhand.html",
-        author: "Vinay Sharma",
-        image: "/home/rve5.jpg",
+        author: "645shrir",
+        image: "/home/review5.jpg",
       },
     ],
 

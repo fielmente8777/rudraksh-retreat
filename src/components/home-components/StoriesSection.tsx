@@ -22,6 +22,8 @@ interface StoriesSectionProps {
     link: string;
   };
 }
+
+
 const StoriesSection: React.FC<StoriesSectionProps> = ({
   title,
   reviews,
@@ -29,18 +31,26 @@ const StoriesSection: React.FC<StoriesSectionProps> = ({
 }) => {
   const { current, total } = useWebContext();
 
+const activeReview = reviews[(current || 1) - 1];
+
   return (
     <SectionWithContainer containerClassName="md:space-y-14 space-y-10">
       <div className="grid lg:grid-cols-2 grid-cols-1 gap-8 items-center">
         <div className="w-full aspect-square relative rounded-2xl overflow-hidden">
-          <LazyLoadedVideo
+          {/* <LazyLoadedVideo
             src="/home/Property-Video.mp4"
             poster="/home/Property-Video.png"
             loop
             muted
             autoPlay
             controls={false}
-          />
+          /> */}
+           <Image
+    src={activeReview.image}
+    alt={activeReview.title}
+    fill
+    className="object-cover transition-all duration-500"
+  />
         </div>
         <div className="flex flex-col  gap-8">
           <div className="relative w-[215px] aspect-4/1">
