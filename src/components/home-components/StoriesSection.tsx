@@ -55,16 +55,16 @@ const StoriesSection: React.FC<StoriesSectionProps> = ({
           {reviewImage}
         </div>
         <div className="flex flex-col  gap-8">
-          <div className="relative w-[215px] aspect-4/1">
+          <div className="relative w-20 aspect-4/4">
             <Image
-              src="/home/tripadvisor2.png"
+              src="/TripAdvisor-Badge.png"
               alt="Rudraksh Logo"
               fill
               sizes="215px"
-              className="object-contain"
+              className="object-cover"
             />
           </div>
-          <SectionHeading title={title} titleClassName="uppercase" />
+          <SectionHeading title={title} titleClassName="" />
           <div className="lg:hidden w-full aspect-square relative rounded-2xl overflow-hidden">
             {reviewImage}
           </div>

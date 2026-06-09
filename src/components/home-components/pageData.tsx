@@ -165,7 +165,7 @@ export const homePageData = {
     ],
   },
   storiesSection: {
-    title: "Stories Of <i class='text-primary'>Satisfaction</i>",
+    title: "Stories Of <i class='text-secondary'>Satisfaction</i>",
     reviews: [
       {
                  title: "Heaven on earth.",
