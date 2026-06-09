@@ -6,6 +6,8 @@ import LinkButton from "../buttons/LinkButton";
 import ReviewsSlider from "./slider/ReviewsSlider";
 import { useWebContext } from "@/context-api/WebContext";
 import { MdKeyboardArrowLeft, MdKeyboardArrowRight } from "react-icons/md";
+import Link from "next/link";
+import Script from "next/script";
 
 interface StoriesSectionProps {
   title: string;
@@ -55,7 +57,12 @@ const StoriesSection: React.FC<StoriesSectionProps> = ({
           {reviewImage}
         </div>
         <div className="flex flex-col  gap-8">
-          <div className="relative w-20 aspect-4/4">
+          <Link
+            className="relative w-20 aspect-4/4 block"
+            href="https://www.tripadvisor.in/Hotel_Review-g25181975-d25136174-Reviews-The_Rudraksh_A_Himalayan_Retreat-Selur_Tehri_Garhwal_District_Uttarakhand.html"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <Image
               src="/TripAdvisor-Badge.png"
               alt="Rudraksh Logo"
@@ -63,7 +70,7 @@ const StoriesSection: React.FC<StoriesSectionProps> = ({
               sizes="215px"
               className="object-cover"
             />
-          </div>
+          </Link>
           <SectionHeading title={title} titleClassName="" />
           <div className="lg:hidden w-full aspect-square relative rounded-2xl overflow-hidden">
             {reviewImage}
@@ -92,6 +99,10 @@ const StoriesSection: React.FC<StoriesSectionProps> = ({
           />
         </div>
       </div>
+      <Script
+        src="https://www.jscache.com/wejs?wtype=tchotel&uniq=269&locationId=25136174&lang=en_IN&year=2026&display_version=2"
+        strategy="lazyOnload"
+      />
     </SectionWithContainer>
   );
 };
