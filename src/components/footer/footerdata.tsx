@@ -103,6 +103,7 @@ export const websiteFooterData: WebsiteFooterData = {
       links: [
         { label: "Wellness", href: "/holistic-wellness" },
         { label: "Dining", href: "/farm-to-table" },
+        { label: "Gallery", href: "/gallery" },
         { label: "Host your retreat", href: "/host-your-retreat" },
         { label: "Blogs", href: "/blogs" },
       ],

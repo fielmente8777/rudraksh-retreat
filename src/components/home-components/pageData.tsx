@@ -165,7 +165,7 @@ export const homePageData = {
     ],
   },
   storiesSection: {
-    title: "Stories Of <i class='text-secondary'>Satisfaction</i>",
+    title: "Stories Of <i class='text-primary'>Satisfaction</i>",
     reviews: [
       {
                  title: "Heaven on earth.",
@@ -200,11 +200,11 @@ I recommend this place for those who want to know a piece of heaven on earth.
       {
         title: "Deep in the Himalayas: A Remote and Authentic Retreat",
         description: `
-         Experience the Himalayas in their purest form. This secluded sanctuary provides a genuine mountain escape, complete with stunning lake vistas, organic meals, and a dedicated staff. The quiet, clean atmosphere and remote location create an unforgettable, immersive experience.
+         Experience the Himalayas in their purest form. This secluded sanctuary provides a genuine mountain escape, complete with stunning lake vistas, organic meals, and a dedicated staff. The quiet, clean atmosphere and remote location create an unforgettable, immersive experience.A multi-day stay is highly recommended.
         `,
         href: "https://www.tripadvisor.in/Hotel_Review-g25181975-d25136174-Reviews-The_Rudraksh_A_Himalayan_Retreat-Selur_Tehri_Garhwal_District_Uttarakhand.html",
         author: "SK Singh",
-        image: "/home/review2.jpg",
+        image: "/home/review2.jpeg",
       },
       {
 
@@ -214,7 +214,7 @@ I recommend this place for those who want to know a piece of heaven on earth.
         `,
         href: "https://www.tripadvisor.in/Hotel_Review-g25181975-d25136174-Reviews-The_Rudraksh_A_Himalayan_Retreat-Selur_Tehri_Garhwal_District_Uttarakhand.html",
         author: "Priscila Z",
-        image: "/home/review3.jpg",
+        image: "/home/review3.jpeg",
       },
       {
         title: "Don't hesitate. Just book a room!",
@@ -223,7 +223,7 @@ I recommend this place for those who want to know a piece of heaven on earth.
         `,
         href: "https://www.tripadvisor.in/Hotel_Review-g25181975-d25136174-Reviews-The_Rudraksh_A_Himalayan_Retreat-Selur_Tehri_Garhwal_District_Uttarakhand.html",
         author: "Erin R",
-        image: "/home/review4.jpg",
+        image: "/home/review4.jpeg",
       },
       {
         title: "🌸 The Best Retreat Experience 🌸",
@@ -233,7 +233,7 @@ I recommend this place for those who want to know a piece of heaven on earth.
         `,
         href: "https://www.tripadvisor.in/Hotel_Review-g25181975-d25136174-Reviews-The_Rudraksh_A_Himalayan_Retreat-Selur_Tehri_Garhwal_District_Uttarakhand.html",
         author: "645shrir",
-        image: "/home/review5.jpg",
+        image: "/home/review5.jpeg",
       },
     ],
 
