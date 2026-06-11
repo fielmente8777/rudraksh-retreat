@@ -89,7 +89,7 @@ const WebsiteNav = () => {
                 <Link
                   href={link.href}
                   className={`
-                  xl:text-xl! text-sm! tracking-wide font-primary uppercase group font-medium
+                  xl:text-lg! text-sm! tracking-wide font-primary uppercase group font-medium
                   ${scrolled ? "text-primary" : "text-white"}
                    transition-colors duration-300
                    hover:text-primary/80

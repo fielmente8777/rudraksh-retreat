@@ -1,11 +1,16 @@
 import Image from "next/image";
 import { Container, Section } from "../sectionComponants";
+import LinkButton from "../buttons/LinkButton";
 
 interface ImageBannerProps {
   title: string;
   image: string;
+  cta?: {
+    label: string;
+    href: string;
+  };
 }
-const ImageBanner: React.FC<ImageBannerProps> = ({ title, image }) => {
+const ImageBanner: React.FC<ImageBannerProps> = ({ title, image, cta }) => {
   return (
     <Section
       defaultPadding={false}
@@ -21,9 +26,16 @@ const ImageBanner: React.FC<ImageBannerProps> = ({ title, image }) => {
       <div className="absolute inset-0 bg-black/50 z-20 flex items-center justify-center">
         <Container>
           <h1
-            className="text-white text-4xl font-semibold font-primary text-center"
+            className="text-white text-4xl lg:text-6xl font-semibold font-primary text-center"
             dangerouslySetInnerHTML={{ __html: title }}
           />
+          {cta && (
+            <LinkButton
+              {...cta}
+              className="mt-6 mx-auto text-white rounded-lg lg:text-lg hover:bg-white hover:text-secondary"
+              arrowIcon={false}
+            />
+          )}
         </Container>
       </div>
     </Section>

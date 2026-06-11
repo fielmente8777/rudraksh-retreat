@@ -2,6 +2,10 @@ export const hostRetretPageData = {
   banner: {
     title: "Host Your Own <i>Retreat</i>",
     image: "/host-your-retreat/host-your-retreat.png",
+    cta: {
+      label: "Host Your Retreat",
+      href: "/contact-us",
+    }
   },
   heroSection: {
     tag: "Book Now",

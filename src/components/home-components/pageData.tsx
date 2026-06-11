@@ -168,30 +168,9 @@ export const homePageData = {
     title: "Stories Of <i class='text-primary'>Satisfaction</i>",
     reviews: [
       {
-                 title: "Heaven on earth.",
-        description: `
-          Rudraksh is a place that can only be described one way. Magic.
-
-This place has all the amenities one can imagine, but what makes it so good are its owners. Mahesh, Roopali and Shubhang make you feel at home and like one of their family.
-
-The food is simply spectacular. Fresh, organic and delicious.
-
-The rooms are very comfortable and have an amazing mountain view.
-
-I recommend this place for those who want to know a piece of heaven on earth.
-        `,
-        
-//         title: "El cielo en la tierra.",
-//         description: `
-//           Rudraksh es un lugar que solo se puede describir de una manera. Mágico. 
-
-// Este lugar tiene todas las comodidades que uno se pueda imaginar, pero lo que lo hace tan bueno son su dueños. Mahesh, Roopali y Shubhang te hacen sentir como en casa y como uno más de su familia.
-
-// La comida es simplemente espectacular. Fresca, orgánica y deliciosa. 
-
-// Las habitaciones son muy cómodas y tienen una vista a las montañas increíble. 
-
-// Recomiendo este lugar para aquellas personas que quieran conocer un pedazo de cielo en la tierra.
+        title: "Heaven on earth.",
+        description:
+          "Rudraksh is a place that can only be described one way. Magic. This place has all the amenities one can imagine, but what makes it so good are its owners. Mahesh, Roopali and Shubhang make you feel at home and like one of their family. The food is simply spectacular. Fresh, organic and delicious. The rooms are very comfortable and have an amazing mountain view. I recommend this place for those who want to know a piece of heaven on earth.",
 
         href: "https://www.tripadvisor.in/Hotel_Review-g25181975-d25136174-Reviews-The_Rudraksh_A_Himalayan_Retreat-Selur_Tehri_Garhwal_District_Uttarakhand.html",
         author: "Luis Felipe F",
@@ -207,7 +186,6 @@ I recommend this place for those who want to know a piece of heaven on earth.
         image: "/home/review2.jpeg",
       },
       {
-
         title: "An incredible experience",
         description: `
           An incredible experience! The hotel itself is already wonderful, but the warmth and care from Mahesh and his family made us feel truly welcomed. Every detail was carefully thought out. I will carry these memories in my heart! Amaizing!!!!
@@ -289,7 +267,8 @@ I recommend this place for those who want to know a piece of heaven on earth.
 
   enquirySection: {
     title: "Limited Availability",
-    subtitle: "In the <i>Himalayas</i>, doing less often means experiencing <i>more!</i>",
+    subtitle:
+      "In the <i>Himalayas</i>, doing less often means experiencing <i>more!</i>",
     description: "A place to pause, reconnect, and simply be",
     image: "/G48095455.png",
     buttons: [

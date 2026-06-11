@@ -44,6 +44,20 @@ const StoriesSection: React.FC<StoriesSectionProps> = ({
 
   return (
     <SectionWithContainer containerClassName="md:space-y-14 space-y-10">
+      <Link
+        className="relative w-65 aspect-[4/1.75] mx-auto block"
+        href="https://www.tripadvisor.in/Hotel_Review-g25181975-d25136174-Reviews-The_Rudraksh_A_Himalayan_Retreat-Selur_Tehri_Garhwal_District_Uttarakhand.html"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <Image
+          src="/tripadvisor.png"
+          alt="Rudraksh Logo"
+          fill
+          sizes="215px"
+          className="object-cover"
+        />
+      </Link>
       <div className="grid lg:grid-cols-2 grid-cols-1 gap-8 items-center">
         <div className="hidden lg:block w-full aspect-square relative rounded-2xl overflow-hidden">
           {/* <LazyLoadedVideo
@@ -57,20 +71,6 @@ const StoriesSection: React.FC<StoriesSectionProps> = ({
           {reviewImage}
         </div>
         <div className="flex flex-col  gap-8">
-          <Link
-            className="relative w-20 aspect-4/4 block"
-            href="https://www.tripadvisor.in/Hotel_Review-g25181975-d25136174-Reviews-The_Rudraksh_A_Himalayan_Retreat-Selur_Tehri_Garhwal_District_Uttarakhand.html"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              src="/TripAdvisor-Badge.png"
-              alt="Rudraksh Logo"
-              fill
-              sizes="215px"
-              className="object-cover"
-            />
-          </Link>
           <SectionHeading title={title} titleClassName="" />
           <div className="lg:hidden w-full aspect-square relative rounded-2xl overflow-hidden">
             {reviewImage}
