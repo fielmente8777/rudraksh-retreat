@@ -20,7 +20,7 @@ export const WebsiteNavData = {
     { label: "Accommodations", href: "/refined-living-spaces/" },
     { label: "Wellness", href: "/holistic-wellness/" },
     { label: "Dining", href: "/farm-to-table/" },
-    { label: "Experiences", href: "/experiences/" },
+    { label: "Host your retreat", href: "/host-your-retreat//" },
     { label: "Contact", href: "/contact-us/" },
   ],
 };
