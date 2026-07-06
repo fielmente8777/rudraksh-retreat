@@ -32,7 +32,6 @@ export const galleryPageData = {
       { src: "/gallery/yoga3.webp",alt:"All" },
       { src: "/gallery/yoga4.JPG",alt:"All" },
       { src: "/gallery/yoga5.jpg",alt:"All" },
-      // { src: "/gallery/img17.webp",alt:"All" },
       { src: "/gallery/yoga6.webp",alt:"All" },
       { src: "/gallery/yoga7.webp",alt:"All" },
 

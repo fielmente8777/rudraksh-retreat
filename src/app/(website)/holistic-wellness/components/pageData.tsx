@@ -15,7 +15,7 @@ export const wellnessPageData = {
       {
         description:
           "Whether you’re indulging in our serene spa treatments, flowing through guided yoga sessions amidst nature, or letting the outdoors soothe you during a peaceful stroll, we’re here to support your journey toward balance, renewal and well-being.",
-        image: "/wellness/DJI_20250216.png",
+        image: "/wellness/DJI_20250216.webp",
       },
     ],
   },
