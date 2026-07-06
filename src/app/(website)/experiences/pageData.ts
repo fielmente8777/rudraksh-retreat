@@ -11,7 +11,8 @@ export const experiencePageData = {
       "At The Rudraksh Retreat, every experience is a journey of discovery, designed to guide you toward inner harmony and renewal. From serene treks through sacred Himalayan landscapes to the art of Ayurvedic cooking, our curated offerings invite you to reconnect with nature, culture, and self. Rooted in ancient traditions and crafted to awaken your senses, each moment nourishes your spirit, blending tranquility, adventure, and personal growth.",
   },
   bannerSection: {
-    image: "/DJI_20240914065117_0341_D-scaled.jpg",
+    image: "/new-img/_DSC0530.webp",
+    // image: "/DJI_20240914065117_0341_D-scaled.jpg",
   },
   experiencesSection: {
     items: [

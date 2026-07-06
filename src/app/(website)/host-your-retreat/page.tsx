@@ -1,11 +1,13 @@
-import React from "react";
-import HeroSection from "./components/HeroSection";
-import { hostRetretPageData } from "./hostRetretPageData";
-import GallerySection from "./components/GallerySection";
-import BannerSection from "./components/BannerSection";
-import CTASection from "./components/CTASection";
-import ImageBanner from "@/components/banners/ImageBanner";
+import { homePageData } from "@/components/home-components/pageData";
+import StoriesSection from "@/components/home-components/StoriesSection";
+import SlidingTitle2 from "@/components/sliders/SlidingTitle2";
 import { Metadata } from "next";
+import Banner from "./components/Banner";
+import BannerSection from "./components/BannerSection";
+import { hostRetretPageData } from "./hostRetretPageData";
+import WhyChooseUs from "./components/WhyChooseUs";
+import ImagineYourRetreat from "./components/ImagineYourRetreat";
+import WhatWeProvide from "./components/WhatWeProvide";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://therudrakshretreat.com"),
@@ -45,13 +47,17 @@ export const metadata: Metadata = {
 const page = () => {
   return (
     <main>
-      <ImageBanner {...hostRetretPageData.banner} />
-      <HeroSection {...hostRetretPageData.heroSection} />
-      {/* <GallerySection {...hostRetretPageData.gallerySection} /> */}
+      <Banner {...hostRetretPageData.banner} />
+      <SlidingTitle2 items={hostRetretPageData.slidingTitleSection.items} useIcon className="text-white! py-3.5 bg-secondary uppercase tracking-wider" />
+      <WhyChooseUs {...hostRetretPageData.whyChooseUs} />
+      <ImagineYourRetreat {...hostRetretPageData.imagineYourRetreat} />
+      <WhatWeProvide {...hostRetretPageData.whatWeProvide} />
       <BannerSection {...hostRetretPageData.bannerSection} />
-      <CTASection {...hostRetretPageData.ctaSection} />
+      <SlidingTitle2 items={hostRetretPageData.byTheNumbersSection} useIcon className="text-white! py-3.5 bg-secondary" />
+      <StoriesSection {...homePageData.storiesSection} />
     </main>
   );
 };
 
 export default page;
+

@@ -13,7 +13,7 @@ export const FarmToTablePageData = {
     ],
     images: [
       "/farm-to-table/Organic-Farming-Collage.png",
-      "/farm-to-table/IMG_1334.png",
+      "/new-img/home/_DSC0475.webp",
       "/farm-to-table/leaf-icon.png",
       "/farm-to-table/gluten-icon.png",
     ],
@@ -23,11 +23,12 @@ export const FarmToTablePageData = {
     description: [
       "Our dining hall, with its expansive views of the majestic mountains, is the perfect setting to enjoy these wholesome meals. Guests can also request customized diet plans, tailored to suit individual preferences and needs. Whether you're savoring a warm, hearty meal or indulging in light, saatvik cuisine, the serene environment enhances your experience—where healthy eating meets the tranquility of nature.",
     ],
-    image: "/farm-to-table/IMG_1328-1.png",
+    image: "/new-img/_DSC0902.webp",
   },
   enquirySection: {
     description:
       "Take a seat at our table, and experience how the earth’s bounty, cultivated with love, becomes an integral part of your wellness journey at Rudraksh.",
-    image: "/farm-to-table/dine-prlx.jpg",
+    image: "/new-img/_DSC0467.webp",
+    // image: "/farm-to-table/dine-prlx.jpg",
   },
 };

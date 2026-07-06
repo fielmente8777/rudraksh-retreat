@@ -69,8 +69,8 @@ export const homePageData = {
     cards: [
       {
         id: "01",
-        title: "REFINED LIVING SPACES",
-        image: "/home/lftrgt-img1.jpg",
+        title: "Refined Living Spaces",
+        image: "/new-img/home/dji_141926.webp",
         href: "/refined-living-spaces/",
         description: [
           "A serene escape with eight crafted guestrooms, set against the Himalayas and overlooking peaceful Tehri Lake. Rudraksh Retreat is a space to unwind, rejuvenate, and restore inner balance.",
@@ -80,7 +80,7 @@ export const homePageData = {
       {
         id: "02",
         title: "Holistic Wellness",
-        image: "/home/lftrgt-img2.jpg",
+        image: "/new-img/home/_DSC1190-Edit.webp",
         href: "/holistic-wellness/",
         description: [
           "Sat-cit-ānanda / सच्चिदानन्द",
@@ -270,7 +270,8 @@ export const homePageData = {
     subtitle:
       "In the <i>Himalayas</i>, doing less often means experiencing <i>more!</i>",
     description: "A place to pause, reconnect, and simply be",
-    image: "/G48095455.png",
+    image: "/new-img/home/dji_20260624.webp",
+    // image: "/G48095455.png",
     buttons: [
       {
         label: "Check Availability",

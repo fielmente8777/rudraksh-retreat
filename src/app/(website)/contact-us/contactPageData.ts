@@ -3,7 +3,7 @@ import { contact } from "@/utils/constent";
 export const contactPageData = {
   heroSection: {
     title: "Contact Us",
-    image: "/contact-bg.jpg",
+    image: "/new-img/_DSC1172.webp",
   },
   contactInfo: {
     title: "Contact Details!",

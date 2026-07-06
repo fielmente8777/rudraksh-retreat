@@ -1,20 +1,31 @@
 "use client";
 import "./sliding.title.scss";
 
-export default function SlidingTitle2({ items }: { items: string[] }) {
+export default function SlidingTitle2({
+  items,
+  className,
+  useIcon = false,
+}: {
+  items: string[];
+  className?: string;
+  useIcon?: boolean;
+}) {
   const titles = [...items, ...items];
 
   return (
-    <div className="relative overflow-hidden text-secondary max_screen_width ">
+    <div
+      className={`relative overflow-hidden text-secondary max_screen_width ${className || ""}`}
+    >
       <div className="marquee-wrapper">
         <div className="marquee-track">
           {titles.map((t, i) => (
-            <span
-              key={i}
-              className="marquee-item font-primary text-xl"
-            >
+            <span key={i} className="marquee-item font-primary text-xl">
               <span dangerouslySetInnerHTML={{ __html: t }}></span>
-              <span className="separator w-2 bg-primary aspect-square rounded-full"></span>
+              {useIcon ? (
+                <ICon />
+              ) : (
+                <span className="separator w-2 bg-primary aspect-square rounded-full"></span>
+              )}
             </span>
           ))}
         </div>

@@ -66,7 +66,7 @@ export default function LandingPage() {
           backgroundImage: `url(${homePageData.enquirySection.image})`,
         }}
       >
-        <div className="absolute inset-0 bg-black/30"></div>
+        <div className="absolute inset-0 bg-black/60"></div>
         <Container className="flex lg:max-w-5xl! flex-col items-center gap-4 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
           <div className="">
             {/* <p className="text-primary uppercase text-center">

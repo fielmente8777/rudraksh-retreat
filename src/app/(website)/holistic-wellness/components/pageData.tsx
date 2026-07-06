@@ -21,7 +21,8 @@ export const wellnessPageData = {
   },
   cards: [
     {
-      image: "/blogs/host-img2.jpg",
+      image: "/new-img/home/_DSC1190-Edit.webp",
+      // image: "/blogs/host-img2.jpg",
       title: "Serene Spa <i class='text-p22'>Treatments</i>",
       subtitle: "THE RUDRAKSH WELLNESS PLAN",
       description: [
@@ -55,10 +56,10 @@ export const wellnessPageData = {
       description: [
         "Harmonize your mind, body, and spirit through the timeless wisdom of yoga and Ayurveda with our rejuvenating Yogic Detox. This retreat enhances self-awareness, inner harmony, and mental clarity, while boosting physical energy and managing stress. You'll leave feeling deeply connected to nature, with a radiant inner and outer glow, and an overall sense of well-being.",
       ],
-      image: "/wellness/service-flx-rgt.jpg",
+      image: "/wellness/_DSC0506.webp",
     },
     {
-      image: "/blogs/DSC07562-scaled.jpg",
+      image: "/wellness/_DSC0485.webp",
       title: "Ayurveda <i class='text-p22'>Panchakarma</i> (7 or 10 Nights)",
       subtitle: "Benefits:",
       description: [

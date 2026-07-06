@@ -1,7 +1,8 @@
 export const aboutUsPageData = {
   heroSection: {
     title: "About <i>Us</i>",
-    image: "/contact-bg.jpg",
+    // image: "/contact-bg.jpg",
+    image: "/new-img/_DSC1118.webp",
   },
   aboutUsSection: {
     title: "Welcome to The Rudraksh <i class='text-p22'>Retreat</i>",
@@ -13,7 +14,7 @@ export const aboutUsPageData = {
   },
   enquirySection: {
     description: "A moment to pause, reconnect, and revel in the simplicity of the present.",
-    image: "/home/home-bg.jpg",
+    image: "/new-img/home/_DSC0332.webp",
     button: {
       label: "ENQUIRE NOW",
       link: "/contact-us",
