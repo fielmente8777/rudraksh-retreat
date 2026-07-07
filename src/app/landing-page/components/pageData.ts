@@ -83,7 +83,14 @@ export const landingPageData = {
     description:
       "From sunrise yoga on the open terrace to Ayurvedic rituals with Himalayan salts, our wellness offerings are designed to detoxify the city from your veins.",
 
-    images: ["/new-img/_DSC0530.webp","/Sunrise-View.webp"],
+    images: [
+      "/new-img/_DSC0530.webp",
+      "/new-img/_DSC1123.webp",
+      "/new-img/_DSC0467.webp",
+      "/new-img/home/_DSC0721.webp",
+      "/new-img/home/_DSC0848.webp",
+      "/new-img/home/dji_200058.webp"
+    ],
 
     buttons: [
       {

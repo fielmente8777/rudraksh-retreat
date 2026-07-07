@@ -60,11 +60,11 @@ export default function WellnessSection() {
           autoplay={{ delay: 3500 }}
           className="w-full"
           renderSlide={(src) => (
-            <div className="relative aspect-4/4.25 lg:aspect-16/7 w-full">
+            <div className="relative aspect-4/4.25 lg:aspect-[16/7.6] w-full">
               <Image src={src} alt="Wellness" fill className="object-cover" />
 
               {/* OVERLAY */}
-              <div className="absolute inset-0 bg-black/10" />
+              <div className="absolute inset-0 bg-black/30 z-10" />
             </div>
           )}
         />
