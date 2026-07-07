@@ -83,7 +83,7 @@ export const landingPageData = {
     description:
       "From sunrise yoga on the open terrace to Ayurvedic rituals with Himalayan salts, our wellness offerings are designed to detoxify the city from your veins.",
 
-    images: ["/images/wellness.jpg","/Sunrise-View.webp"],
+    images: ["/new-img/_DSC0530.webp","/Sunrise-View.webp"],
 
     buttons: [
       {
@@ -232,7 +232,7 @@ export const landingPageData = {
         description:
           "A first-floor sanctuary with a private balcony framing the Himalayan ridgeline and Tehri Lake.",
 
-        image: "/images/room1.jpg",
+        image: "/rooms/Room-1/_DSC0791.webp",
       },
 
       {
@@ -243,7 +243,7 @@ export const landingPageData = {
         description:
           "A ground-floor retreat opening into lush surroundings, cozy, intimate, close to the earth.",
 
-        image: "/images/room2.jpg",
+        image: "/rooms/room-2/_DSC0833.webp",
       },
 
       {
@@ -254,7 +254,7 @@ export const landingPageData = {
         description:
           "Our in-house kitchen serving Sattvic, vegetarian meals on a serene deck above the valley.",
 
-        image: "/images/room3.jpg",
+        image: "/new-img/_DSC0515.webp",
       },
     ],
 
@@ -296,7 +296,7 @@ export const landingPageData = {
       {
         title: "Sustainable Soul",
         description: "Powered by local craftsmanship and zero-waste ideals.",
-        image: "/images/story1.jpg",
+        image: "/rooms/Room-3/_DSC0965.webp",
       },
 
       {

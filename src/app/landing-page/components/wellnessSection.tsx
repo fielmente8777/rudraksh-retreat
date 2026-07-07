@@ -1,17 +1,16 @@
 "use client";
 
 import Image from "next/image";
-import { Navigation, Autoplay } from "swiper/modules";
+import { Autoplay, Navigation } from "swiper/modules";
 
-import SwiperCarousel from "@/components/sliders/SwiperCarousel";
-import { landingPageData } from "./pageData";
+import LinkButton from "@/components/buttons/LinkButton";
 import {
   Container,
-  Section,
-  SectionWithContainer,
+  Section
 } from "@/components/sectionComponants";
+import SwiperCarousel from "@/components/sliders/SwiperCarousel";
 import { SliderNextIcon, SliderPrevIcon } from "@/utils/icons";
-import LinkButton from "@/components/buttons/LinkButton";
+import { landingPageData } from "./pageData";
 
 export default function WellnessSection() {
   const { wellnessSection } = landingPageData;
