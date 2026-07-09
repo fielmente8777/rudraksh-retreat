@@ -497,6 +497,8 @@ const blogPostPageData = [
       India.
     </p>`,
   },
+
+
   {
     slug: "why-monsoon-is-the-best-time-to-visit-the-rudraksh-retreat-and-the-himalayas",
     metaData: {
@@ -511,7 +513,7 @@ const blogPostPageData = [
       "Why Monsoon is the Best Time to Visit The Rudraksh Retreat — and the Himalayas",
     publishedAt: "July 9, 2026",
     author: "The Rudraksh Retreat",
-    bannerImage: "",
+    bannerImage: "/blogs/_DSC0383-3.png",
     content: `
     <p>
       Open any travel guide to Uttarakhand and you will find a familiar warning somewhere near the monsoon months: avoid July and August. Roads are slippery. Visibility is poor. Travel is risky.
@@ -838,7 +840,7 @@ const blogPostPageData = [
     title: "What Makes a Family-Run Retreat Different from a Hotel?",
     publishedAt: "July 9, 2026",
     author: "The Rudraksh Retreat",
-    bannerImage: "",
+    bannerImage: "/blogs/_DSC0383-5.png",
     content: `
     <p>
       You have probably stayed in a hotel that ticked every box on paper.
@@ -1180,7 +1182,7 @@ const blogPostPageData = [
       "Yoga in the Himalayas vs a City Studio: Why Location Changes Everything",
     publishedAt: "July 9, 2026",
     author: "The Rudraksh Retreat",
-    bannerImage: "",
+    bannerImage: "/wellness/_DSC0383.webp",
     content: `
     <p>
       You have been practising yoga for years. Maybe months. Maybe you have a
@@ -1506,7 +1508,7 @@ const blogPostPageData = [
       "Offbeat Uttarakhand: Why Tehri Garhwal is the State's Best-Kept Secret",
     publishedAt: "July 9, 2026",
     author: "The Rudraksh Retreat",
-    bannerImage: "",
+    bannerImage: "/blogs/_DSC0383-2.png",
     content: `
     <p>
       Say "Uttarakhand" to most travellers and the same names appear
@@ -1948,7 +1950,7 @@ const blogPostPageData = [
     title: "A Day at The Rudraksh Retreat: What to Expect",
     publishedAt: "July 9, 2026",
     author: "The Rudraksh Retreat",
-    bannerImage: "",
+    bannerImage: "/blogs/_DSC0383-3.png",
     content: `
     <p>
       There is a question that most travellers ask before booking a retreat,

@@ -9,6 +9,7 @@ export const blogsPageData = {
     return {
       slug: card.slug,
       title: card.title,
+      // description: card.description,
       publishedAt: card.publishedAt,
       author: card.author,
       image: card.bannerImage,

@@ -14,7 +14,7 @@ export const homePageData = {
     "Zero-Pollution Stargazing",
   ],
   about: {
-    images: ["/images/story1.jpg", "/images/Story2.jpeg"],
+    images: ["/new-img/home/_DSC1049.jpg", "/images/Story2.jpeg"],
     subTitle: "Our STORY",
     title: "Named after the <i class='text-p22'>divine tears</i> of Shiva.",
     note: "Discover the Art of Slow Living in the Himalayas",
