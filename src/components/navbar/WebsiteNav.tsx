@@ -89,7 +89,7 @@ const WebsiteNav = () => {
                 <Link
                   href={link.href}
                   className={`
-                  xl:text-lg! text-sm! tracking-wide font-primary uppercase group font-medium
+                  xl:text-lg! text-xs! text-nowrap font-primary uppercase group font-medium
                   ${scrolled ? "text-primary" : "text-white"}
                    transition-colors duration-300
                    hover:text-primary/80
@@ -114,9 +114,10 @@ const WebsiteNav = () => {
             w-fit rounded-lg
             max-md:hidden
             uppercase font-primary
+            xl:text-base! text-xs!  text-nowrap
             ${
               scrolled
-                ? "bg-transparent text-primary border xl:text-base! text-sm!  font-medium border-primary/50"
+                ? "bg-transparent text-primary border  font-medium border-primary/50"
                 : " text-white border border-white/50"
             }
             `}

@@ -21,6 +21,7 @@ export const WebsiteNavData = {
     { label: "Wellness", href: "/holistic-wellness/" },
     { label: "Dining", href: "/farm-to-table/" },
     { label: "Host your retreat", href: "/host-your-retreat/" },
+    { label: "Gallery", href: "/gallery/" },
     { label: "Contact", href: "/contact-us/" },
   ],
 };

@@ -1,12 +1,10 @@
 import { contact } from "@/utils/constent";
 import {
-  ArrowIcon,
-  CallIcon,
   FiveIcon,
   FourIcon,
   OneIcon,
   ThreeIcon,
-  TwoIcon,
+  TwoIcon
 } from "@/utils/icons";
 export const landingPageData = {
   heroSection: {
@@ -301,16 +299,16 @@ export const landingPageData = {
 
     points: [
       {
-        title: "Sustainable Soul",
-        description: "Powered by local craftsmanship and zero-waste ideals.",
-        image: "/rooms/Room-3/_DSC0965.webp",
+        title: "Rooted in the Himalayas",
+        description: "Every corner of Rudraksh reflects the mountains—from locally crafted spaces to organic gardens and timeless Garhwali hospitality.",
+        image: "/new-img/home/_DSC0475.webp",
       },
 
       {
-        title: "Ancient Energy",
+        title: "Made for Inner Quiet",
         description:
-          "Near the Agaan Shiv temple, vibrating with ancient prana.",
-        image: "/images/story2.jpg",
+          "Wake to birdsong, practice yoga at sunrise, walk through forests, and embrace the rare luxury of genuine stillness.",
+        image: "/wellness/_DSC0395.webp",
       },
     ],
 

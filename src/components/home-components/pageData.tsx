@@ -14,19 +14,19 @@ export const homePageData = {
     "Zero-Pollution Stargazing",
   ],
   about: {
-    images: ["/new-img/home/_DSC1049.jpg", "/images/Story2.jpeg"],
+    images: ["/new-img/home/_DSC0475.webp", "/wellness/_DSC0395.webp"],
     subTitle: "Our STORY",
     title: "Named after the <i class='text-p22'>divine tears</i> of Shiva.",
     note: "Discover the Art of Slow Living in the Himalayas",
     cards: [
       {
-        title: "Sustainable Soul",
-        description: "Powered by local craftsmanship and zero-waste ideals.",
+        title: "Rooted in the Himalayas",
+        description: "Every corner of Rudraksh reflects the mountains—from locally crafted spaces to organic gardens and timeless Garhwali hospitality.",
       },
       {
-        title: "Ancient Energy",
+        title: "Made for Inner Quiet",
         description:
-          "Near the Agaan Shiv temple, vibrating with ancient prana.",
+          "Wake to birdsong, practice yoga at sunrise, walk through forests, and embrace the rare luxury of genuine stillness.",
       },
     ],
     description: [
