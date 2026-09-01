@@ -8,18 +8,18 @@ import { Metadata } from "next";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://therudrakshretreat.com"),
-  title: "Holistic Wellness | Best Yoga Retreat Near Rishikesh",
+  title: "Best Wellness Resort and retreat in Tehri Garhwal, Uttarakhand",
   description:
-    "Rejuvenate your mind and body at The Rudraksh Retreat. Experience yoga, meditation, and holistic wellness in a serene setting near Rishikesh.",
+    "Find the best wellness resort and retreat in Tehri Garhwal, Uttarakhand, offering peaceful stays, holistic wellness, nature and rejuvenation.",
 
   alternates: {
     canonical: "https://therudrakshretreat.com/holistic-wellness/",
   },
 
   openGraph: {
-    title: "Holistic Wellness | Best Yoga Retreat Near Rishikesh",
+    title: "Best Wellness Resort and retreat in Tehri Garhwal, Uttarakhand",
     description:
-      "Rejuvenate your mind and body at The Rudraksh Retreat. Experience yoga, meditation, and holistic wellness in a serene setting near Rishikesh.",
+      "Find the best wellness resort and retreat in Tehri Garhwal, Uttarakhand, offering peaceful stays, holistic wellness, nature and rejuvenation.",
     url: "https://therudrakshretreat.com/holistic-wellness/",
     siteName: "The Rudraksh Retreat",
     type: "website",
